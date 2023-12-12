@@ -7,5 +7,6 @@
     int age = get_int("What's your age? ");
     string number = get_string("What's your phone number? ");
 
+    printf("Age is %i. Name is %s. Phone number is %s.", age, name, number);
 }
 
