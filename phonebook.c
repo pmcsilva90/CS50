@@ -5,7 +5,7 @@
 {
     string name = get_string("What's your name? ");
     int age = get_int("What's your age? ");
-    long number = get_long("What's your phone number? ");
+    string number = get_string("What's your phone number? ");
 
 }
 
