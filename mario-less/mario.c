@@ -12,7 +12,7 @@ int main(void)
 
     for (int row = 0; row < height; row++)
     {
-        for (int j = 0; j < height; j = j++)
+        for (int col = 0; col < height; col++)
         {
             printf("#");
         }
