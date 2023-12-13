@@ -3,11 +3,11 @@
 
 int main(void)
 {
-    int height
+    int height;
     do
     {
         get_int("Height: ");
 
     }
-    while(height < 1 || >8);
+    while(height < 1 || > 8);
 }
