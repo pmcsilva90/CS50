@@ -5,21 +5,21 @@ int main(void)
 {
     // TODO: Prompt for start size
 
-int n;
+int start;
 do
 {
-    n = get_int("Start size: ");
+    start = get_int("Start size: ");
 }
-while (n < 9);
+while (start < 9);
 
     // TODO: Prompt for end size
 
-int e;
+int end;
 do
 {
-    e = get_int("End size: ");
+    end = get_int("End size: ");
 }
-while (e <= n);
+while (end <= start);
 
 
     // TODO: Calculate number of years until we reach threshold
