@@ -12,6 +12,10 @@ int main(void)
 
     for (int row = 0; row < height; row++)
     {
+        for (int dot = 0; asdasd; dot++)
+        {
+            printf(".");
+        }
         for (int col = 0; col <= row; col++)
         {
             printf("#");
