@@ -3,10 +3,12 @@
 
 int main(void)
 {
+    
     do
     {
-        int height
-        get_int("Height: ")
-        
+        int height;
+        get_int("Height: ");
+
     }
+    while()
 }
