@@ -12,9 +12,9 @@ int main(void)
 
     for (int row = 0; row < height; row++)
     {
-        for (int dot = 0; dot < height - row - 1; dot++)
+        for (int spc = 0; spc < height - row - 1; spc++)
         {
-            printf(".");
+            printf(" ");
         }
         for (int col = 0; col <= row; col++)
         {
