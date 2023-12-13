@@ -7,9 +7,11 @@ int main(void)
     do
     {
         height = get_int("Height: ");
-
     }
     while(height < 1 || height > 8);
 
-    for (int height)
+    for (int i = 0; i < height, i++)
+    {
+        printf("#");
+    }
 }
