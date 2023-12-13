@@ -24,5 +24,8 @@ while (e <= n);
 
     // TODO: Calculate number of years until we reach threshold
 
+int y;
+
+
     // TODO: Print number of years
 }
