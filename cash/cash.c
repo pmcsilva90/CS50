@@ -53,7 +53,7 @@ int get_cents(void)
 int calculate_quarters(int cents)
 {
     // TODO
-    quarters = cents / 25;
+    int quarters = cents / 25;
     return quarters;
 }
 
@@ -61,7 +61,7 @@ int calculate_dimes(int cents)
 {
     // TODO
     // return 0;
-    dimes = cents - (quarters * cents) / 10;
+    int dimes = cents - (quarters * cents) / 10;
     return dimes;
 }
 
@@ -69,7 +69,7 @@ int calculate_nickels(int cents)
 {
     // TODO
     //return 0;
-    nickels = cents - ((quarters + dimes) * cents) / 5;
+    int nickels = cents - ((quarters + dimes) * cents) / 5;
     return nickels;
 }
 
@@ -77,7 +77,7 @@ int calculate_pennies(int cents)
 {
     // TODO
     //return 0;
-    pennies = cents - ((quarters + dimes + nickels) * cents);
+    int pennies = cents - ((quarters + dimes + nickels) * cents);
     return pennies;
 
     int coins = quarters + dimes + nickels + pennies;
