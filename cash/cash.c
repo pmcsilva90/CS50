@@ -46,28 +46,28 @@ int calculate_quarters(int cents)
 {
     // TODO
     // return 0;
-    calculate_quarters = cents / 25
+    calculate_quarters = cents / 25;
 }
 
 int calculate_dimes(int cents)
 {
     // TODO
     // return 0;
-    calculate_dimes = cents - (quarters * cents) / 10
+    calculate_dimes = cents - (quarters * cents) / 10;
 }
 
 int calculate_nickels(int cents)
 {
     // TODO
     //return 0;
-    calculate_nickels = cents - ((quarters + dimes) * cents) / 5
+    calculate_nickels = cents - ((quarters + dimes) * cents) / 5;
 }
 
 int calculate_pennies(int cents)
 {
     // TODO
     //return 0;
-    calculate_pennies = cents - ((quarters + dimes + nickels) * cents) / 1
+    calculate_pennies = cents - ((quarters + dimes + nickels) * cents) / 1;
 
-    printf("Total coins: %d", )
+    printf("Total coins: %d", calculate_quartes + calculate_dimes + calculate_nickels + calculate_pennies);
 }
