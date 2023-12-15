@@ -58,7 +58,7 @@ int calculate_dimes(int cents)
 {
     // TODO
     // return 0;
-    int dimes = cents - (quarters * cents) / 10;
+    int dimes = cents - (calculate_quarters * cents) / 10;
     return dimes
 }
 
