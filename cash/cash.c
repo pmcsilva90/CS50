@@ -37,6 +37,11 @@ int main(void)
 
 int get_cents(void)
 {
+
+    int quarters;
+    int dimes;
+    int nickels;
+    int pennies;
     // TODO
     int cents;
     do
