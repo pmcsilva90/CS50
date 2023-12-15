@@ -43,35 +43,38 @@ int get_cents(void)
         int cents = get_int("How much is owed? ");
     }
     while(cents < 0)
-    return cents
+    return cents;
 }
 
 int calculate_quarters(int cents)
 {
     // TODO
-    // return 0;
     int quarters = cents / 25;
+    return quarters;
 }
 
 int calculate_dimes(int cents)
 {
     // TODO
     // return 0;
-    calculate_dimes = cents - (quarters * cents) / 10;
+    int dimes = cents - (quarters * cents) / 10;
+    return dimes
 }
 
 int calculate_nickels(int cents)
 {
     // TODO
     //return 0;
-    calculate_nickels = cents - ((quarters + dimes) * cents) / 5;
+    int nickels = cents - ((quarters + dimes) * cents) / 5;
+    return nickels
 }
 
 int calculate_pennies(int cents)
 {
     // TODO
     //return 0;
-    calculate_pennies = cents - ((quarters + dimes + nickels) * cents) / 1;
+    int pennies = cents - ((quarters + dimes + nickels) * cents);
+    return pennies;
 
     printf("Total coins: %d", calculate_quartes + calculate_dimes + calculate_nickels + calculate_pennies);
 }
