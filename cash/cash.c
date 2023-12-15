@@ -76,5 +76,6 @@ int calculate_pennies(int cents)
     int pennies = cents - ((quarters + dimes + nickels) * cents);
     return pennies;
 
-    printf("Total coins: %d", calculate_quartes + calculate_dimes + calculate_nickels + calculate_pennies);
+    int coins = quarters + dimes + nickels + pennies;
+    printf("Total coins: %d", coins);
 }
