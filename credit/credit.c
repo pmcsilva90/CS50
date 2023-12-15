@@ -9,7 +9,11 @@ int main(void)
     //Mastercard = 5xxxxxxxxxxxxxxx
     //Visa = 4xxxxxxxxxxxxxxx
 
-    if (cardNumber >= 340000000000000 && cardNumber < 350000000000000 || cardNumber >= 370000000000000 && cardNumber < 380000000000000)
+    if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
+    {
+        printf("AMEX\n");
+    }
+    else if (cardNumber >= 370000000000000 && cardNumber < 380000000000000)
     {
         printf("AMEX\n");
     }
