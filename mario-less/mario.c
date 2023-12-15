@@ -9,7 +9,7 @@ int main(void)
     {
         height = get_int("Height: ");
     }
-    while(height < 1 || height > 8);
+    while (height < 1 || height > 8);
 
     // Make right aligned pyramid
     for (int row = 0; row < height; row++)
