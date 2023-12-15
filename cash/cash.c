@@ -53,17 +53,21 @@ int calculate_dimes(int cents)
 {
     // TODO
     // return 0;
-    calculate_dimes = 
+    calculate_dimes = cents - (quarters * cents) / 10
 }
 
 int calculate_nickels(int cents)
 {
     // TODO
-    return 0;
+    //return 0;
+    calculate_nickels = cents - ((quarters + dimes) * cents) / 5
 }
 
 int calculate_pennies(int cents)
 {
     // TODO
-    return 0;
+    //return 0;
+    calculate_pennies = cents - ((quarters + dimes + nickels) * cents) / 1
+
+    printf("Total coins: %d", )
 }
