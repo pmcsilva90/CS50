@@ -79,7 +79,4 @@ int calculate_pennies(int cents)
     //return 0;
     int pennies = cents;
     return pennies;
-
-    int coins = quarters + dimes + nickels + pennies;
-    printf("Total coins: %d", coins);
 }
