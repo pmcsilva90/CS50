@@ -13,6 +13,12 @@ int main(void)
     {
         printf("AMEX\n");
     }
+
+    else if (cardNumber >= 5000000000000000 && cardNumber < 6000000000000000)
+    {
+        printf("AMEX\n");
+    }
+
     else
     {
         printf("INVALID\n");
