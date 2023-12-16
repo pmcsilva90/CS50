@@ -13,11 +13,14 @@ int main(void)
     int digit[16];
     int divisor = 10;
 
-    for (i = 0; i <)
-        digit[0] = cardNumber % divisor;
-    //(10^(digit[1]))/(10^(digit[1]-1));
+    for (i = 0; i < 16; i++)
+    {
+        digit[i] = cardNumber % divisor;
 
-    printf("%d\n", digit[0]);
+        printf("%d\n", digit[i]);
+    }
+
+
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
