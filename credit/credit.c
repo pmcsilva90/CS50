@@ -27,6 +27,7 @@ int main(void)
     {
         printf("Visa\n");
     }
+    
     else
     {
         printf("INVALID\n");
