@@ -19,7 +19,7 @@ int main(void)
     {
         divisor = pow(10, i + 1);
         subtractor = pow(10, i);
-        digit[i] = cardNumber % divisor - subtractor;
+        digit[i] = cardNumber % divisor / subtractor;
 
 
         printf("%d\n", digit[i]);
