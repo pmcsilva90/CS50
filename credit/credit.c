@@ -21,6 +21,14 @@ int main(void)
         subtractor = pow(10, i);
         digit[i] = cardNumber % divisor / subtractor;
 
+        printf("%d\n", digit[i]);
+    }
+
+    printf("\n");
+
+    for (i=0 ; i < 16; i = i + 2)
+    {
+        digit[i] = digit[i] * 2;
 
         printf("%d\n", digit[i]);
     }
