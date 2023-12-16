@@ -33,7 +33,7 @@ int main(void)
         printf("%d\n", digit[i]);
     }
 
-    int digit2[8];
+    int digit2[16];
 
     digit2[0] = digit[1] % 10
     digit2[1] = digit[1] % 100
