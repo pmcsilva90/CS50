@@ -14,7 +14,7 @@ int main(void)
     long divisor;
     int i;
 
-    for (i = 0 ; i < 16; i++)
+    /*for (i = 0 ; i < 16; i++)
     {
         divisor = pow(10, i);
         digit[i] = cardNumber % divisor;
@@ -22,8 +22,10 @@ int main(void)
 
         printf("%d\n", digit[i]);
     }
-
-
+*/
+    long test1 = pow(10, 1);
+    long test2 = pow(10, 0);
+    printf("%l...%l\n", test1, test2);
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
