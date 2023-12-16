@@ -18,7 +18,7 @@ int main(void)
 
     //(10^(digit[1]))/(10^(digit[1]-1));
 
-    printf("%i\n", digit[0]);
+    printf("%d\n", digit[0]);
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
