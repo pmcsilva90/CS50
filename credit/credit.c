@@ -12,6 +12,7 @@ int main(void)
 
     int digit[16];
     int divisor = 10;
+    int i;
 
     for (i = 0; i < 16; i++)
     {
