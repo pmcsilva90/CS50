@@ -10,14 +10,14 @@ int main(void)
     //Visa = 4xxxxxxxxxxxx(xxx)
 
     int digit[16];
-    int divisor = 10
-    int digit = 1
-    
-    digit[0] = cardNumber % divisor^digit/divisor^digit-1;
+    int divisor = 10;
+    int digitNum = 1;
+
+    digit[0] = cardNumber % (divisor^digitNum) / (divisor^(digitNum-1));
 
     //(10^(digit[1]))/(10^(digit[1]-1));
 
-    printf("%i\n", digit[1]);
+    printf("%i\n", digit[0]);
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
