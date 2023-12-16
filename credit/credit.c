@@ -13,7 +13,7 @@ int main(void)
     int divisor = 10;
     int digitNum = 1;
 
-    digit[0] = cardNumber % (divisor^digitNum) / (divisor^(digitNum-1));
+    digit[0] = (cardNumber % (divisor^digitNum)) / (divisor^(digitNum-1));
 
     //(10^(digit[1]))/(10^(digit[1]-1));
 
