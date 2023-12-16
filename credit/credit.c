@@ -14,9 +14,9 @@ int main(void)
     long divisor;
     int i;
 
-    for (i = 1; i <= 16; i++)
+    for (i = 0 ; i < 16; i++)
     {
-        divisor = pow(10, (i - 1));
+        divisor = pow(10, i);
         digit[i] = cardNumber % divisor;
 
 
