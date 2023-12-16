@@ -11,11 +11,10 @@ int main(void)
     //Visa = 4xxxxxxxxxxxx(xxx)
 
     int digit[16];
-    long divisor = 10;
-    long digitNum = 1;
+    int divisor = 10;
 
-    digit[0] = (cardNumber % pow(divisor, digitNum)) / (pow(divisor, (digitNum-1));
-
+    for (i = 0; i <)
+        digit[0] = cardNumber % divisor;
     //(10^(digit[1]))/(10^(digit[1]-1));
 
     printf("%d\n", digit[0]);
