@@ -14,7 +14,7 @@ int main(void)
     int divisor = 10;
     int i;
 
-    for (i = 15; i > 0; i--)
+    for (i = 1; i < 16; i+)
     {
         digit[i] = cardNumber % 10^i;
 
