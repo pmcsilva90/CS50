@@ -26,6 +26,8 @@ int main(void)
 
     printf("\n");
 
+    int digit2[8]
+
     for (i=0 ; i < 16; i = i + 2)
     {
         digit[i] = digit[i] * 2;
@@ -33,7 +35,7 @@ int main(void)
         printf("%d\n", digit[i]);
     }
 
-    
+    ;
 
 
 
