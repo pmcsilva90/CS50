@@ -11,8 +11,8 @@ int main(void)
     //Visa = 4xxxxxxxxxxxx(xxx)
 
     int digit[16];
-    double divisor = 10;
-    double digitNum = 1;
+    long divisor = 10;
+    long digitNum = 1;
 
     digit[0] = (cardNumber % pow(divisor, digitNum)) / (pow(divisor, (digitNum-1));
 
