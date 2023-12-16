@@ -20,6 +20,10 @@ int main(void)
 
     printf("%d\n", digit[0]);
 
+    int test = 10^1;
+
+    printf("%i\n", test);
+
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
         printf("AMEX\n");
