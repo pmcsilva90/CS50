@@ -10,8 +10,10 @@ int main(void)
     //Visa = 4xxxxxxxxxxxx(xxx)
 
     int digit[16];
-    int divisor
-    digit[0] = cardNumber % 10;
+    int divisor = 10
+    int digit = 1
+    
+    digit[0] = cardNumber % divisor^digit/divisor^digit-1;
 
     //(10^(digit[1]))/(10^(digit[1]-1));
 
