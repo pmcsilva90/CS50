@@ -27,7 +27,12 @@ int main(void)
     {
         printf("Visa\n");
     }
-    
+
+    else if (cardNumber >= 4000000000000 && cardNumber < 5000000000000)
+    {
+        printf("Visa\n");
+    }
+
     else
     {
         printf("INVALID\n");
