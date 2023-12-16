@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -10,19 +11,14 @@ int main(void)
     //Visa = 4xxxxxxxxxxxx(xxx)
 
     int digit[16];
-    int divisor = 10;
-    int digitNum = 1;
+    double divisor = 10;
+    double digitNum = 1;
 
-    digit[0] = (cardNumber % (divisor^digitNum));
-    // (divisor^(digitNum-1));
+    digit[0] = (cardNumber % pow(divisor, digitNum)) / (pow(divisor, (digitNum-1));
 
     //(10^(digit[1]))/(10^(digit[1]-1));
 
     printf("%d\n", digit[0]);
-
-    int test = 10e2;
-
-    printf("%i\n", test);
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
