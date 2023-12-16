@@ -10,7 +10,9 @@ int main(void)
     //Visa = 4xxxxxxxxxxxx(xxx)
 
     int digit[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
-    digit[1] = cardNumber % (10^(digit[1]))/(10^(digit[1]-1));
+    digit[1] = cardNumber;
+
+    //% (10^(digit[1]))/(10^(digit[1]-1));
 
     printf("%i\n", digit[1]);
 
