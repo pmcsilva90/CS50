@@ -18,7 +18,7 @@ int main(void)
         printf("AMEX\n");
     }
 
-    else if (cardNumber >= 5000000000000000 && cardNumber < 6000000000000000)
+    else if (cardNumber >= 5100000000000000 && cardNumber < 5600000000000000)
     {
         printf("Mastercard\n");
     }
