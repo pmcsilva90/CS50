@@ -16,7 +16,7 @@ int main(void)
 
     for (i = 0; i < 16; i++)
     {
-        digit[i] = cardNumber % 10;
+        digit[i] = cardNumber % 10^i;
 
         printf("%d\n", digit[i]);
     }
