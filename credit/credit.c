@@ -12,12 +12,14 @@ int main(void)
 
     int digit[16];
     long divisor;
+    long subtractor;
     int i;
 
     for (i = 0 ; i < 16; i++)
     {
         divisor = pow(10, i + 1);
-        digit[i] = (cardNumber % divisor) - (divisor / 10);
+        subtractor = pow(10, i);
+        digit[i] = cardNumber % divisor - subtractor;
 
 
         printf("%d\n", digit[i]);
