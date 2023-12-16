@@ -20,7 +20,7 @@ int main(void)
 
     printf("%d\n", digit[0]);
 
-    int test = 10^1;
+    int test = 10e2;
 
     printf("%i\n", test);
 
