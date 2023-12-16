@@ -7,7 +7,9 @@ int main(void)
     long cardNumber = get_long("Card number: ");
     //AMEX = 34xxxxxxxxxxxxx, 37xxxxxxxxxxxxx
     //Mastercard = 5xxxxxxxxxxxxxxx
-    //Visa = 4xxxxxxxxxxxxxxx
+    //Visa = 4xxxxxxxxxxxx(xxx)
+
+    int digit1 = cardNumber % 10 
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
