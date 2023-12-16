@@ -17,7 +17,7 @@ int main(void)
     for (i = 0 ; i < 16; i++)
     {
         divisor = pow(10, i + 1);
-        digit[i] = cardNumber % divisor - (divisor / 10);
+        digit[i] = (cardNumber % divisor) - (divisor / 10);
 
 
         printf("%d\n", digit[i]);
