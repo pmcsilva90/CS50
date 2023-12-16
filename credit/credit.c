@@ -33,6 +33,12 @@ int main(void)
         printf("%d\n", digit[i]);
     }
 
+    
+
+
+
+
+
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
         printf("AMEX\n");
