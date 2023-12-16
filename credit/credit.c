@@ -25,7 +25,7 @@ int main(void)
 */
     long test1 = pow(10, 1);
     long test2 = pow(10, 0);
-    printf("%l...%l\n", test1, test2);
+    printf("%l and %l\n", test1, test2);
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
