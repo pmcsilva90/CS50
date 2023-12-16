@@ -26,14 +26,14 @@ int main(void)
 
     printf("\n");
 
-    for (i=0 ; i < 16; i = i + 2)
+    for (i=1 ; i < 16; i = i + 2)
     {
         digit[i] = digit[i] * 2;
 
         printf("%d\n", digit[i]);
     }
 
-    ;
+    
 
 
 
