@@ -11,13 +11,13 @@ int main(void)
     //Visa = 4xxxxxxxxxxxx(xxx)
 
     int digit[16];
-    int divisor = 10;
+    double divisor = 10;
     int i;
 
     for (i = 1; i <= 16; i++)
     {
-        digit[i] = cardNumber % 10;
-        
+        digit[i] = cardNumber % divisor;
+        divisor = pow(divisor, i);
 
         printf("%d\n", digit[i]);
     }
