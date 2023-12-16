@@ -9,8 +9,10 @@ int main(void)
     //Mastercard = 5xxxxxxxxxxxxxxx
     //Visa = 4xxxxxxxxxxxx(xxx)
 
-    int digit[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
-    digit[1] = cardNumber % 10^
+    int digit[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+    digit[1] = cardNumber % 10^(digit[1])/10^(digit[1]-1);
+
+    printf("%i\n", digit[1]);
 
     if (cardNumber >= 340000000000000 && cardNumber < 350000000000000)
     {
