@@ -14,10 +14,11 @@ int main(void)
     long divisor;
     int i;
 
-    for (divisor = 10; i = 1; i <= 16; i++)
+    for (i = 1; i <= 16; i++)
     {
+        divisor = pow(10, (i - 1));
         digit[i] = cardNumber % divisor;
-        divisor = pow(divisor, (i - 1));
+
 
         printf("%d\n", digit[i]);
     }
