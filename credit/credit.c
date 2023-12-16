@@ -38,7 +38,7 @@ int main(void)
     digit2[0] = digit[1] % 10
     digit2[1] = digit[1] % 100
 
-    for (i = 0; j = 1; i < 8; i++; j)
+    for (i = 0; j = 1; i < 8; i++; j = )
 
 
 
