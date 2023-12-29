@@ -11,9 +11,12 @@ int main() {
     }
     while(low > high);
 
-    int pages
+    int pages;
 
-    for(pages = low; )
+    for(pages = low; pages <= high; pages++)
+    {
+        printf("%d ", pages);
+    }
 
     return 0;
 }
