@@ -11,7 +11,9 @@ int main() {
     }
     while(low > high);
 
-    for()
+    int pages
+
+    for(pages = low; )
 
     return 0;
 }
