@@ -2,6 +2,7 @@
 
 int main() {
     char dir;
+    dir = 'w';
 
     switch(dir)
     {
