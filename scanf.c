@@ -2,16 +2,16 @@
 
 int main() {
     // number of tickets ordered
-    int tickets; // take it from input
+    float tickets; // take it from input
 
-    scanf("Number of tickets: %d", &tickets);
+    scanf("Number of tickets: %f", &tickets);
 
     // price per ticket
     float price = 7.45;
 
     float total = tickets * price;
 
-    printf("Total: %f", total);
+    printf("Total: %f\n", total);
 
     return 0;
 }
