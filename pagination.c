@@ -7,9 +7,9 @@ int main() {
 
     do
     {
-    scanf("%d %d", low, high);
+    scanf("%d %d", &low, &high);
     }
-    while(low > high)
+    while(low > high);
 
 
     return 0;
