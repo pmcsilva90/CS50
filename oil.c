@@ -21,8 +21,11 @@ int main() {
 
     if(mileage > 10000 || months > 12)
     {
-        printf("Change oil")
+        printf("Change oil");
     }
-
+    else
+    {
+        printf("OK");
+    }
     return 0;
 }
