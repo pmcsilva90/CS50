@@ -2,9 +2,9 @@
 
 int main() {
     // number of tickets ordered
-    float tickets; // take it from input
+    int tickets; // take it from input
 
-    scanf("Number of tickets: %f", &tickets);
+    scanf("%d", &tickets);
 
     // price per ticket
     float price = 7.45;
