@@ -2,7 +2,7 @@
 
 int main() {
     char dir;
-    dir = 'w';
+    scanf("%c", &dir);
 
     switch(dir)
     {
