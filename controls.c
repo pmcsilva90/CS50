@@ -6,18 +6,18 @@ int main() {
     switch(dir)
     {
         case 'w':
-        printf("Up");~
+        printf("Up");
         break;
-        case a:
-        printf("Left");~
+        case 'a':
+        printf("Left");
         break;
-        case d:
-        printf("Right");~
+        case 'd':
+        printf("Right");
         break;
-        case s:
-        printf("Down");~
+        case 's':
+        printf("Down");
         break;
-        default w:
+        default:
         printf("Wrong");
         break;
     }
