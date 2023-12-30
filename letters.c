@@ -7,7 +7,7 @@ int main() {
 
     fgets(word, 50, stdin);
 
-    printf("%s %d", word, word[position]);
+    printf("%s %i", word, word[]);
 
     return 0;
 }
