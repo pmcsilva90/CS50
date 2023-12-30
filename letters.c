@@ -5,10 +5,14 @@ int main() {
     int position;
 
 
-    fgets(word, 50, stdin);
+   /* fgets(word, 50, stdin);
     scanf("%i", &position);
 
     printf("%s %c", word, word[position - 1]);
+    */
+
+   scanf("%s %i", word[50], position);
+   printf("%s %c", word, word[position - 1]);
 
     return 0;
 }
