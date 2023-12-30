@@ -11,7 +11,7 @@ int main() {
     printf("%s %c", word, word[position - 1]);
     */
 
-   scanf("%s %i", word[50], position);
+   scanf("%s %i", word, &position);
    printf("%s %c", word, word[position - 1]);
 
     return 0;
