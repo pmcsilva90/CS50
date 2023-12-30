@@ -2,7 +2,7 @@
 
 int main() {
     char word[50];
-    int position;
+    int position = 0;
 
 
     fgets(word, 50, stdin);
