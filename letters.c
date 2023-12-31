@@ -12,7 +12,7 @@ int main() {
     */
 
    scanf("%s %i", word, &position);
-   printf("%s %c", word, word[position - 1]);
+   printf("%s %c", word, word[position]);
 
     return 0;
 }
