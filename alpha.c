@@ -6,10 +6,12 @@ int main(void)
 {
     string word = get_string("Word: ");
     int i;
+    int inOrder;
+
 
     for(i = 0; i < strlen(word); i++)
     {
-        
+        inOrder = 
     }
 
 
