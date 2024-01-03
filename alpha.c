@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 int main(void)
 {
-    string word = get_string("Word: ")
+    string word = get_string("Word: ");
 
-    int i;
+    int i = 0;
+    /*for(i = 0; i < strlen(word); i++)
+    {
+        word[i] = ("%i", word[i]);
+    }*/
     while (word[i] > 96)
     {
         if (word[i] > word[i + 1])
@@ -13,6 +18,6 @@ int main(void)
         printf("False");
         }
         else
-        printf("True")
+        printf("True");
     }
 }
