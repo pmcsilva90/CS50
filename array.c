@@ -3,8 +3,12 @@
 
 int main(void)
 {
-    
-    int lenght = get_int("Length: ");
+    int lenght;
+    do
+    {
+        lenght = get_int("Length: ");
+    }
+    while (lenght < 1);
 
 
 
