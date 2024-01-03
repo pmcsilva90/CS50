@@ -8,10 +8,8 @@ int main(void)
     int i = 0;
 
 
-    if(word[i] < word[i + 1])
-    {
-        i++;
-    }
+    do
+    
 
 
 
