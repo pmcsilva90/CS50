@@ -8,8 +8,8 @@ int main(void)
 
     scanf("%i", &size);
 
-    for(int i = 1; i <= size; i = i * 2)
+    for(int i = 1; i <= size; i++)
     {
-        printf("%i\n", array[i]);
+        printf("%i\n", (array[i] * 2));
     }
 }
