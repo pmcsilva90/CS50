@@ -8,7 +8,7 @@ int main(void)
 
     scanf("%i", &size);
 
-    for(i = 1, i <= size, i = i * 2)
+    for(int i = 1, i <= size, i = i * 2)
     {
         printf("%i\n", array[i]);
     }
