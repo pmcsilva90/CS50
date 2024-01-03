@@ -6,7 +6,7 @@ int main(void)
 {
     string word = get_string("Word: ");
     int i;
-    int inOrder;
+    int inOrder = 0;
 
 
     for(i = 0; i < strlen(word); i++)
@@ -15,7 +15,7 @@ int main(void)
         {
             inOrder++;
         }
-
+    }
     if(inOrder == strlen(word))
     {
         printf("True");
