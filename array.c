@@ -12,11 +12,11 @@ int main(void)
 
     int i;
     int array[lenght];
-
+    array[0] = 1;
 
     for(i = 0; i < lenght; i++)
     {
-        array[i] = ;
+        
 
 
 
