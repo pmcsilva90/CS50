@@ -11,18 +11,11 @@ int main(void)
     while (lenght < 1);
 
 
-
-
-
-    /*int size;
-
-    scanf("%i", &size);
-
-    int array[size];
+    int array[lenght] = {1, 
 
     for(int i = 1; i <= size; i++)
     {
         printf("%i\n", array[i]);
-    }*/
+    }
 
 }
