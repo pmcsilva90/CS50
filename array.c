@@ -19,8 +19,12 @@ int main(void)
         if (array[0] > 1)
         {
             array[i] = array[i - 1] * 2;
+            printf("%i\n", array[i]);
         }
+        else
+        {
         printf("%i\n", array[i]);
+        }
     }
 
 }
