@@ -11,7 +11,7 @@ int main(void)
 
     for(i = 0; i < strlen(word); i++)
     {
-        if(word[i] < word[i + 1])
+        if(word[i] <= word[i + 1])
         {
             inOrder++;
         }
