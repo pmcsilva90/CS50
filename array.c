@@ -10,12 +10,11 @@ int main(void)
     }
     while (lenght < 1);
 
-
+    int i;
     int array[lenght];
-    int i = 1
-    array[]
 
-    for(int i = 1; i <= size; i++)
+
+    for(i = 1; i <= lenght; i++)
     {
         printf("%i\n", array[i]);
     }
