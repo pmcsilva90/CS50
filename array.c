@@ -16,7 +16,8 @@ int main(void)
 
     for(i = 0; i < lenght; i++)
     {
-        array[i] = i ;
+        array[0] = 1;
+        
         printf("%i\n", array[i]);
     }
 
