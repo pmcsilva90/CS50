@@ -5,7 +5,9 @@
 int main(void)
 {
     string word = get_string("Word: ");
+    int i;
 
+    for(i = 0; )
 
 
 }
