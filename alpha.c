@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    string word = get_string()
+    string word = get_string("Word: ")
 
     if
 }
