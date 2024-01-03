@@ -15,8 +15,12 @@ int main(void)
         {
             inOrder++;
         }
+        /*else
+        {
+            inOrder = inOrder + 0;
+        }*/
     }
-    if(inOrder == strlen(word))
+    if(inOrder == strlen(word) - 1)
     {
         printf("True");
     }
