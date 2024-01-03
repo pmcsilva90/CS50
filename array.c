@@ -11,7 +11,9 @@ int main(void)
     while (lenght < 1);
 
 
-    int array[lenght] = {1, 
+    int array[lenght];
+    int i = 1
+    array[]
 
     for(int i = 1; i <= size; i++)
     {
