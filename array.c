@@ -4,12 +4,14 @@
 int main(void)
 {
     int size = 0;
-    int array[size];
 
     scanf("%i", &size);
+
+    int array[size];
 
     for(int i = 1; i <= size; i++)
     {
         printf("%i\n", array[i]);
     }
+
 }
