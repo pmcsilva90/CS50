@@ -16,7 +16,7 @@ int main(void)
 
     for(i = 0; i < lenght; i++)
     {
-        array[0] = 1;
+        array[0] = i + 1;
         if (array[0] > 1)
         {
             array[i] = array[i - 1] * 2;
