@@ -7,7 +7,7 @@ int main(void)
     string word = get_string("Word: ");
     int i;
 
-    for(i = 0; word[i] < word[i + 1]; i++)
+    for(i = 0; i < strlen(word); i++)
     {
         
     }
