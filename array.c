@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int size = 0;
+    int size;
 
     scanf("%i", &size);
 
