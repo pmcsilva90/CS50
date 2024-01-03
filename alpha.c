@@ -5,5 +5,5 @@ int main(void)
 {
     string word = get_string("Word: ")
 
-    if
+    while (word )
 }
