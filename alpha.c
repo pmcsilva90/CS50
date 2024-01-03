@@ -11,8 +11,18 @@ int main(void)
 
     for(i = 0; i < strlen(word); i++)
     {
-        inOrder = 
-    }
+        if(word[i] < word[i + 1])
+        {
+            inOrder++;
+        }
 
+    if(inOrder == strlen(word))
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
 
 }
