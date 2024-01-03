@@ -3,12 +3,12 @@
 
 int main(void)
 {
-    int size;
+    int size = 0;
     int array[size];
 
     scanf("%i", &size);
 
-    for(int i = 1, i <= size, i = i * 2)
+    for(int i = 1; i <= size; i = i * 2)
     {
         printf("%i\n", array[i]);
     }
