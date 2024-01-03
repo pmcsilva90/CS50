@@ -6,7 +6,7 @@ int main(void)
 {
     string word = get_string("Word: ");
 
-    int i = 0;
+    int i;
     /*for(i = 0; i < strlen(word); i++)
     {
         word[i] = ("%i", word[i]);
