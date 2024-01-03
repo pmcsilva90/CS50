@@ -10,6 +10,6 @@ int main(void)
 
     for(int i = 1; i <= size; i++)
     {
-        printf("%i\n", (array[i] * 2));
+        printf("%i\n", array[i]);
     }
 }
