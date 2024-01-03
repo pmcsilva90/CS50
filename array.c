@@ -3,7 +3,14 @@
 
 int main(void)
 {
-    int size;
+    
+    int lenght = get_int("Length: ");
+
+
+
+
+
+    /*int size;
 
     scanf("%i", &size);
 
@@ -12,6 +19,6 @@ int main(void)
     for(int i = 1; i <= size; i++)
     {
         printf("%i\n", array[i]);
-    }
+    }*/
 
 }
