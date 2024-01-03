@@ -5,13 +5,7 @@
 int main(void)
 {
     string word = get_string("Word: ");
-    int i = 0;
-
-
-    do
-    
-
-
+    int i;
 
     for(i = 0; i < strlen(word); i++)
     {
