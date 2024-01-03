@@ -16,8 +16,10 @@ int main(void)
 
     for(i = 0; i < lenght; i++)
     {
-        array[0] = 1;
-        array[i] = array[i - 1] * 2;
+        if (array[0] > 1)
+        {
+            array[i] = array[i - 1] * 2;
+        }
         printf("%i\n", array[i]);
     }
 
