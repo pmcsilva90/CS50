@@ -14,14 +14,11 @@ int main(void)
     int array[lenght];
     array[0] = 1;
 
-    for(i = 0; i < lenght; i++)
+    for(i = 1; i <= lenght; i++)
     {
-        
-
-
-
-        printf("%i\n", array[i]);
-        }
+        array[i] = array[i - 1] * 2;
+        printf("%i\n", array[i - 1]);
     }
+
 
 }
