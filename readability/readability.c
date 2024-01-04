@@ -31,12 +31,34 @@ int count_letters(string text)
     for (int i = 0; i < strlen(text); i++)
     {
         if(isaplha(text[i]))
+        {
+            l += 1;
+        }
+        else
+        {
+            l += 0;
+        }
     }
+    return l;
 }
 
 int count_words(string text)
 {
     // Return the number of words in text
+    int w = 0;
+
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if(isblank(text[i]))
+        {
+            w += 1;
+        }
+        else
+        {
+            w += 0;
+        }
+    }
+    return w;
 }
 
 int count_sentences(string text)
