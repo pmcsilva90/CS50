@@ -13,4 +13,6 @@ int main(void)
         printf("%i\n", array2[n]);
     }
 
+    printf("pos 4 is %i\n", array2[3]);
+
 }
