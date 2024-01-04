@@ -6,14 +6,16 @@
 
 int main(int argc, string argv[])
 {
-    bool valid_key(argv[1]);
+    bool valid_key(string argv[1]);
 
-    for (int i = 0; i < strlen(argv[1]); i++)
+    bool valid_key(string argv[1])
     {
-        if (isdigit(argv[1][i]) = 0);
-        valid_key(argv[1]) = 0;
+        for (int i = 0; i < strlen(argv[1]); i++)
+        {
+            if (isdigit(argv[1][i]) = 0);
+            valid_key(argv[1]) = 0;
+        }
     }
-
 
 
 
