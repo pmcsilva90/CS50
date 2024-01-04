@@ -11,5 +11,5 @@ int main(void)
     {
         printf("%i\n", array2[n]);
     }
-    return 0;
+    
 }
