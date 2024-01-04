@@ -8,7 +8,7 @@ int main(argc, argv[])
         printf("Usage: ./caesar key\n");
         main = 1;
     }
-    else if(argv[1] <= '0' || argv[1] >= '9')
+    else if(atoi(argv[1] <= '0' || argv[1] >= '9')
     {
         printf("Usage: ./caesar key\n")
     }
