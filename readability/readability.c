@@ -1,5 +1,5 @@
-#include <ctype.h>
 #include <cs50.h>
+#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
@@ -28,11 +28,11 @@ int main(void)
     CLindex = 0.0588 * L - 0.296 * S - 15.8;
 
     // Print the grade level
-    if(CLindex >= 16)
+    if (CLindex >= 16)
     {
         printf("Grade 16+\n");
     }
-    else if(CLindex < 1)
+    else if (CLindex < 1)
     {
         printf("Before Grade 1\n");
     }
@@ -58,7 +58,7 @@ int count_letters(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(isalpha(text[i]))
+        if (isalpha(text[i]))
         {
             l += 1;
         }
@@ -77,7 +77,7 @@ int count_words(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(isspace(text[i]))
+        if (isspace(text[i]))
         {
             w += 1;
         }
@@ -96,7 +96,7 @@ int count_sentences(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(text[i] == '.' || text[i] == '?' || text[i] == '!')
+        if (text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
             s += 1;
         }
