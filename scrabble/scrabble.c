@@ -35,6 +35,7 @@ int main(void)
 
 }
 
+//Compute score
 int compute_score(string word)
 {
     int score = 0;
@@ -49,6 +50,6 @@ int compute_score(string word)
         {
             score += points[word[i] - 'a'];
         }
-    return score
+    return score;
     }
 }
