@@ -64,4 +64,18 @@ int count_words(string text)
 int count_sentences(string text)
 {
     // Return the number of sentences in text
+    int s = 0;
+
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if(text[i] )
+        {
+            s += 1;
+        }
+        else
+        {
+            s += 0;
+        }
+    }
+    return s;
 }
