@@ -32,7 +32,6 @@ int main(void)
     {
         printf("Tie!\n");
     }
-
 }
 
 //Compute score
