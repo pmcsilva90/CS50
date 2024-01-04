@@ -41,14 +41,6 @@ int main(void)
         printf("Grade %d\n", (int) round(CLindex));
     }
 
-    // Testing
-    /* printf("\n");
-    printf("letters: %d\n", letters);
-    printf("words: %d\n", words);
-    printf("sentences: %d\n", sentences);
-    printf("L: %f\n", L);
-    printf("S: %f\n", S);
-    printf("CLindex: %f\n", CLindex); */
 }
 
 int count_letters(string text)
