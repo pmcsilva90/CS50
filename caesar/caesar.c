@@ -17,6 +17,10 @@ int main(int argc, string argv[])
         {
             printf("invalid key\n");
         }
+        else
+        {
+            printf("valid key!!!\n");
+        }
     }
 
 }
