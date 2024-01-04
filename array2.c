@@ -3,13 +3,13 @@
 
 int main(void)
 {
-    int array2[n];
-
     int n = get_int("Size of array2: ");
 
-    for(i = 0; i < n; i++)
+    int array2[n];
+
+    for(int i = 0; i < n; i++)
     {
-        printf("%i\n", i);
+        printf("%i\n", array2[n]);
     }
-    return 0
+    return 0;
 }
