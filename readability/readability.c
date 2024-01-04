@@ -28,7 +28,10 @@ int count_letters(string text)
     // Return the number of letters in text
     int l = 0;
 
-    for (i = 0, strlen(text))
+    for (int i = 0; i < strlen(text); i++)
+    {
+        
+    }
 }
 
 int count_words(string text)
