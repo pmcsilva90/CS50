@@ -16,11 +16,9 @@ int main(int argc, string argv[])
         if (isdigit(argv[1][i]) == 0)
         {
             printf("invalid key\n");
-        }
-        else
-        {
-            printf("valid key!!!\n");
+            return 0;
         }
     }
+    printf("valid key!!!\n");
 
 }
