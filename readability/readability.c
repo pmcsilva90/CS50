@@ -26,7 +26,9 @@ int main(void)
 int count_letters(string text)
 {
     // Return the number of letters in text
-    
+    int l = 0;
+
+    for (i = 0, strlen(text))
 }
 
 int count_words(string text)
