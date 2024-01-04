@@ -9,7 +9,7 @@ int main(void)
 
     for(int i = 0; i < n; i++)
     {
-        array2[n] = i;
+        array2[n] = array2[i];
         printf("%i\n", array2[n]);
     }
 
