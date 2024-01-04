@@ -25,14 +25,16 @@ int main(void)
 
     L = letters / words * 100;
     S = sentences / words * 100;
+    CLindex = 0.0588 * L - 0.296 * S - 15.8;
 
     // Print the grade level
 
 
-    // Testing
-    // printf("letters: %i\n", letters);
-    // printf("words: %i\n", words);
-    // printf("sentences: %i\n", sentences);
+    //Testing
+    printf("letters: %i\n", letters);
+    printf("words: %i\n", words);
+    printf("sentences: %i\n", sentences);
+    printf("CLindex: %f\n", CLindex);
 }
 
 int count_letters(string text)
