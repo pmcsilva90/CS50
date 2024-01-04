@@ -58,7 +58,7 @@ int count_words(string text)
             w += 0;
         }
     }
-    return w;
+    return w + 1;
 }
 
 int count_sentences(string text)
