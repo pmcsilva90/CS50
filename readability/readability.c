@@ -30,19 +30,20 @@ int main(void)
     // Print the grade level
     if(CLindex >= 16)
     {
-        printf("Grade 16+")
+        printf("Grade 16+\n");
     }
     else if(CLindex < 1)
     {
-        printf("Before Grade 1")
+        printf("Before Grade 1\n");
     }
     else
     {
-        printf("Grade %d)
+        printf("Grade %d\n", (int) round(CLindex));
     }
 
 
     //Testing
+    printf("\n");
     printf("letters: %d\n", letters);
     printf("words: %d\n", words);
     printf("sentences: %d\n", sentences);
