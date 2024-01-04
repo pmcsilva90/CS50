@@ -50,6 +50,6 @@ int compute_score(string word)
         {
             score += points[word[i] - 'a'];
         }
-    return score;
     }
+    return score;
 }
