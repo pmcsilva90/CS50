@@ -22,8 +22,8 @@ int main(argc, argv[])
         printf("Usage: ./caesar key\n");
         main = 1;
     }
-    else if()
+    else if(valid_key == 0)
     {
-        printf("Usage: ./caesar key(digit)\n")
+        printf("Usage: ./caesar key(digit)\n");
     }
 }
