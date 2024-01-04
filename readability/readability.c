@@ -34,6 +34,8 @@ int main(void)
     printf("letters: %i\n", letters);
     printf("words: %i\n", words);
     printf("sentences: %i\n", sentences);
+    printf("L: %f\n", L);
+    printf("S: %f\n", S);
     printf("CLindex: %f\n", CLindex);
 }
 
