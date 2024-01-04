@@ -10,8 +10,10 @@ int main(argc, argv[])
 
     for (int i = 0; i < strlen(argv[1]); i++)
     {
-        if (isdigit(argv[1][i]))
+        if (isdigit(argv[1][i]) = 0);
+        valid_key(argv[1]) = 0;
     }
+
 
 
 
