@@ -19,9 +19,9 @@ int main(void)
     int sentences = count_sentences(text);
 
     // Compute the Coleman-Liau index
-    float CLindex;
-    float L;
-    float S;
+    double CLindex;
+    double L;
+    double S;
 
     L = letters / words * 100.0;
     S = sentences / words * 100.0;
