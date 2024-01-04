@@ -4,7 +4,7 @@
 #include <string.h>
 
 
-int main(argc, argv[])
+int main(int argc, string argv[])
 {
     bool valid_key(argv[1]);
 
