@@ -14,16 +14,16 @@ int main(void)
     string text = get_string("Text: ");
 
     // Count number of letters, words, and sentences in text
-    float letters = count_letters(text);
-    float words = count_words(text);
-    float sentences = count_sentences(text);
+    int letters = count_letters(text);
+    int words = count_words(text);
+    int sentences = count_sentences(text);
 
     // Compute the Coleman-Liau index
     float CLindex;
     float L;
     float S;
 
-    L = letters * 100 / words;
+    L = letters * 100.0 / words;
     S = sentences * 100.0 / words;
     CLindex = 0.0588 * L - 0.296 * S - 15.8;
 
@@ -31,9 +31,9 @@ int main(void)
 
 
     //Testing
-    printf("letters: %f\n", letters);
-    printf("words: %f\n", words);
-    printf("sentences: %f\n", sentences);
+    printf("letters: %d\n", letters);
+    printf("words: %d\n", words);
+    printf("sentences: %d\n", sentences);
     printf("L: %f\n", L);
     printf("S: %f\n", S);
     printf("CLindex: %f\n", CLindex);
