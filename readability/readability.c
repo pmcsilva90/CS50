@@ -28,6 +28,18 @@ int main(void)
     CLindex = 0.0588 * L - 0.296 * S - 15.8;
 
     // Print the grade level
+    if(CLindex >= 16)
+    {
+        printf("Grade 16+")
+    }
+    else if(CLindex < 1)
+    {
+        printf("Before Grade 1")
+    }
+    else
+    {
+        printf("Grade %d)
+    }
 
 
     //Testing
