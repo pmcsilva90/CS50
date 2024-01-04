@@ -23,7 +23,8 @@ int main(void)
     float L;
     float S;
 
-    L = 
+    L = letters / words * 100;
+    S = sentences / words * 100;
 
     // Print the grade level
 
