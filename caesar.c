@@ -8,5 +8,8 @@ int main(argc, argv[])
         printf("Usage: ./caesar key\n");
         main = 1;
     }
-    else if(argv[1] >= '0' && argv[1] )
+    else if(argv[1] >= '0' && argv[1] <= '9')
+    {
+        printf(")
+    }
 }
