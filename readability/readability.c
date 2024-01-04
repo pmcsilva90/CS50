@@ -41,7 +41,6 @@ int main(void)
         printf("Grade %d\n", (int) round(CLindex));
     }
 
-
     // Testing
     /* printf("\n");
     printf("letters: %d\n", letters);
