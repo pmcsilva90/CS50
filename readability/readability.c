@@ -23,8 +23,8 @@ int main(void)
     float L;
     float S;
 
-    L = letters / words * 100;
-    S = sentences / words * 100;
+    L = letters / words * 100.0;
+    S = sentences / words * 100.0;
     CLindex = 0.0588 * L - 0.296 * S - 15.8;
 
     // Print the grade level
