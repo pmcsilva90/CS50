@@ -33,7 +33,7 @@ int count_letters(string text)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if(isaplha(text[i]))
+        if(isalpha(text[i]))
         {
             l += 1;
         }
