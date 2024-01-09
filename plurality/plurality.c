@@ -68,10 +68,9 @@ bool vote(string name)
     // TODO
     for (int i = 0; i <  candidate_count; i++)
     {
-        int highest_votes = 0;
         if (strcmp(name, candidates[i].name) == 0)
         {
-            highest_votes++;
+            candidates[i].votes++;
             return true;
         }
     }
@@ -82,6 +81,7 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
+    
     printf("testing");
     return;
 }
