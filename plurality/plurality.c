@@ -82,9 +82,9 @@ void print_winner(void)
 {
     // TODO
     int highest_votes = 0;
-    for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < voter_count; i++)
     {
-        
+        if ()
     }
     printf("testing");
     return;
