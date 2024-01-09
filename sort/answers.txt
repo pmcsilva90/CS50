@@ -1,9 +1,9 @@
-sort1 uses: Selection sort
+sort1 uses: Bubble sort
 
 reversed50000 - 0m4.964s
 sorted50000 - 0m0.358s
 
-How do you know?: Because selection sort starts by sorting from the smallest value to the biggest.
+How do you know?: In worst case scenario, bubble sort will take n times n steps to sort. Best case scenario it will take n steps. Because it took significantly longer to sort a reversed list than a sorted list, it must mean it's a bubble sort.
 
 sort2 uses: TODO
 
