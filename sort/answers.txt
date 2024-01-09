@@ -1,18 +1,20 @@
-sort1 uses: TODO
-
+sort1 uses: Selection sort
 
 reversed50000 - 0m4.964s
+sorted50000 - 0m0.358s
 
-How do you know?: TODO
+How do you know?: Because selection sort 
 
 sort2 uses: TODO
 
 reversed50000 - 0m0.577s
+sorted50000 - 0m0.448s
 
 How do you know?: TODO
 
 sort3 uses: TODO
 
 reversed50000 - 0m2.530s
+sorted50000 - 0m2.354s
 
 How do you know?: TODO
