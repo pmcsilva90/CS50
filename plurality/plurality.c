@@ -101,4 +101,3 @@ void print_winner(void)
     return;
 }
 
-// 3 2 1
