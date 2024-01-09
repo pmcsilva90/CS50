@@ -2,6 +2,7 @@ sort1 uses: Bubble sort
 
 reversed50000 - 0m4.964s
 sorted50000 - 0m0.358s
+random50000 - 0m5.648s
 
 How do you know?: In worst case scenario, bubble sort will take n times n steps to sort. Best case scenario it will take n steps. Because it took significantly longer to sort a reversed list than a sorted list, it must mean it's a bubble sort.
 
@@ -9,6 +10,7 @@ sort2 uses: Selection sort
 
 reversed50000 - 0m0.577s
 sorted50000 - 0m0.458s
+random50000 - 0m0.485s
 
 How do you know?: TODO
 
@@ -16,5 +18,6 @@ sort3 uses: Merge sort
 
 reversed50000 - 0m2.509s
 sorted50000 - 0m2.435s
+random50000 - 0m2.441s
 
 How do you know?: TODO
