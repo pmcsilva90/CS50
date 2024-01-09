@@ -66,7 +66,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // Iterate over each candidate
-    for (int i = 0; i <  candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         // Check if candidate's name matches given name
         if (strcmp(name, candidates[i].name) == 0)
@@ -101,4 +101,3 @@ void print_winner(void)
     }
     return;
 }
-
