@@ -84,7 +84,13 @@ void print_winner(void)
     string winner;
     int highest_votes = 0;
 
-    
+    for (int i = 0, i < candidate_count; i++)
+    {
+        if (candidates[i].votes > highest_votes)
+        {
+            highest_votes = candidates[i].votes;
+        }
+    }
 
     printf("testing");
     return;
