@@ -14,7 +14,7 @@ How do you know?: TODO
 
 sort3 uses: TODO
 
-reversed50000 - 0m2.530s
-sorted50000 - 0m2.354s
+reversed50000 - 0m2.509s
+sorted50000 - 0m2.435s
 
 How do you know?: TODO
