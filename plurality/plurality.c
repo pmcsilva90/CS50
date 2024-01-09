@@ -66,26 +66,22 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
+    int highest_vote = 0;
     for (int i = 0; i < candidate_count; i++)
     {
-        int highest_vote = 0;
         if (strcmp(name, candidates[i].name) == 0)
         {
             highest_vote++;
-            return true;
         }
-        else
-        {
-            return false;
-        }
+        return true;
     }
-
+    return false;
 }
 
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
     // TODO
-    printf("testing")
-    return 0;
+    printf("testing");
+    return;
 }
