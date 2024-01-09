@@ -8,7 +8,7 @@ How do you know?: Because selection sort starts by sorting from the smallest val
 sort2 uses: TODO
 
 reversed50000 - 0m0.577s
-sorted50000 - 0m0.448s
+sorted50000 - 0m0.596s
 
 How do you know?: TODO
 
