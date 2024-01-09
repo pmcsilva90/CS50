@@ -92,3 +92,5 @@ void print_winner(void)
     printf("testing");
     return;
 }
+
+// 3 2 1
