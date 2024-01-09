@@ -81,7 +81,11 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    
+    int highest_votes = 0;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        
+    }
     printf("testing");
     return;
 }
