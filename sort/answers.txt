@@ -3,7 +3,7 @@ sort1 uses: Selection sort
 reversed50000 - 0m4.964s
 sorted50000 - 0m0.358s
 
-How do you know?: Because selection sort 
+How do you know?: Because selection sort starts by sorting from the smallest value to the biggest.
 
 sort2 uses: TODO
 
