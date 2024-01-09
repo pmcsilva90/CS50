@@ -74,11 +74,12 @@ bool vote(string name)
             highest_vote++;
             return true;
         }
+        else
+        {
+            return false;
+        }
     }
-    else
-    {
-        return false;
-    }
+
 }
 
 // Print the winner (or winners) of the election
