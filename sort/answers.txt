@@ -1,11 +1,18 @@
 sort1 uses: TODO
 
+
+reversed50000 - 0m4.964s
+
 How do you know?: TODO
 
 sort2 uses: TODO
 
+reversed50000 - 0m0.577s
+
 How do you know?: TODO
 
 sort3 uses: TODO
+
+reversed50000 - 0m2.530s
 
 How do you know?: TODO
