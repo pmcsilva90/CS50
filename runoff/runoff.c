@@ -181,6 +181,8 @@ int find_min(void)
 {
     // Set minimum votes to total voter count
     int min_votes = voter_count;
+
+    // Check for each candidate
     for (int i = 0; i < candidate_count; i++)
     {
         // If candidate has not been eliminated and has less than minimum votes, candidates votes becomes new minimum
@@ -198,7 +200,7 @@ bool is_tie(int min)
     // Set candidates last place to 0
     int candidates_last = 0;
 
-    // If candidate has minimum votes, increment last place by 1
+    // Check for each candidate. If candidate has minimum votes, increment last place by 1
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].eliminated == false && candidates[i].votes == min)
@@ -210,7 +212,7 @@ bool is_tie(int min)
     // Sets candidates left to 0
     int candidates_left = 0;
 
-    // If candidate has not been eliminated, increment candidates left by 1
+    // Check for each candidate. If candidate has not been eliminated, increment candidates left by 1
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].eliminated == false)
@@ -233,7 +235,7 @@ bool is_tie(int min)
 // Eliminate the candidate (or candidates) in last place
 void eliminate(int min)
 {
-    // TODO
+    // Cheack for each candidate if candidate has minimum votes and eliminate candidate
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].eliminated == false && candidates[i].votes == min)
