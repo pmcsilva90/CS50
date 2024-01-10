@@ -130,9 +130,9 @@ bool vote(int voter, int rank, string name)
     // Check each candidate for name given
     for (int i = 0; i < candidate_count; i++)
     {
+        // If name matches, store voter preference as candidate index and return as valid
         if (strcmp(name, candidates[i].name) == 0)
         {
-            // Store voter preference as candidate index and return as valid
             preferences[voter][rank] = i;
             return true;
         }
