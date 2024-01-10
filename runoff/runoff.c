@@ -132,7 +132,7 @@ bool vote(int voter, int rank, string name)
     {
         if (strcmp(name, candidates[i].name) == 0)
         {
-            // Store voter preference as candidate index
+            // Store voter preference as candidate index and return as valid
             preferences[voter][rank] = i;
             return true;
         }
@@ -143,11 +143,13 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    // TODO
+    // Check each voter
     for (int i = 0; i < voter_count; i++)
     {
+        // Check each rank
         for (int j = 0; j < candidate_count; j++)
         {
+            // If candidate is not eliminated, increment candidate votes
             if (candidates[preferences[i][j]].eliminated == false)
             {
                 candidates[preferences[i][j]].votes++;
@@ -161,9 +163,10 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    // TODO
+    // Check each candidate
     for (int i = 0; i < candidate_count; i++)
     {
+        // If candidate has majority, print candidate name
         if (candidates[i].votes > voter_count / 2)
         {
             printf("%s\n", candidates[i].name);
