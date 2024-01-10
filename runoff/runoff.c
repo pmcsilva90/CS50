@@ -199,8 +199,15 @@ bool is_tie(int min)
             candidates_tie++;
         }
     }
+    if (candidates_tie > 1)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
 
-    return false;
+    }
 
 }
 
