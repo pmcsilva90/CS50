@@ -199,7 +199,18 @@ bool is_tie(int min)
             candidates_tie++;
         }
     }
-    if (candidates_tie > 1)
+
+    int candidate_eliminated = 0;
+
+    for (i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].eliminated == true)
+        {
+            candidate_eliminated++;
+        }
+    }
+
+    if (candidates_tie != candidate_eliminated)
     {
         return true;
     }
