@@ -199,7 +199,7 @@ bool is_tie(int min)
             candidates_tie++;
         }
     }
-    int candidates_left = 0;
+    /*int candidates_left = 0;
 
     for (int i = 0; i < candidate_count; i++)
     {
@@ -207,9 +207,9 @@ bool is_tie(int min)
         {
             candidates_left++;
         }
-    }
+    }*/
 
-    if (candidates_tie > 1 || candidates_tie == candidates_left)
+    if (candidates_tie > 1)
     {
         return true;
     }
