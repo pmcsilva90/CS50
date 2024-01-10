@@ -179,10 +179,11 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
-    // TODO
+    // Set minimum votes to total voter count
     int min_votes = voter_count;
     for (int i = 0; i < candidate_count; i++)
     {
+        // If candidate has not been eliminated and has less than minimum votes, candidates votes becomes new minimum
         if (candidates[i].eliminated == false && candidates[i].votes < min_votes)
         {
             min_votes = candidates[i].votes;
@@ -194,8 +195,10 @@ int find_min(void)
 // Return true if the election is tied between all candidates, false otherwise
 bool is_tie(int min)
 {
-    // TODO
+    // Set candidates last place to 0
     int candidates_last = 0;
+
+    // If candidate has minimum votes, increment last place by 1
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].eliminated == false && candidates[i].votes == min)
@@ -203,8 +206,11 @@ bool is_tie(int min)
             candidates_last++;
         }
     }
+
+    // Sets candidates left to 0
     int candidates_left = 0;
 
+    // If candidate has not been eliminated, increment candidates left by 1
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].eliminated == false)
@@ -213,6 +219,7 @@ bool is_tie(int min)
         }
     }
 
+    // If candidates left match candidates last place, then election is tied between all candidates
     if (candidates_last == candidates_left)
     {
         return true;
