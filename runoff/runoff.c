@@ -203,6 +203,7 @@ bool is_tie(int min)
     {
         return true;
     }
+    else if (candidates_tie )
     else
     {
         return false;
