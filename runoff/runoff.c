@@ -205,15 +205,14 @@ bool is_tie(int min)
     {
         if (candidates[i].eliminated == false)
         {
-            candidate:left++;
+            candidate_left++;
         }
     }
 
-    if (candidates_tie > 1)
+    if (candidates_tie > 1 || candidates_tie == candidates_left)
     {
         return true;
     }
-    else if (candidates_tie )
     else
     {
         return false;
