@@ -209,13 +209,13 @@ bool is_tie(int min)
         }
     }
 
-    if (candidates_tied > 1)
+    if (candidates_tied == candidates_left)
     {
         return true;
     }
     else if
     {
-        
+
     }
     else
     {
