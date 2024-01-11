@@ -84,9 +84,9 @@ void swap(int xp, int yp)
 {
     int temp;
 
-    temp = xp;
-    xp = yp;
-    yp = temp;
+    temp = *xp;
+    *xp = *yp;
+    *yp = temp;
 
 }
 
@@ -109,7 +109,7 @@ void selectionSort(void)
         }
         if (minIndex != i)
         {
-            swap(array[minIndex], array[i]);
+swap(&array[minIndex], &array[i]);
         }
     }
 }
