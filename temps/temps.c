@@ -66,7 +66,7 @@ int main(void)
 void sort_cities(void)
 {
     // Add your code here
-    int high = temps[0].temp;
+    int high;
     int temp;
 
     for (i = 0; i < NUM_CITIES - 1; i++)
@@ -78,7 +78,7 @@ void sort_cities(void)
                 high = temps[j].temp;
             }
         }
-        
+
 
     }
 
