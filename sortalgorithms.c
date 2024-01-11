@@ -31,10 +31,19 @@ int main(int argc, string argv[])
         algorithm = get_string ("Sorting Algorithm: ")
         if (strcasecmp(algorithm, "Selection" == 0))
         {
-            
+            selectionSort();
         }
     }
     else if (strcasecmp(argv[1], "selection"))
+
+    printf("Sorted array\n");
+
+    for (int i = 0; i < lenght; i++)
+    {
+        printf("%i", array[i]);
+    }
+
+    return 0;
 }
 
 void swap(int xp, int yp)
