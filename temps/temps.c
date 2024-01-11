@@ -70,6 +70,7 @@ void sort_cities(void)
 
     for (int i = 0; i < NUM_CITIES; i++)
     {
+        for ()
         if (temps[i].temp > high)
         {
             high = temps[i].temp;
