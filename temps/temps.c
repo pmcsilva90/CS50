@@ -74,7 +74,7 @@ void sort_cities(void)
         high_index = i;
         for (int j = i + 1; j < NUM_CITIES; j++)
         {
-            if (temps[j].temp > temps[i].temp)
+            if (temps[j].temp > temps[high_index].temp)
             {
                 high_index = j;
             }
