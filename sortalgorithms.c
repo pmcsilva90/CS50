@@ -80,7 +80,7 @@ int main(int argc, string argv[])
     return 0;
 }
 
-void swap(int xp, int yp)
+void swap(int *xp, int *yp)
 {
     int temp;
 
@@ -109,7 +109,7 @@ void selectionSort(void)
         }
         if (minIndex != i)
         {
-swap(&array[minIndex], &array[i]);
+            swap(&array[minIndex], &array[i]);
         }
     }
 }
