@@ -20,8 +20,8 @@ int main(int argc, string argv[])
     for (int i = 0; i < LENGHT; i++)
     {
         array[i] = get_int("Element %i: ", i + 1);
-        printf("\n");
     }
+    printf("\n");
     for (int i = 0; i < LENGHT; i++)
     {
         printf("Element %i is %i", i + 1, array[i]);
