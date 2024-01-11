@@ -65,9 +65,9 @@ void sort_cities(void)
     // Add your code here
     int high_index;
     int tempor_temp;
-    int tempor_city;
+    string tempor_city;
 
-    for (i = 0; i < NUM_CITIES - 1; i++)
+    for (int i = 0; i < NUM_CITIES - 1; i++)
     {
         high_index = i;
         for (int j = i + 1; j < NUM_CITIES; j++)
