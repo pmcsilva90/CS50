@@ -4,20 +4,24 @@
 #include <string.h>
 #include <stdlib.h>
 
+void 
+
+
 int main(int argc, string argv[])
 {
     int array[];
     int lenght = 10;
 
-    do
+    for (int i = 0; i < lenght; i++)
     {
-        get_int("Element 1: \n")
-    }
-    while
-    {
-        
+        array[i] = get_int("Element %i: ", i + 1);
+        printf("\n");
     }
 
+    for (int i = 0; i < lenght; i++)
+    {
+        printf("Element %i is %i", i + 1, array[i])
+    }
 
     if (argc == 1)
     {
