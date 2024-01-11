@@ -6,8 +6,8 @@
 
 int main(int argc, string argv[])
 {
-    array[];
-    lenght;
+    int array[];
+    int lenght;
 
 
     if (argc == 1)
