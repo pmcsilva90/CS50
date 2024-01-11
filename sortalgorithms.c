@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include <cs50.h>
-#include <strings.h>
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <strings.h>
 
 #define LENGHT 10
 
@@ -32,7 +32,7 @@ int main(int argc, string argv[])
     if (argc == 1)
     {
         printf("Choose one of the sorting algorithms: bubble, selection or sort\n");
-        algorithm = get_string ("Sorting Algorithm: ");
+        algorithm = get_string("Sorting Algorithm: ");
         if (strcasecmp(algorithm, "selection") == 0)
         {
             selectionSort();
@@ -87,13 +87,9 @@ void swap(int *xp, int *yp)
     temp = *xp;
     *xp = *yp;
     *yp = temp;
-
 }
 
-void bubbleSort(void)
-{
-
-}
+void bubbleSort(void) {}
 
 void selectionSort(void)
 {
@@ -114,10 +110,4 @@ void selectionSort(void)
     }
 }
 
-void insertionSort(void)
-{
-
-}
-
-
-
+void insertionSort(void) {}
