@@ -60,9 +60,6 @@ int main(void)
 }
 
 // TODO: Sort cities by temperature in descending order
-//For i from 0 to n–1
-//    Find smallest number between numbers[i] and numbers[n-1]
-//    Swap smallest number with numbers[i]
 void sort_cities(void)
 {
     // Add your code here
@@ -82,10 +79,10 @@ void sort_cities(void)
         tempor = temps[i].temp;
         tempor = temps[i].city;
 
-        temps[i].temp = temps[high_index].temps;
+        temps[i].temp = temps[high_index].temp;
         temps[i].city = temps[high_index].city;
 
-        temps[high_index].temps = tempor;
+        temps[high_index].temp = tempor;
         temps[high_index].city = tempor;
 
     }
