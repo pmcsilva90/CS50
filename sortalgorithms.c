@@ -13,6 +13,7 @@ int main(int argc, string argv[])
 {
     int array[];
     int lenght = 10;
+    algo
 
     for (int i = 0; i < lenght; i++)
     {
@@ -32,31 +33,6 @@ int main(int argc, string argv[])
     else if (strcasecmp(argv[1], "selection"))
 }
 
-void bubbleSort(void)
-{
-
-}
-
-void selectionSort(void)
-{
-    for (int i = 0; i < lenght - 1; i++)
-    {
-        minIndex = i;
-        for (int j = i + 1; j < lenght; j++)
-        {
-            if (array[j] < array[minIndex])
-            {
-                minIndex = j;
-            }
-        }
-    }
-}
-
-void insertionSort(void)
-{
-
-}
-
 void swap(int xp, int yp)
 {
     int temp;
@@ -66,4 +42,35 @@ void swap(int xp, int yp)
     yp = temp;
 
 }
+
+void bubbleSort(void)
+{
+
+}
+
+void selectionSort(void)
+{
+    for (int i = 0; i < lenght - 1; i++)
+    {
+        int minIndex = i;
+        for (int j = i + 1; j < lenght; j++)
+        {
+            if (array[j] < array[minIndex])
+            {
+                minIndex = j;
+            }
+        }
+        if (minIndex != i)
+        {
+            swap(array[minIndex], array[i])
+        }
+    }
+}
+
+void insertionSort(void)
+{
+
+}
+
+
 
