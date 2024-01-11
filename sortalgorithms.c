@@ -6,6 +6,8 @@
 
 #define LENGHT 10
 
+int array[LENGHT];
+
 void bubbleSort(void);
 void selectionSort(void);
 void insertionSort(void);
@@ -13,7 +15,6 @@ void swap(int xp, int yp);
 
 int main(int argc, string argv[])
 {
-    int array[LENGHT];
     string algorithm;
 
     for (int i = 0; i < LENGHT; i++)
