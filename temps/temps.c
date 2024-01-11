@@ -69,6 +69,7 @@ void sort_cities(void)
         if (temps[i].temp > high)
         {
             high = temps[i];
+            
         }
     }
     /*for (int i = 0; i < NUM.CITIES; i++)
