@@ -11,8 +11,8 @@ void swap(int xp, int yp);
 
 int main(int argc, string argv[])
 {
-    int array[];
     int lenght = 10;
+    int array[lenght];
     string algorithm;
 
     for (int i = 0; i < lenght; i++)
@@ -28,8 +28,8 @@ int main(int argc, string argv[])
 
     if (argc == 1)
     {
-        printf("Choose one of the sorting algorithms: bubble, selection or sort")
-        algorithm = get_string ("Sorting Algorithm: ")
+        printf("Choose one of the sorting algorithms: bubble, selection or sort");
+        algorithm = get_string ("Sorting Algorithm: ");
         if (strcasecmp(algorithm, "selection" == 0))
         {
             selectionSort();
@@ -44,10 +44,10 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf("Algorithm invalid\n")
+            printf("Algorithm invalid\n");
             return 1;
         }
-        printf("\n\n")
+        printf("\n\n");
     }
     else if (strcasecmp(argv[1], "selection" == 0))
     {
@@ -63,7 +63,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf("Usage: %s algorithm", argv[0])
+        printf("Usage: %s algorithm", argv[0]);
         return 2;
     }
 
@@ -106,7 +106,7 @@ void selectionSort(void)
         }
         if (minIndex != i)
         {
-            swap(array[minIndex], array[i])
+            swap(array[minIndex], array[i]);
         }
     }
 }
