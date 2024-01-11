@@ -73,7 +73,8 @@ int main(void)
 // Add at least the first four items to the menu array
 void add_items(void)
 {
-    
+    menu[0].item =
+    menu0[0].price = 
     return;
 }
 
