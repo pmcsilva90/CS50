@@ -11,7 +11,7 @@ int array[LENGHT];
 void bubbleSort(void);
 void selectionSort(void);
 void insertionSort(void);
-void swap(int xp, int yp);
+void swap(int *xp, int *yp);
 
 int main(int argc, string argv[])
 {
