@@ -109,6 +109,3 @@ float get_cost(string item)
     }
     return 0.0;
 }
-
-Can't debug this program! Are you sure you're running debug50 on an executable, a Python script, or a Java program?
-Unsupported File: ./snackbar
