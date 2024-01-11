@@ -29,6 +29,10 @@ int main(int argc, string argv[])
     if (argc == 1)
     {
         algorithm = get_string ("Sorting Algorithm: ")
+        if (strcasecmp(algorithm, "Selection" == 0))
+        {
+            
+        }
     }
     else if (strcasecmp(argv[1], "selection"))
 }
