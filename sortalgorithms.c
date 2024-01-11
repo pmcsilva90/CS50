@@ -44,8 +44,10 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf"
+            printf("Algorithm invalid\n")
+            return 1;
         }
+        printf("\n")
     }
     else if (strcasecmp(argv[1], "selection"))
     {
