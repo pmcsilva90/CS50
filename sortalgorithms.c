@@ -59,13 +59,11 @@ void insertionSort(void)
 
 void swap(int xp, int yp)
 {
-    int xp;
-    int yp;
     int temp;
 
-    temp = xp
-    yp = xp
-    xp = temp
+    temp = xp;
+    xp = yp;
+    yp = temp;
 
 }
 
