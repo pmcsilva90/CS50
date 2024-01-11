@@ -79,7 +79,7 @@ void sort_cities(void)
                 high_index = j;
             }
         }
-
+        
 
     }
 
