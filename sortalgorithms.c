@@ -27,6 +27,7 @@ int main(int argc, string argv[])
         printf("Element %i is %i\n", i + 1, array[i]);
     }
 
+    printf("\n");
 
     if (argc == 1)
     {
