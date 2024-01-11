@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define LENGHT 10
+
 void bubbleSort(void);
 void selectionSort(void);
 void insertionSort(void);
@@ -11,16 +13,15 @@ void swap(int xp, int yp);
 
 int main(int argc, string argv[])
 {
-    int lenght = 10;
-    int array[lenght];
+    int array[LENGHT];
     string algorithm;
 
-    for (int i = 0; i < lenght; i++)
+    for (int i = 0; i < LENGHT; i++)
     {
         array[i] = get_int("Element %i: ", i + 1);
         printf("\n");
     }
-    for (int i = 0; i < lenght; i++)
+    for (int i = 0; i < LENGHT; i++)
     {
         printf("Element %i is %i", i + 1, array[i]);
     }
@@ -69,7 +70,7 @@ int main(int argc, string argv[])
 
     printf("Sorted array\n");
 
-    for (int i = 0; i < lenght; i++)
+    for (int i = 0; i < LENGHT; i++)
     {
         printf("%i", array[i]);
     }
@@ -94,10 +95,10 @@ void bubbleSort(void)
 
 void selectionSort(void)
 {
-    for (int i = 0; i < lenght - 1; i++)
+    for (int i = 0; i < LENGHT - 1; i++)
     {
         int minIndex = i;
-        for (int j = i + 1; j < lenght; j++)
+        for (int j = i + 1; j < LENGHT; j++)
         {
             if (array[j] < array[minIndex])
             {
