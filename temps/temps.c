@@ -71,12 +71,12 @@ void sort_cities(void)
             high = temps[i];
         }
     }
-    for (int i = 0; i < NUM.CITIES; i++)
+    /*for (int i = 0; i < NUM.CITIES; i++)
     {
         if (high == temps[i].temp)
         {
             temps[i].city = temps[0 + i];
         }
-    }
+   }*/
 
 }
