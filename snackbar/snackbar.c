@@ -102,9 +102,10 @@ float get_cost(string item)
 {
     for (int i = 0; i < NUM_ITEMS; i++)
     {
-        if (strcasecmp(item, menu[i].item))
+        if (strcasecmp(item, menu[i].item) == 0)
         {
             return (float) menu[i].price;
+            printf("%s, %.2f", menu[i].item, menu[i].price);
         }
     }
     return 0.0;
