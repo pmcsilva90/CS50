@@ -22,7 +22,7 @@ int main(int argc, string argv[])
     }
     for (int i = 0; i < lenght; i++)
     {
-        printf("Element %i is %i", i + 1, array[i])
+        printf("Element %i is %i", i + 1, array[i]);
     }
 
 
