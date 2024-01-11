@@ -80,7 +80,8 @@ void sort_cities(void)
             }
         }
         tempor = temps[i].temp;
-        temps[i].temp = temps[high_index].temps
+        temps[i].temp = temps[high_index].temps;
+        temps[high_index].temps = tempor;
 
 
     }
