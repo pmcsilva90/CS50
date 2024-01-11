@@ -47,11 +47,11 @@ int main(int argc, string argv[])
             printf("Algorithm invalid\n")
             return 1;
         }
-        printf("\n")
+        printf("\n\n")
     }
-    else if (strcasecmp(argv[1], "selection"))
+    else if (strcasecmp(argv[1], "selection" == 0))
     {
-
+        selectionSort();
     }
 
     printf("Sorted array\n");
