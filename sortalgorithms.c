@@ -13,7 +13,7 @@ int main(int argc, string argv[])
 {
     int array[];
     int lenght = 10;
-    algo
+    string algorithm;
 
     for (int i = 0; i < lenght; i++)
     {
@@ -28,7 +28,7 @@ int main(int argc, string argv[])
 
     if (argc == 1)
     {
-        get_string ("Sorting Algorithm: ")
+        algorithm = get_string ("Sorting Algorithm: ")
     }
     else if (strcasecmp(argv[1], "selection"))
 }
