@@ -74,7 +74,7 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < LENGHT; i++)
     {
-        printf("%i", array[i]);
+        printf("%i\n", array[i]);
     }
 
     return 0;
