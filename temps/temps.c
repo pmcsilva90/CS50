@@ -66,16 +66,17 @@ int main(void)
 void sort_cities(void)
 {
     // Add your code here
-    int high;
+    int high_index;
     int temp;
 
     for (i = 0; i < NUM_CITIES - 1; i++)
     {
+        high_index = i;
         for (int j = i + 1; j < NUM_CITIES; j++)
         {
             if (temps[j].temp > temps[i].temp)
             {
-                high = temps[j].temp;
+                high_index = j;
             }
         }
 
