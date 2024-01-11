@@ -9,6 +9,11 @@ int main(int argc, string argv[])
     int array[];
     int lenght = 10;
 
+    do
+    {
+        get_int("Element 1: ")
+    }
+
 
     if (argc == 1)
     {
