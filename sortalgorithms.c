@@ -11,7 +11,11 @@ int main(int argc, string argv[])
 
     do
     {
-        get_int("Element 1: ")
+        get_int("Element 1: \n")
+    }
+    while
+    {
+        
     }
 
 
