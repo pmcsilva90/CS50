@@ -4,8 +4,9 @@
 #include <string.h>
 #include <stdlib.h>
 
-void 
-
+void bubbleSort(void);
+void selectionSort(void);
+void insertionSort(void);
 
 int main(int argc, string argv[])
 {
@@ -23,6 +24,7 @@ int main(int argc, string argv[])
         printf("Element %i is %i", i + 1, array[i])
     }
 
+
     if (argc == 1)
     {
         get_string ("Sorting Algorithm: ")
@@ -30,3 +32,12 @@ int main(int argc, string argv[])
     else if (strcasecmp(argv[1], "selection"))
 }
 
+void bubbleSort(void)
+{
+
+}
+
+void selectionSort(void)
+{
+
+}
