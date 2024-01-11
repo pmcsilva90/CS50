@@ -53,6 +53,19 @@ int main(int argc, string argv[])
     {
         selectionSort();
     }
+    else if (strcasecmp(argv[1], "bubble" == 0))
+    {
+        bubbleSort();
+    }
+    else if (strcasecmp(argv[1], "insertion" == 0))
+    {
+        insertionSort();
+    }
+    else
+    {
+        printf("Usage: %s algorithm", argv[0])
+        return 2;
+    }
 
     printf("Sorted array\n");
 
