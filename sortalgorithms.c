@@ -24,7 +24,7 @@ int main(int argc, string argv[])
     printf("\n");
     for (int i = 0; i < LENGHT; i++)
     {
-        printf("Element %i is %i", i + 1, array[i]);
+        printf("Element %i is %i\n", i + 1, array[i]);
     }
 
 
