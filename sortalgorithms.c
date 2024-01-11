@@ -30,15 +30,15 @@ int main(int argc, string argv[])
     {
         printf("Choose one of the sorting algorithms: bubble, selection or sort");
         algorithm = get_string ("Sorting Algorithm: ");
-        if (strcasecmp(algorithm, "selection" == 0))
+        if (strcasecmp(algorithm, "selection") == 0)
         {
             selectionSort();
         }
-        else if (strcasecmp(algorithm, "bubble" == 0))
+        else if (strcasecmp(algorithm, "bubble") == 0)
         {
             bubbleSort();
         }
-        else if (strcasecmp(algorithm, "insertion" == 0))
+        else if (strcasecmp(algorithm, "insertion") == 0)
         {
             insertionSort();
         }
@@ -49,15 +49,15 @@ int main(int argc, string argv[])
         }
         printf("\n\n");
     }
-    else if (strcasecmp(argv[1], "selection" == 0))
+    else if (strcasecmp(argv[1], "selection") == 0)
     {
         selectionSort();
     }
-    else if (strcasecmp(argv[1], "bubble" == 0))
+    else if (strcasecmp(argv[1], "bubble") == 0)
     {
         bubbleSort();
     }
-    else if (strcasecmp(argv[1], "insertion" == 0))
+    else if (strcasecmp(argv[1], "insertion") == 0)
     {
         insertionSort();
     }
