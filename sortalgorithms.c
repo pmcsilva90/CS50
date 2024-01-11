@@ -44,7 +44,7 @@ int main(int argc, string argv[])
         }
         else
         {
-            
+            printf"
         }
     }
     else if (strcasecmp(argv[1], "selection"))
