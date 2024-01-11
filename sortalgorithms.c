@@ -7,7 +7,7 @@
 int main(int argc, string argv[])
 {
     int array[];
-    int lenght;
+    int lenght = 10;
 
 
     if (argc == 1)
