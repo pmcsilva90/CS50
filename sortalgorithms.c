@@ -28,13 +28,29 @@ int main(int argc, string argv[])
 
     if (argc == 1)
     {
+        printf("Choose one of the sorting algorithms: bubble, selection or sort")
         algorithm = get_string ("Sorting Algorithm: ")
-        if (strcasecmp(algorithm, "Selection" == 0))
+        if (strcasecmp(algorithm, "selection" == 0))
         {
             selectionSort();
         }
+        else if (strcasecmp(algorithm, "bubble" == 0))
+        {
+            bubbleSort();
+        }
+        else if (strcasecmp(algorithm, "insertion" == 0))
+        {
+            insertionSort();
+        }
+        else
+        {
+            
+        }
     }
     else if (strcasecmp(argv[1], "selection"))
+    {
+
+    }
 
     printf("Sorted array\n");
 
