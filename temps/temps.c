@@ -70,13 +70,14 @@ void sort_cities(void)
         {
             high = temps[i];
         }
-    }
-    for (int i = 1; i < NUM.CITIES; i++)
-    {
-        if
+        for (int j = 0; j < NUM.CITIES; j++)
         {
-            
+            if (high == temps[i].temp)
+            {
+                temps[i].city = temps[j];
+            }
         }
     }
+
 
 }
