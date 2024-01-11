@@ -63,7 +63,7 @@ int main(void)
 void sort_cities(void)
 {
     // Add your code here
-    int high_index;
+    /*int high_index;
     int tempor_temp;
     string tempor_city;
 
@@ -85,5 +85,5 @@ void sort_cities(void)
 
         temps[high_index].temp = tempor_temp;
         temps[high_index].city = tempor_city;
-    }
+    }*/
 }
