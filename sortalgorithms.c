@@ -31,7 +31,7 @@ int main(int argc, string argv[])
 
     if (argc == 1)
     {
-        printf("Choose one of the sorting algorithms: bubble, selection or sort");
+        printf("Choose one of the sorting algorithms: bubble, selection or sort\n");
         algorithm = get_string ("Sorting Algorithm: ");
         if (strcasecmp(algorithm, "selection") == 0)
         {
