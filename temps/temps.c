@@ -64,7 +64,8 @@ void sort_cities(void)
 {
     // Add your code here
     int high_index;
-    int tempor;
+    int tempor_temp;
+    int tempor_city;
 
     for (i = 0; i < NUM_CITIES - 1; i++)
     {
@@ -76,23 +77,13 @@ void sort_cities(void)
                 high_index = j;
             }
         }
-        tempor = temps[i].temp;
-        tempor = temps[i].city;
+        tempor_temp = temps[i].temp;
+        tempor_city = temps[i].city;
 
         temps[i].temp = temps[high_index].temp;
         temps[i].city = temps[high_index].city;
 
-        temps[high_index].temp = tempor;
-        temps[high_index].city = tempor;
-
+        temps[high_index].temp = tempor_temp;
+        temps[high_index].city = tempor_city;
     }
-
-    /*for (int i = 0; i < NUM.CITIES; i++)
-    {
-        if (high == temps[i].temp)
-        {
-            temps[i].city = temps[0 + i];
-        }
-   }*/
-
 }
