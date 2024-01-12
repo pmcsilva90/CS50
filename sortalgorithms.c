@@ -91,6 +91,13 @@ void swap(int *xp, int *yp)
 
 void bubbleSort(void)
 {
+/* Repeat n-1 times
+    For i from 0 to n–2
+        If numbers[i] and numbers[i+1] out of order
+            Swap them
+    If no swaps
+        Quit*/
+
     
 }
 
