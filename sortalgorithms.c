@@ -100,7 +100,7 @@ void bubbleSort(void)
 
     for (int i = 0; i < LENGHT - 1; i++)
     {
-        for (int j = i; j < LENGHT - 2; j++)
+        for (int j = 0; j < LENGHT - i - 1; j++)
         {
             if (array[j] > array[j + 1])
             {
