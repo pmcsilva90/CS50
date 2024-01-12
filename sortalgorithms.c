@@ -98,7 +98,13 @@ void bubbleSort(void)
     If no swaps
         Quit*/
 
-    
+    for (int i = 0; i < LENGHT - 1; i++)
+    {
+        for (int j = i; j < LENGHT - 2; j++)
+        {
+            if ()
+        }
+    }
 }
 
 void selectionSort(void)
