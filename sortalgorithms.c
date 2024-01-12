@@ -102,9 +102,9 @@ void bubbleSort(void)
     {
         for (int j = i; j < LENGHT - 2; j++)
         {
-            if (array[j] > array[minIndex])
+            if (array[j] > array[j + 1])
             {
-                swap(&array[minIndex], array[j]);
+                swap(&array[j + 1], array[j]);
             }
         }
     }
