@@ -104,10 +104,9 @@ void bubbleSort(void)
         {
             if (array[j] > array[j + 1])
             {
-                swap(&array[j + 1], array[j]);
+                swap(&array[j + 1], &array[j]);
             }
         }
-        i
     }
 }
 
