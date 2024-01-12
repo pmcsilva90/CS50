@@ -100,7 +100,6 @@ void bubbleSort(void)
 
     for (int i = 0; i < LENGHT - 1; i++)
     {
-        minIndex = i;
         for (int j = i; j < LENGHT - 2; j++)
         {
             if (array[j] > array[minIndex])
