@@ -107,7 +107,7 @@ void bubbleSort(void)
                 swap(&array[j + 1], array[j]);
             }
         }
-        if ()
+        i
     }
 }
 
