@@ -27,9 +27,10 @@ int convert(string input)
 {
     // TODO
     int n = strlen(input) - 1;
+    int result = 0;
 
     for (int i = n; i > 0; i--)
     {
-        input[n] = input[n] - '0';
+        result = input[n] - '0';
     }
 }
