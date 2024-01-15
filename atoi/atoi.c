@@ -35,4 +35,5 @@ int convert(string input)
         n--;
         convert(input);
     }
+    return result;
 }
