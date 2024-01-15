@@ -31,7 +31,7 @@ int convert(string input)
     int result = 0;
 
     // Base case: when the string is empty
-    if (n == 0)
+    if (n < 0)
     {
         return 0;
     }
