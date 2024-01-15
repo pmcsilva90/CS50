@@ -33,6 +33,6 @@ int convert(string input)
     {
         result = input[n] - '0';
         n--;
-        convert(string input);
+        convert(input);
     }
 }
