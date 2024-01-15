@@ -26,7 +26,7 @@ int main(void)
 // Convert positive integer as a string to an integer using recursion
 int convert(string input)
 {
-    int n = strlen(input) - 1;
+/*    int n = strlen(input) - 1;
     int result = 0;
 
     for (int i = n; i > 0; i--)
@@ -36,4 +36,20 @@ int convert(string input)
         convert(input);
     }
     return result;
+    */
+
+    int n = strlen(input) - 1;
+    int result = 0;
+
+    // Base case: when the string is empty
+    if (n < 0)
+    {
+        return 0;
+    }
+
+    // Convert the last character to an integer
+    result = input[n] - '0';
+
+    // Recursively convert the substring without the last character
+    return result + 10 * convert(input);
 }
