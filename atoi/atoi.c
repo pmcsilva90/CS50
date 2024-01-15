@@ -26,8 +26,10 @@ int main(void)
 int convert(string input)
 {
     // TODO
-    for (int i = strlen(input); i > 0; i--)
+    int n = strlen(input) - 1;
+
+    for (int i = n; i > 0; i--)
     {
-        
+        input[n] 
     }
 }
