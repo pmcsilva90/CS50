@@ -32,5 +32,7 @@ int convert(string input)
     for (int i = n; i > 0; i--)
     {
         result = input[n] - '0';
+        n--;
+        convert(string input);
     }
 }
