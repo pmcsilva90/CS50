@@ -38,7 +38,7 @@ int convert(string input)
     return result;
     */
 
-    int n = strlen(input) - 1;
+    int n = strlen(*input) - 1;
     int result = 0;
 
     // Base case: when the string is empty
@@ -48,8 +48,8 @@ int convert(string input)
     }
 
     // Convert the last character to an integer
-    result = input[n] - '0';
+    result = *input[n] - '0';
 
     // Recursively convert the substring without the last character
-    return result + 10 * convert(input);
+    return result + 10 * convert(*input);
 }
