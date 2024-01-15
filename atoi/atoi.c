@@ -31,17 +31,13 @@ int convert(string input)
     int result = 0;
 
     // Base case: when the string is empty
-    if (n < 0)
+    if (n == 0)
     {
         return 0;
     }
 
     // Convert the last character to an integer
     result = input[n] - '0';
-    if (n > 0)
-    {
-        n = n - 1;
-    }
 
     // Recursively convert the substring without the last character
     return result + 10 * convert(input);
