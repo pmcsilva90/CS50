@@ -30,6 +30,6 @@ int convert(string input)
 
     for (int i = n; i > 0; i--)
     {
-        input[n] 
+        input[n] = input[n] - '0';
     }
 }
