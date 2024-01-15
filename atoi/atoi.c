@@ -23,9 +23,9 @@ int main(void)
     printf("%i\n", convert(input));
 }
 
+// Convert positive integer as a string to an integer using recursion
 int convert(string input)
 {
-    // TODO
     int n = strlen(input) - 1;
     int result = 0;
 
