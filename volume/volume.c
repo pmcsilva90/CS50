@@ -42,14 +42,9 @@ int main(int argc, char *argv[])
     int16_t buffer;
     fread(&buffer, sizeof(int16_t), 1, input);
 
-    int i = 0;
-    while (buffer[i] != '\0' || buffer[i] != 'NUL')
-    {
-        buffer[i] = buffer[i] * factor;
-        i++;
-    }
+    buffer[i] *= factor;
 
-    fwrite(buffer, 1, 1, output);
+    fwrite(&buffer, sizeof(int16_t), 1, output);
 
     // Close files
     fclose(input);
