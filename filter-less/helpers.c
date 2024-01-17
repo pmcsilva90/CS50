@@ -103,6 +103,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int w = 0; w < width; w++)
         {
+            pixelCount = 0;
             for (int r = -1; int r <= 1; r++)
             {
                 for (int c = -1; int c <= 1; c++)
@@ -112,7 +113,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                         pixelCount++;
                         sumRed += copy[h + r][w + c].rgbtRed;
                     }
-                    
+
                 }
             }
             avgRed = sumRed / 9
