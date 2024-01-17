@@ -96,9 +96,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int w = 0; w < width; w++)
         {
-            int avgRed = 0;
-            int avgGreen = 0;
-            int avgBlue = 0;
+            float avgRed = 0.0;
+            float avgGreen = 0.0;
+            float avgBlue = 0.0;
             int sumRed = 0;
             int sumGreen = 0;
             int sumBlue = 0;
