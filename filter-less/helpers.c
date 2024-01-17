@@ -106,10 +106,11 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int c = -1; int c <= 1; c++)
                 {
+                    if
                     sumRed += copy[h + r][w + c];
                 }
             }
-            avgRed = sumRed / 
+            avgRed = sumRed /
         }
     }
 
