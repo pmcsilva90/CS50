@@ -6,11 +6,13 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     int new_r = 0;
     int new_g = 0;
     int new_b = 0;
+    int avg = 0;
     for (int h = 0; h < height; h++)
     {
         for (int w = 0; w < width; w++)
         {
-             new_r = 
+            avg = image[h][w].rgbtBlue + image[h][w].rgbtBlue + image[h][w].rgbtBlue / 3
+            new_r =
         }
     }
     return;
