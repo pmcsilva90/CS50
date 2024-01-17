@@ -104,9 +104,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             int sumGreen = 0;
             int sumBlue = 0;
             int pixelCount = 0;
-            for (int r = -1; int r <= 1; r++)
+            for (int r = -1; r <= 1; r++)
             {
-                for (int c = -1; int c <= 1; c++)
+                for (int c = -1; c <= 1; c++)
                 {
                     if (h + r >= 0 && h + r <= height && w + c >= 0 && w + c <= width)
                     {
@@ -118,9 +118,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
                 }
             }
-            avgRed = sumRed / pixelCount;
-            avgGreen = sumGreen / pixelCount;
-            avgBlue = sumBlue / pixelCount;
+            avgRed = round(sumRed / pixelCount);
+            avgGreen = round(sumGreen / pixelCount);
+            avgBlue = round(sumBlue / pixelCount);
             image[h][w].rgbtRed = avgRed;
             image[h][w].rgbtGreen = avgGreen;
             image[h][w].rgbtBlue = avgBlue;
