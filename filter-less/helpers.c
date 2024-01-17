@@ -103,7 +103,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int c = -1; int c <= 1; c++)
                 {
-                    avgRed = 
+                    avgRed = copy[h + r][w + c]
                 }
             }
         }
