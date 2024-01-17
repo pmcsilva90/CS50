@@ -108,7 +108,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int c = -1; int c <= 1; c++)
                 {
-                    if (h + r >= 0 || h + r <= height || w + c >= 0 || w + c <= width)
+                    if (h + r >= 0 && h + r <= height && w + c >= 0 && w + c <= width)
                     {
                         pixelCount++;
                         sumRed += copy[h + r][w + c].rgbtRed;
