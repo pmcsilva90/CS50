@@ -58,6 +58,19 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
+    tempR = 0;
+    tempG = 0;
+    tempB = 0;
+    for (int h = 0; h < height; h++)
+    {
+        for (int w = 0; w < width; w++)
+        {
+            avg = (image[h][w].rgbtBlue + image[h][w].rgbtGreen + image[h][w].rgbtRed) / 3;
+            image[h][w].rgbtBlue = avg;
+            image[h][w].rgbtGreen = avg;
+            image[h][w].rgbtRed = avg;
+        }
+    }
     return;
 }
 
