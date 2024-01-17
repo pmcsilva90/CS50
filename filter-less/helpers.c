@@ -114,7 +114,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                         sumGreen += copy[h + r][w + c].rgbtGreen;
                         sumBlue += copy[h + r][w + c].rgbtBlue;
                     }
-
                 }
             }
             avgRed = round(sumRed / pixelCount);
