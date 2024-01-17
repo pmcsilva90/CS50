@@ -65,10 +65,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int w = 0; w < width; w++)
         {
-            avg = (image[h][w].rgbtBlue + image[h][w].rgbtGreen + image[h][w].rgbtRed) / 3;
-            image[h][w].rgbtBlue = avg;
-            image[h][w].rgbtGreen = avg;
-            image[h][w].rgbtRed = avg;
+            
         }
     }
     return;
