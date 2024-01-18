@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     if (card == NULL)
     {
         printf("Could not open file\n");
-        return 1;
+        return 2;
     }
 
     // Create a buffer for a block of data
