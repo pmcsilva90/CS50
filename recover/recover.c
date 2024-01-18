@@ -25,21 +25,18 @@ int main(int argc, char *argv[])
     uint8_t buffer[512];
     uint8_t BYTE1, BYTE2, BYTE3, BYTE4;
     char img[3];
-    int imgNo
-
-
+    int imgNo = 0;
 
     // While there's still data left to read from the memory card
     while (fread(buffer, 1, 512, card) == 512)
     {
-        // Create JPEGs from the data
-        // Open output file
-        FILE *img = fopen(outfile, "w");
-        if (outptr == NULL)
+        // Create JPEGs from the data    // Open output file
+        FILE *img = fopen("img.jpeg", "w");
+        if (img == NULL)
         {
-            fclose(inptr);
-            printf("Could not create %s.\n", outfile);
+            fclose(img);
+            printf("Could not create %s.\n", img);
             return 1;
-    }
+        }
     }
 }
