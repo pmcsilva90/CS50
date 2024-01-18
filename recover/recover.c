@@ -23,8 +23,6 @@ int main(int argc, char *argv[])
 
     // Create a buffer for a block of data
     uint8_t buffer[512];
-    uint8_t BYTE1, BYTE2, BYTE3, BYTE4;
-    char img[3];
     int countImage = 0;
     FILE *outputFile = NULL;
     char *filename = malloc(8 * sizeof(char))
