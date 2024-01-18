@@ -28,13 +28,6 @@ int main(int argc, char *argv[])
     while (fread(buffer, 1, 512, card) == 512)
     {
         // Create JPEGs from the data
-        // Open output file
-        FILE *outptr = fopen(outfile, "w");
-        if (outptr == NULL)
-        {
-            fclose(inptr);
-            printf("Could not create %s.\n", outfile);
-            return 5;
-        }
+        
     }
 }
