@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
     // Open the memory card
     FILE *card = fopen(argv[1], "r");
 
-    if (*card == NULL)
+    if (card == NULL)
     {
-        printf("Could not open file\n")
+        printf("Could not open file\n");
         return 1;
     }
 
