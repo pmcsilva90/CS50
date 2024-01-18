@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     // While there's still data left to read from the memory card
     while (fread(buffer, 1, 512, card) == 512)
     {
-        if (buffer[0]
+        if ((buffer[3] & 0xf0) == 0xe0)
         // Create JPEGs from the data    // Open output file
         FILE *img = fopen("img.jpeg", "w");
         if (img == NULL)
