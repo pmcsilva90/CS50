@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
     uint8_t BYTE1, BYTE2, BYTE3, BYTE4;
     char img[3];
     int countImage = 0;
+    FILE *outputFile = NULL;
 
     // While there's still data left to read from the memory card
     while (fread(buffer, 1, 512, card) == 512)
