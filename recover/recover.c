@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
     char img[3];
     int countImage = 0;
     FILE *outputFile = NULL;
+    char *filename = malloc(8 * sizeof(char))
 
     // While there's still data left to read from the memory card
     while (fread(buffer, 1, 512, card) == 512)
