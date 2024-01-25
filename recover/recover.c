@@ -47,10 +47,8 @@ int main(int argc, char *argv[])
                 fclose(output);
                 return 1;
             }
-            
-            fwrite(buffer, 1, 512, output)
 
-
+            fwrite(buffer, 1, 512, output);
             counter++
         }
 
