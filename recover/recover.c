@@ -59,9 +59,10 @@ int main(int argc, char *argv[])
             // Update counter of found JPEGs
             counter++;
         }
-        //Copy data from buffer to output file
+        // Check if the output file has been initialized before writing to it
         if (output != NULL)
         {
+            //Copy data from buffer to output file
             fwrite(buffer, 1, 512, output);
         }
     }
