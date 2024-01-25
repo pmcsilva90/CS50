@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
             // If not first JPEG found, close previous one
-            if (counter > 0)
+            if (counter != 0)
             {
                 fclose(output);
             }
