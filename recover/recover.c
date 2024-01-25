@@ -3,8 +3,6 @@
 
 int main(int argc, char *argv[])
 {
-
-
     // First 3 bytes of JPEGs are 0xff 0xd8 0xff
     // 4th byte is either 0xe0, 0xe1, 0xe2, 0xe3, 0xe4, 0xe5, 0xe6, 0xe7, 0xe8, 0xe9, 0xea, 0xeb, 0xec, 0xed, 0xee, or 0xef
     // Put another way, the fourth byte’s first four bits are 1110.
@@ -28,12 +26,12 @@ int main(int argc, char *argv[])
 
     // Create a buffer for a block of data
     uint8_t buffer[512];
+    // Create string for file name
     char filename[8];
+    // Create counter for found JPEGs
     int counter = 0;
+    // Create pointer to output file
     FILE *output = NULL;
-
-
-
 
     // While there's still data left to read from the memory card
     while (fread(buffer, 1, 512, card) == 512)
@@ -41,24 +39,30 @@ int main(int argc, char *argv[])
         // Create JPEGs from the data
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
+            // If not first JPEG found, close previous one
             if (counter > 0)
             {
                 fclose(output);
             }
+            // Update filename to match counter
             sprintf(filename, "%03i.jpg", counter);
+            // Create new file with filename
             output = fopen(filename, "w");
+            // If pointing to invalid memory space, print error, close created file and exit program
             if (output == NULL)
             {
                 printf("Could not create file");
                 fclose(output);
                 return 1;
             }
-
-            counter++
+            // Update counter of found JPEGs
+            counter++;
         }
+        //Copy data from input file to output file
         fwrite(buffer, 1, 512, output);
-
-
     }
-
+    // Close remaining files
+    fclose(card);
+    fclose(output);
+    return 0;
 }
