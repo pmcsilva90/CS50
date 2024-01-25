@@ -41,7 +41,14 @@ int main(int argc, char *argv[])
         {
             sprintf(filename, "%3i.jpg", counter);
             FILE *output = fopen(filename, "w");
+            if (output == NULL)
+            {
+                printf("Could not create file");
+                fclose(output);
+                return 1;
+            }
             
+            fwrite(buffer, 1, 512, output)
 
 
             counter++
