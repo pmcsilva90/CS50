@@ -54,6 +54,7 @@ int main(int argc, char *argv[])
             {
                 printf("Could not create file");
                 fclose(output);
+                fclose(card);
                 return 1;
             }
             // Update counter of found JPEGs
