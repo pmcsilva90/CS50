@@ -30,6 +30,8 @@ int main(int argc, char *argv[])
     uint8_t buffer[512];
     char filename[8];
     int counter = 0;
+    FILE *output = NULL;
+
 
 
 
@@ -39,7 +41,6 @@ int main(int argc, char *argv[])
         // Create JPEGs from the data
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && buffer[4] == somethingggg!!!!)
         {
-            FILE *output = NULL;
             if (counter > 0)
             {
                 fclose(output);
