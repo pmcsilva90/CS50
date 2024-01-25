@@ -39,8 +39,9 @@ int main(int argc, char *argv[])
         // Create JPEGs from the data
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && buffer[4] == somethingggg!!!!)
         {
-            sprintf("")
+            sprintf(filename, "%3i.jpg", counter)
             FILE *output = (filename, "w")
+            
         }
 
     }
