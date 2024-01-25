@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
             // Update counter of found JPEGs
             counter++;
         }
-        //Copy data from input file to output file
+        //Copy data from buffer to output file
         fwrite(buffer, 1, 512, output); ////////////////
     }
     // Close remaining files
