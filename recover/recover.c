@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     FILE *card = fopen(argv[1], "r");
     if (card == NULL)
     {
-        printf("Could not open file");
+        printf("Could not open file\n");
         return 1;
     }
 
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
             // If pointing to invalid memory space, print error, close created file and exit program
             if (output == NULL)
             {
-                printf("Could not create file");
+                printf("Could not create file\n");
                 fclose(output);
                 fclose(card);
                 return 1;
