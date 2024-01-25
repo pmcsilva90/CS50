@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
     // Create a buffer for a block of data
     uint8_t buffer[512];
-    char filename[8] = 0;
+    char filename[8];
     int counter = 0;
 
 
@@ -39,17 +39,8 @@ int main(int argc, char *argv[])
         // Create JPEGs from the data
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && buffer[4] == somethingggg!!!!)
         {
-            
-
-            while (fread(buffer, 1, 512, card) == 512)
-            {
-                filename = sprintf("%3i", counter, filename);
-                FILE *output = fopen("###.jpeg", "w");
-                freadfwrite(buffer, 1, 512, output);
-                fclose(output);
-                counter++;
-            }
-
+            filename = sprintf()
+            FILE *output = (filename, "w")
         }
 
     }
