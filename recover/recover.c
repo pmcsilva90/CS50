@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
             // Update filename to match counter
             sprintf(filename, "%03i.jpg", counter);
             // Create new file with filename
-            output = fopen(filename, "w");
+            FILE *output = fopen(filename, "w");
             // If pointing to invalid memory space, print error, close created file and exit program
             if (output == NULL)
             {
