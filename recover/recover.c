@@ -39,12 +39,13 @@ int main(int argc, char *argv[])
         // Create JPEGs from the data
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && buffer[4] == somethingggg!!!!)
         {
+            FILE *output = NULL;
             if (counter > 0)
             {
                 fclose(output);
             }
             sprintf(filename, "%3i.jpg", counter);
-            FILE *output = fopen(filename, "w");
+            output = fopen(filename, "w");
             if (output == NULL)
             {
                 printf("Could not create file");
