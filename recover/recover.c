@@ -1,6 +1,6 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
 
 int main(int argc, char *argv[])
 {
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
         // Check if the output file has been initialized before writing to it
         if (output != NULL)
         {
-            //Copy data from buffer to output file
+            // Copy data from buffer to output file
             fwrite(buffer, 1, 512, output);
         }
     }
