@@ -41,7 +41,8 @@ int main(int argc, char *argv[])
         {
             sprintf(filename, "%3i.jpg", counter)
             FILE *output = (filename, "w")
-            
+            while (fread(buffer, 1, 512, card) == 512)
+
         }
 
     }
