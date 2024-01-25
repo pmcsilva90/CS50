@@ -32,7 +32,6 @@ int main(int argc, char *argv[])
         printf("Could not allocate memory for buffer");
         return 1;
     }
-
     // Create string for file name
     char filename[8];
     // Create counter for found JPEGs
