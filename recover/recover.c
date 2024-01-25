@@ -62,7 +62,6 @@ int main(int argc, char *argv[])
         }
         //Copy data from input file to output file
         fwrite(buffer, 1, 512, output);
-        printf()
     }
     // Close remaining files
     fclose(card);
