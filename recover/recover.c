@@ -27,12 +27,6 @@ int main(int argc, char *argv[])
 
     // Create a buffer for a block of data
     uint8_t buffer[512];
-    /*uint8_t *buffer = malloc(sizeof(uint8_t) * 512);
-    if (buffer == NULL)
-    {
-        printf("Could not allocate memory for buffer");
-        return 1;
-    }*/
     // Create string for file name
     char filename[8];
     // Create counter for found JPEGs
