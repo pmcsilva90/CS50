@@ -65,9 +65,6 @@ int main(int argc, char *argv[])
     }
     // Close remaining files
     fclose(card);
-    if (output != NULL)
-    {
-        fclose(output);
-    }
+    fclose(output);
     return 0;
 }
