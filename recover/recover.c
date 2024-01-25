@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
     // Create a buffer for a block of data
     uint8_t buffer[512];
-    char filename[8];
+    char filename[8] = 0;
     int counter = 0;
 
 
@@ -39,8 +39,9 @@ int main(int argc, char *argv[])
         // Create JPEGs from the data
         if (buffer[0] == 0xff || buffer[1] == 0xd8 || buffer[2] == 0xff || buffer[4] == somethingggg!!!!)
         {
-            
-            fopen("###.jpeg")
+
+            FILE *output = fopen("###.jpeg", "w");
+            while fwrite(buffer, 1, 512, output)
         }
 
     }
