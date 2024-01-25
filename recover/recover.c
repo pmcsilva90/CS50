@@ -43,12 +43,12 @@ int main(int argc, char *argv[])
 
             while (fread(buffer, 1, 512, card) == 512)
             {
-                filename =
+                filename = 
                 FILE *output = fopen("###.jpeg", "w");
                 freadfwrite(buffer, 1, 512, output);
                 fclose(output);
                 counter++;
-                sprintf("%3i.jpg", filename)
+                sprintf("%s.jpg", filename)
             }
 
         }
