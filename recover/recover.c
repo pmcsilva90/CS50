@@ -40,8 +40,17 @@ int main(int argc, char *argv[])
         if (buffer[0] == 0xff || buffer[1] == 0xd8 || buffer[2] == 0xff || buffer[4] == somethingggg!!!!)
         {
 
-            FILE *output = fopen("###.jpeg", "w");
-            while fwrite(buffer, 1, 512, output)
+
+            while (fread(buffer, 1, 512, card) == 512)
+            {
+                filename =
+                FILE *output = fopen("###.jpeg", "w");
+                freadfwrite(buffer, 1, 512, output);
+                fclose(output);
+                counter++;
+                sprintf("%3i.jpg", filename)
+            }
+
         }
 
     }
