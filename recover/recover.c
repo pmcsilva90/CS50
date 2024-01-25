@@ -53,7 +53,6 @@ int main(int argc, char *argv[])
             if (output == NULL)
             {
                 printf("Could not create file\n");
-                fclose(output);
                 fclose(card);
                 return 1;
             }
@@ -61,7 +60,10 @@ int main(int argc, char *argv[])
             counter++;
         }
         //Copy data from buffer to output file
-        fwrite(buffer, 1, 512, output); ////////////////
+        if (output != NULL)
+        {
+            fwrite(buffer, 1, 512, output);
+        }
     }
     // Close remaining files
     fclose(card);
