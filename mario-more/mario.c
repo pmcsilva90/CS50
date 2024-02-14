@@ -14,11 +14,15 @@ int main(void)
     for(int c = 0; c < height; c++)
     {
 
-        for(int s = 0; s )
+        for(int s = height - 1; s > 0; s--)
+        {
+            printf(" ");
+        }
         for(int r = 0; r <= c; r++)
         {
             printf("#");
         }
+        
         printf("\n");
     }
 
