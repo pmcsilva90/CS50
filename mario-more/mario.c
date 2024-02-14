@@ -3,7 +3,12 @@
 
 int main(void)
 {
-    int height = get_int("Height: ")
+    do
+    {
+        int height = get_int("Height: ")
+    }
+    while(height < )
 
-    
+
+
 }
