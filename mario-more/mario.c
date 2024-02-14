@@ -13,8 +13,10 @@ int main(void)
 
     for(int c = 0; c < height; c++)
     {
+
         for(int r = 0; r <= c; r++)
         {
+            printf()
             printf("#");
         }
         printf("\n");
