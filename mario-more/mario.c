@@ -11,7 +11,7 @@ int main(void)
     }
     while(height > 8 || height < 1);
 
-    for(int c = 0; c < height; c++)
+    for(int c = 0; c < height + 1; c++)
     {
         for(int r = 0; r < c; r++)
         {
