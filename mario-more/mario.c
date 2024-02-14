@@ -14,9 +14,9 @@ int main(void)
     for(int c = 0; c < height; c++)
     {
 
+        for(int s = 0; s )
         for(int r = 0; r <= c; r++)
         {
-            printf()
             printf("#");
         }
         printf("\n");
