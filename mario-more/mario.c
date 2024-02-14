@@ -14,7 +14,7 @@ int main(void)
     for(int c = 0; c < height; c++)
     {
 
-        for(int s = height - 1; s > ; s--)
+        for(int s = height - 1; s > c; s--)
         {
             printf(" ");
         }
