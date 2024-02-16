@@ -21,7 +21,7 @@ int main(void)
         digits = digits / 10;
         if(digits % 10 * 2 > 9)
         {
-            evenSum = evenSum + digits % 10 + digits / 10;
+            evenSum = evenSum + digits % 10 * 2 % 10 + digits % 10 * 2 / 10;
         }
         else
         evenSum = evenSum + digits % 10 * 2;
