@@ -9,19 +9,20 @@ int main(void)
     // Mastercard: 16 digit, 51, 52, 53, 54, 55
     // Visa: 13 and 16 digit, 4
 
+    int digits = card;
     int checksum = 0;
 
-    while (card > 0)
+    while (digits > 0)
     {
-        checksum = checksum + card % 10;
-        card = card / 10;
-        if(card % 10 * 2 > 9)
+        checksum += digits % 10;
+        digits /= 10;
+        if(digits % 10 * 2 > 9)
         {
-            checksum = checksum + card % 10 * 2 % 10 + card % 10 * 2 / 10;
+            checksum += digits % 10 * 2 % 10 + digits % 10 * 2 / 10;
         }
         else
-        checksum = checksum + card % 10 * 2;
-        card = card / 10;
+        checksum += digits % 10 * 2;
+        digits /= 10;
     }
 
     if(checksum % 10 == 0)
