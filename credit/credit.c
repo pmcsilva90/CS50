@@ -28,7 +28,7 @@ int main(void)
         digits = digits / 10;
     }
 
-    if(evenSum + oddSum % 10 == 0)
+    if((evenSum + oddSum) % 10 == 0)
     {
         if(card / 10000000000000 == 34 || card / 10000000000000 == 37)
         {
