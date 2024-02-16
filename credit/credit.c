@@ -11,13 +11,17 @@ int main(void)
     // Mastercard: 16 digit, 51, 52, 53, 54, 55
     // Visa: 13 and 16 digit, 4
 
+    int digits = card;
     int oddSum = 0;
     int evenSum = 0;
 
-    while ()
+    while (digits > 0)
     {
-        oddSum = card % 10
+        oddSum = digits % 10
+        digits = digits / 100
     }
+
+    
 
 
 
