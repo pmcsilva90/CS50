@@ -12,7 +12,7 @@ int main(void)
     int oddSum = 0;
     int evenSum = 0;
 
-    
+    oddSum = card % 10
 
 
 
