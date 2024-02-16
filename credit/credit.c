@@ -11,7 +11,8 @@ int main(void)
 
     int sum = 0;
 
-    card / 10 % 10
+    sum = card / 10 % 10 * 2
+    
 
     if(card / 10000000000000 == 34 || card / 10000000000000 == 37)
     {
