@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+
+
 int main(void)
 {
     long card = get_long("Number: ");
@@ -12,8 +14,10 @@ int main(void)
     int oddSum = 0;
     int evenSum = 0;
 
-    oddSum = card % 10
-
+    while ()
+    {
+        oddSum = card % 10
+    }
 
 
 
