@@ -36,17 +36,17 @@ int main(void)
         }
         else if(card / 100000000000000 >= 51 && card / 100000000000000 <= 55)
         {
-            printf("Mastercard\n");
+            printf("MASTERCARD\n");
         }
         else if(card / 1000000000000 == 4 || card / 1000000000000000 == 4)
         {
-            printf("Visa\n");
+            printf("VISA\n");
         }
         else
         {
-            printf("Invalid\n");
+            printf("INVALID\n");
         }
     }
     else
-    printf("Invalid Checksum");
+    printf("INVALID");
 }
