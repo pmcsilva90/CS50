@@ -9,7 +9,9 @@ int main(void)
     // Mastercard: 16 digit, 51, 52, 53, 54, 55
     // Visa: 13 and 16 digit, 4
 
-    
+    int sum = 0;
+
+    card / 10 % 10
 
     if(card / 10000000000000 == 34 || card / 10000000000000 == 37)
     {
