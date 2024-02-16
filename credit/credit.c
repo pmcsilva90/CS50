@@ -9,7 +9,7 @@ int main(void)
     // Mastercard: 16 digit, 51, 52, 53, 54, 55
     // Visa: 13 and 16 digit, 4
 
-    int digits = card;
+    long digits = card;
     int checksum = 0;
 
     while (digits > 0)
