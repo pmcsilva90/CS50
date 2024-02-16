@@ -28,24 +28,25 @@ int main(void)
         digits = digits / 10;
     }
 
-    if()
-
-
-
-    if(card / 10000000000000 == 34 || card / 10000000000000 == 37)
+    if(evenSum + oddSum % 10 == 0)
     {
-        printf("AMEX\n");
-    }
-    else if(card / 100000000000000 >= 51 && card / 100000000000000 <= 55)
-    {
-        printf("Mastercard\n");
-    }
-    else if(card / 1000000000000 == 4 || card / 1000000000000000 == 4)
-    {
-        printf("Visa\n");
+        if(card / 10000000000000 == 34 || card / 10000000000000 == 37)
+        {
+            printf("AMEX\n");
+        }
+        else if(card / 100000000000000 >= 51 && card / 100000000000000 <= 55)
+        {
+            printf("Mastercard\n");
+        }
+        else if(card / 1000000000000 == 4 || card / 1000000000000000 == 4)
+        {
+            printf("Visa\n");
+        }
+        else
+        {
+            printf("Invalid\n");
+        }
     }
     else
-    {
-        printf("Invalid\n");
-    }
+    printf("Invalid Checksum");
 }
