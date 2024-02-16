@@ -17,11 +17,11 @@ int main(void)
 
     while (digits > 0)
     {
-        oddSum = digits % 10
+        oddSum = oddSum + digits % 10
         digits = digits / 100
     }
 
-    
+    while
 
 
 
