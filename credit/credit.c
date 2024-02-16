@@ -17,9 +17,12 @@ int main(void)
 
     while (digits > 0)
     {
-        oddSum = oddSum + digits % 10
-        digits = digits / 10
+        oddSum = oddSum + digits % 10;
+        digits = digits / 10;
         if(digits % 10 * 2 > 9)
+        {
+            evenSum = 
+        }
 
     }
 
