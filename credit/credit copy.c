@@ -9,22 +9,24 @@ int main(void)
     // Mastercard: 16 digit, 51, 52, 53, 54, 55
     // Visa: 13 and 16 digit, 4
 
-    int checksum = 0;
+    long digits = card;
+    int oddSum = 0;
+    int evenSum = 0;
 
-    while (card > 0)
+    while (digits > 0)
     {
-        checksum = checksum + card % 10;
-        card = card / 10;
-        if(card % 10 * 2 > 9)
+        oddSum = oddSum + digits % 10;
+        digits = digits / 10;
+        if(digits % 10 * 2 > 9)
         {
-            checksum = checksum + card % 10 * 2 % 10 + card % 10 * 2 / 10;
+            evenSum = evenSum + digits % 10 * 2 % 10 + digits % 10 * 2 / 10;
         }
         else
-        checksum = checksum + card % 10 * 2;
-        card = card / 10;
+        evenSum = evenSum + digits % 10 * 2;
+        digits = digits / 10;
     }
 
-    if(checksum % 10 == 0)
+    if((evenSum + oddSum) % 10 == 0)
     {
         if(card / 10000000000000 == 34 || card / 10000000000000 == 37)
         {
