@@ -88,6 +88,8 @@ int main(int argc, char *argv[])
         }
     }
 
+    
+
     // Close infile
     fclose(inptr);
 
