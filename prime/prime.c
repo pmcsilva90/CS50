@@ -35,8 +35,8 @@ bool prime(int number)
     {
         if (number % i == 0)
         {
-            return true;
+            return false;
         }
     }
-    return false;
+    return true;
 }
