@@ -25,7 +25,7 @@ int main(void)
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
-    bool upper, lower, number, symbol = false;
+    bool upper = false, lower = false, number = false, symbol = false;
 
     for (int i = 0; i < strlen(password); i++)
     {
