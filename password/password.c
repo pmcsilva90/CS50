@@ -29,23 +29,21 @@ bool valid(string password)
 
     for (int i = 0; i < strlen(password); i++)
     {
-        switch (password[i])
+        if (isupper(password[i]) != 0)
         {
-            case isupper(password[i]) != 0:
-                upper = true;
-                break;
-
-            case islower(password[i]) != 0:
-                lower = true;
-                break;
-
-            case isdigit(password[i]) != 0:
-                number = true;
-                break;
-
-            case isalnum(password[i]) == 0:
-                symbol = true;
-                break;
+            upper = true;
+        }
+        else if (islower(password[i]) != 0)
+        {
+            lower = true;
+        }
+        else if (isdigit(password[i]) != 0)
+        {
+            number = true;
+        }
+        else if (!isalnum(password[i]))
+        {
+            symbol = true;
         }
     }
 
