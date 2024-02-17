@@ -33,15 +33,19 @@ bool valid(string password)
         {
             case isupper(password[i]):
                 upper = true;
+                break;
 
             case islower(password[i]):
                 lower = true;
+                break;
+
+            case isdigit(password[i]):
+                number = true;
+                break;
 
             case islower(password[i]):
                 lower = true;
-
-            case islower(password[i]):
-                lower = true;
+                break;
         }
     }
     return false;
