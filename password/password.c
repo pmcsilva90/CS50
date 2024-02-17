@@ -39,7 +39,7 @@ bool valid(string password)
                 lower = true;
                 break;
 
-            case isdigit(password[i]):
+            case isdigit(password[i]) != 0:
                 number = true;
                 break;
 
