@@ -6,6 +6,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+string replace(string word);
+
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -13,5 +15,7 @@ int main(int argc, string argv[])
         printf("Usage: %s word", argv[0])
         return 1;
     }
-    
+
 }
+
+
