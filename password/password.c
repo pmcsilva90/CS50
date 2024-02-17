@@ -31,11 +31,11 @@ bool valid(string password)
     {
         switch (password[i])
         {
-            case isupper(password[i]):
+            case isupper(password[i]) != 0:
                 upper = true;
                 break;
 
-            case islower(password[i]):
+            case islower(password[i]) != 0:
                 lower = true;
                 break;
 
