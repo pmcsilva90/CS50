@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
         // Save plate number in array
         plates[idx] = buffer;
         idx++;
-        printf("%s\n", buffer);
+        //printf("%s\n", buffer);
     }
 
     for (int i = 0; i < 8; i++)
