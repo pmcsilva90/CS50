@@ -25,12 +25,24 @@ int main(void)
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
-    
-
+    bool upper, lower, number, symbol = false;
 
     for (int i = 0; i < strlen(password); i++)
     {
+        switch (password[i])
+        {
+            case isupper(password[i]):
+                upper = true;
 
+            case islower(password[i]):
+                lower = true;
+
+            case islower(password[i]):
+                lower = true;
+
+            case islower(password[i]):
+                lower = true;
+        }
     }
     return false;
 }
