@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -28,7 +27,8 @@ int main(int argc, char *argv[])
         buffer[6] = '\0';
 
         // Allocate memory for each plate number and copy contents
-        plates[idx] = strdup(buffer);
+        plates[idx] = malloc(strlen(buffer) + 1);
+        strcpy(plates[idx], buffer);
         idx++;
     }
 
