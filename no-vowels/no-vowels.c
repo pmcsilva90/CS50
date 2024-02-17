@@ -20,5 +20,8 @@ int main(int argc, string argv[])
 
 string replace(string word)
 {
-    for (int i = 0; i < word[])
+    for (int i = 0; i < strlen(word); i++)
+    {
+        
+    }
 }
