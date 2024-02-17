@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
     // Determine padding for scanlines
     int padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
 
-    int image[biHeight][biWidth];
+    int image[(abs(bi.biHeight))][bi.biWidth];
 
     // Iterate over infile's scanlines
     for (int i = 0, biHeight = abs(bi.biHeight); i < biHeight; i++)
@@ -75,6 +75,8 @@ int main(int argc, char *argv[])
 
             // Read RGB triple from infile
             fread(&triple, sizeof(RGBTRIPLE), 1, inptr);
+
+            image[i][j] = triple;
 
             // Write RGB triple to outfile
             fwrite(&triple, sizeof(RGBTRIPLE), 1, outptr);
