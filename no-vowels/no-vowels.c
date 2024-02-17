@@ -24,8 +24,9 @@ string replace(string word)
     {
         switch (word[i])
         {
-            case 1:
+            case 'a':
                 
+
         }
     }
 }
