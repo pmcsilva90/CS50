@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
     // Write outfile's BITMAPINFOHEADER
     fwrite(&bi, sizeof(BITMAPINFOHEADER), 1, outptr);
 
-    biHeight = abs(bi.biHeight)
+    biHeight = abs(bi.biHeight);
 
     // Determine padding for scanlines
     int padding = (4 - (bi.biWidth * sizeof(RGBTRIPLE)) % 4) % 4;
