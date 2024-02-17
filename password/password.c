@@ -43,8 +43,8 @@ bool valid(string password)
                 number = true;
                 break;
 
-            case islower(password[i]):
-                lower = true;
+            case isalnum(password[i]) == 0:
+                symbol = true;
                 break;
         }
     }
