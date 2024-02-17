@@ -31,7 +31,7 @@ int main(void)
 bool prime(int number)
 {
     // TODO
-    for (i = 2; i < number; i++)
+    for (int i = 2; i < number; i++)
     {
         if (number / i % 10 == 0)
         {
