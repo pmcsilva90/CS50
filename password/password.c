@@ -49,7 +49,7 @@ bool valid(string password)
         }
     }
 
-    if (upper + lower + number + symbol == 4)
+    if (upper == true && lower == true && number == true && symbol == true)
     {
         return true;
     }
