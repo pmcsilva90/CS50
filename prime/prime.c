@@ -33,9 +33,9 @@ bool prime(int number)
     // TODO
     for (float i = 2; i < number; i++)
     {
-        if (number / i % 10 == 0)
+        if (number % i == 0)
         {
-            break;
+            return true;
         }
     }
     return false;
