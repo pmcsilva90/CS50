@@ -48,5 +48,10 @@ bool valid(string password)
                 break;
         }
     }
+
+    if (upper + lower + number + symbol == 4)
+    {
+        return true;
+    }
     return false;
 }
