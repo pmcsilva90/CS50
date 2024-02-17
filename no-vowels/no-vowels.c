@@ -5,6 +5,7 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 string replace(string word);
 
@@ -12,11 +13,15 @@ int main(int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("Usage: %s word", argv[0])
+        printf("Usage: %s word\n", argv[0]);
         return 1;
     }
-    replace(argv[1])
 
+    replace(argv[1]);
+
+    printf("%s\n", argv[1]);
+
+    return 0;
 }
 
 string replace(string word)
