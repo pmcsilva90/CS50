@@ -15,6 +15,7 @@ int main(int argc, string argv[])
         printf("Usage: %s word", argv[0])
         return 1;
     }
+    replace(argv[1])
 
 }
 
@@ -36,6 +37,9 @@ string replace(string word)
             case 'o':
                 word[i] = '0';
                 break;
+            default:
+                break;
         }
     }
+    return word;
 }
