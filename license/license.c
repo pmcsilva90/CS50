@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+
 int main(int argc, char *argv[])
 {
     // Check for command line args
@@ -33,5 +34,9 @@ int main(int argc, char *argv[])
     for (int i = 0; i < 8; i++)
     {
         printf("%s\n", plates[i]);
+
+        free(plates[i]);
     }
+
+
 }
