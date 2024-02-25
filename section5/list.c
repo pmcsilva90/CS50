@@ -30,10 +30,9 @@ int main(void)
         {
             return 1;
         }
-
         n->phrase = phrase;
+        n->next = NULL;
         n->next = list;
-
         list = n;
 
         // Visualize list after adding a node.
