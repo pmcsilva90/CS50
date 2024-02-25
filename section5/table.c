@@ -37,6 +37,13 @@ int hash(string phrase)
     {
         bucket[i] = 'A' + i;
     }
-    if (phrase[0] == )
+    for (int i = 0; i <= 26, i++)
+    {
+        if (phrase[0] == bucket[i])
+        {
+            return i;
+        }
+    }
+
     return 0;
 }
