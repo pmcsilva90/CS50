@@ -53,6 +53,13 @@ int main(void)
 bool unload(node *list)
 {
     // TODO: Free all allocated nodes
+    while ()
+    node *ptr = list->next;
+    free(list);
+    list = ptr;
+    ptr = list->next;
+    free(list);
+    list = ptr;
 
     return false;
 }
