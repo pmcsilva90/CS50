@@ -37,6 +37,6 @@ int hash(string phrase)
     {
         bucket[i] = 'A' + i;
     }
-    
+    if (phrase[0] == )
     return 0;
 }
