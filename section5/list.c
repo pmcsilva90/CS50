@@ -57,8 +57,9 @@ bool unload(node *list)
 
     while (ptr != NULL)
     {
-    free(list);
-    list = ptr;
+        ptr = list->next;
+        free(list);
+        list = ptr;
     }
     return true;
 }
