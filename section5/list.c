@@ -28,10 +28,19 @@ int main(void)
         if (i == 0)
         {
             node *n = malloc(sizeof(node));
+            if (n == NULL)
+            {
+                return 1;
+            }
         }
         else
         {
             n = malloc(sizeof(node));
+            if (n == NULL)
+            {
+                free(list);
+                return 1;
+            }
         }
 
         n->phrase = phrase;
