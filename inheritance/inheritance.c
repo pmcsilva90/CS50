@@ -42,8 +42,8 @@ person *create_family(int generations)
     person *new_person = malloc(sizeof(person));
     if (new_person == NULL)
     {
-        free_family(p)
-        return 1;
+        printf("Couldn't allocate memory for new person")
+        return NULL;
     }
 
     // If there are still generations left to create
