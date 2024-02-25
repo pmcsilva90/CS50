@@ -32,6 +32,10 @@ int main(void)
 // TODO: return the correct bucket for a given phrase
 int hash(string phrase)
 {
-    
+    char bucket[26];
+    for (int i = 0; i <= 26; i++)
+    {
+        bucket[i] = 
+    }
     return 0;
 }
