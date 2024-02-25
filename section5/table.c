@@ -33,21 +33,5 @@ int main(void)
 // TODO: return the correct bucket for a given phrase
 int hash(string phrase)
 {
-    char bucket[26];
-    for (int i = 0; i < 26; i++)
-    {
-        bucket[i] = 'A' + i;
-    }
-
-    phrase[0] = toupper(phrase[0]);
-
-    for (int i = 0; i < 26; i++)
-    {
-        if (phrase[0] == bucket[i])
-        {
-            return i;
-        }
-    }
-
-    return 0;
+    return toupper(phrase[0]) - 'A';
 }
