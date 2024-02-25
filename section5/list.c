@@ -32,15 +32,7 @@ int main(void)
         }
 
         n->phrase = phrase;
-
-        if (i == 0)
-        {
-            n->next = NULL;
-        }
-        else
-        {
-            n->next = list;
-        }
+        n->next = list;
 
         list = n;
 
