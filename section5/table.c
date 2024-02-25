@@ -35,7 +35,7 @@ int hash(string phrase)
     char bucket[26];
     for (int i = 0; i <= 26; i++)
     {
-        bucket[i] = 
+        bucket[i] = 'A' + i;
     }
     return 0;
 }
