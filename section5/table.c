@@ -37,8 +37,9 @@ int hash(string phrase)
     {
         bucket[i] = 'A' + i;
     }
-    for (int i = 0; i <= 26, i++)
+    for (int i = 0; i <= 26; i++)
     {
+        toupper(phrase[0]);
         if (phrase[0] == bucket[i])
         {
             return i;
