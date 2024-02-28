@@ -34,11 +34,11 @@ unsigned int hash(const char *word)
     // TODO: Improve this hash function
     int i = 0;
 
-    if (isalpha == 0)
+    while (isalpha(word[i]) == 0)
     {
-
+        i++;
     }
-    return toupper(word[0]) - 'A';
+    return toupper(word[i]) - 'A';
 }
 
 // Loads dictionary into memory, returning true if successful, else false
