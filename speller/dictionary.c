@@ -111,7 +111,8 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    free(buffer);
+    node *cursor = 
+
     free(new_node);
     return false;
 }
