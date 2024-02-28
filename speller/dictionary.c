@@ -47,7 +47,7 @@ bool load(const char *dictionary)
     FILE *source = fopen(dictionary, "r")
     if (source == NULL)
     {
-        printf("Could not open dictionary");
+        printf("Could not open dictionary %s\n", dictionary);
         fclose(source);
         return false;
     }
@@ -56,7 +56,7 @@ bool load(const char *dictionary)
     char *buffer = malloc(sizeof((LENGHT + 1) * char));
     if (buffer == NULL)
     {
-        printf("Could not allocate memory for buffer");
+        printf("Could not allocate memory for buffer\n");
         free(buffer);
         return false;
     }
@@ -66,7 +66,7 @@ bool load(const char *dictionary)
         node *new_node = malloc(sizeof(node));
         if (new_node == NULL)
         {
-            printf("Could not allocate memory for new node %s", buffer);
+            printf("Could not allocate memory for new node %s\n", buffer);
             free(new_node);
             return false;
         }
