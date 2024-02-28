@@ -72,6 +72,7 @@ bool load(const char *dictionary)
         new_node->next = NULL;
         int hash_num = hash(new_node->word);
         table[hash_num]->next = new_node;
+        
 
     }
 
