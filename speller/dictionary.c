@@ -57,6 +57,8 @@ bool load(const char *dictionary)
 
     // Close the dictionary file
     fclose(source);
+    free(buffer);
+
     return false;
 }
 
