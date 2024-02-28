@@ -28,7 +28,7 @@ int word_count = 0;
 bool check(const char *word)
 {
     // TODO
-    hash_val = hash(word);
+    int hash_val = hash(word);
     node *cursor = table[hash_val];
     while (cursor->next != NULL)
     {
