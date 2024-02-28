@@ -52,7 +52,7 @@ bool load(const char *dictionary)
         node *new_node = malloc(sizeof(node));
         new_node->word = sprintf(buffer, "%s");
         new_node->next = NULL;
-        
+        int hash(new_node->word);
     }
 
 
