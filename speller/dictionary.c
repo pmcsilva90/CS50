@@ -2,6 +2,7 @@
 
 #include <ctype.h>
 #include <stdbool.h>
+#include <string.h>
 
 #include "dictionary.h"
 
@@ -68,7 +69,7 @@ bool load(const char *dictionary)
             free(new_node);
             return false;
         }
-        new_node->word = sprintf(buffer, "%s");
+        strcpy(new_node->word)
         new_node->next = NULL;
         int hash_num = hash(new_node->word);
         table[hash_num]->next = new_node;
