@@ -50,7 +50,9 @@ bool load(const char *dictionary)
     while (fscanf(source, "%s", buffer) != EOF)
     {
         node *new_node = malloc(sizeof(node));
-        new_node->word = sprintf(buffer, "%s")
+        new_node->word = sprintf(buffer, "%s");
+        new_node->next = NULL;
+        
     }
 
 
