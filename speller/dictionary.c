@@ -21,7 +21,7 @@ const unsigned int N = 26;
 // Hash table
 node *table[N];
 
-for (int i = 0; i < 26; i++)
+for (int i = 0; i < N; i++)
 {
     table[i]->word = 'A' + i;
     table[i]->next = NULL;
