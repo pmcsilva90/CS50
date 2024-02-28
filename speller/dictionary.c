@@ -32,7 +32,12 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    
+    int i = 0;
+
+    if (isalpha == 0)
+    {
+
+    }
     return toupper(word[0]) - 'A';
 }
 
