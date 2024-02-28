@@ -89,6 +89,18 @@ bool load(const char *dictionary)
 
         int hash_val = hash(new_node->word);
 
+        if (table[hash_val] == NULL)
+        {
+            table[hash_val] = malloc(sizeof(node));
+            if (table[hash_val] == NULL)
+            {
+                printf("Could not allocate memory for table[%d]\n", hash_val);
+                free(new_node);
+                return false;
+            }
+            table[hash_val]->next = NULL;
+        }
+
         new_node->next = table[hash_val]->next;
         table[hash_val]->next = new_node;
         word_count++;
