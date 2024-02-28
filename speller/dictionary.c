@@ -42,11 +42,17 @@ bool load(const char *dictionary)
     {
         printf("Could not open dictionary");
         fclose(source);
-        return 1;
+        return false;
     }
 
     // Read each word in the file
     char *buffer = malloc(sizeof(word));
+    if (buffer == NULL)
+    {
+        printf("Could not allocate memory for buffer");
+        free(buffer);
+        return false;
+    }
     while (fscanf(source, "%s", buffer) != EOF)
     {
         node *new_node = malloc(sizeof(node));
@@ -54,12 +60,13 @@ bool load(const char *dictionary)
         {
             printf("Could not allocate memory for new node %s", buffer)
             free(new_node);
+            return false;
         }
         new_node->word = sprintf(buffer, "%s");
         new_node->next = NULL;
         int hash_num = hash(new_node->word);
         table[hash_num]->next = new_node;
-        
+
     }
 
 
