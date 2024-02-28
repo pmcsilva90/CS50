@@ -88,8 +88,8 @@ bool load(const char *dictionary)
 
         int hash_val = hash(new_node->word);
 
-        new_node->next = table[hash_num]->next;
-        table[hash_num]->next = new_node;
+        new_node->next = table[hash_val]->next;
+        table[hash_val]->next = new_node;
         word_count++;
     }
 
@@ -116,7 +116,7 @@ bool unload(void)
     {
         node *cursor = table[i];
         node *tmp = cursor;
-        while (cursor->next =! NULL)
+        while (cursor->next != NULL)
         {
             cursor = cursor->next;
             free(tmp);
