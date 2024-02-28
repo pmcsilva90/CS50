@@ -45,6 +45,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    int word_count = 0;
     // Open the dictionary file
     FILE *source = fopen(dictionary, "r");
     if (source == NULL)
@@ -77,6 +78,7 @@ bool load(const char *dictionary)
 
         new_node->next = table[hash_num]->next;
         table[hash_num]->next = new_node;
+        word_count++;
     }
 
     // Close the dictionary file
