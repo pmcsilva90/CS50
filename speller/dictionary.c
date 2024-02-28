@@ -37,7 +37,7 @@ bool load(const char *dictionary)
 {
     // TODO
     // Open the dictionary file
-    FILE *source = fopen(dictionary)
+    FILE *source = fopen(dictionary, )
 
     // Read each word in the file
 
