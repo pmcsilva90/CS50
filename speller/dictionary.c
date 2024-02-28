@@ -37,7 +37,13 @@ bool load(const char *dictionary)
 {
     // TODO
     // Open the dictionary file
-    FILE *source = fopen(dictionary, )
+    FILE *source = fopen(dictionary, "r")
+    if (source == NULL)
+    {
+        printf("Could not open dictionary");
+        fclose(source);
+        return 1;
+    }
 
     // Read each word in the file
 
