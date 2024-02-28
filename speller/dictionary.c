@@ -18,6 +18,12 @@ const unsigned int N = 26;
 // Hash table
 node *table[N];
 
+for (int i = 0; i < 26; i++)
+{
+    table[i]->word = 'A' + i;
+    table[i]->next = NULL;
+}
+
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
@@ -46,7 +52,7 @@ bool load(const char *dictionary)
     }
 
     // Read each word in the file
-    char *buffer = malloc(sizeof(word));
+    char *buffer = malloc(sizeof((LENGHT + 1) * char));
     if (buffer == NULL)
     {
         printf("Could not allocate memory for buffer");
