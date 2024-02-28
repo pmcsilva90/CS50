@@ -58,7 +58,8 @@ bool load(const char *dictionary)
         new_node->word = sprintf(buffer, "%s");
         new_node->next = NULL;
         int hash_num = hash(new_node->word);
-        
+        table[hash_num]->word = new_node->word;
+        table[hash_num]->next = NULL;
     }
 
 
