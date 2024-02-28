@@ -50,7 +50,11 @@ bool load(const char *dictionary)
     while (fscanf(source, "%s", buffer) != EOF)
     {
         node *new_node = malloc(sizeof(node));
-        {}
+        if (new_node == NULL)
+        {
+            printf("Could not allocate memory for new node %s", buffer)
+            free(new_node);
+        }
         new_node->word = sprintf(buffer, "%s");
         new_node->next = NULL;
         int hash_num = hash(new_node->word);
