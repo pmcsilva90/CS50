@@ -1,6 +1,6 @@
 from cs50 import get_int
 
-card = get_int("Number: ");
+card = get_int("Number: ")
 
 # AMEX: 15 digit, starting 34 or 37
 # Mastercard: 16 digit, starting 51, 52, 53, 54 or 55
