@@ -29,4 +29,3 @@ if checksum % 10 == 0:
         print("INVALID")
 else:
     print("INVALID")
-
