@@ -6,7 +6,8 @@ while height < 0 or height > 8:
     height = get_int("Height: ")
 
 for i in range(height):
-        print(" ", end="")
-    for j in range(i + 1):
+    j = 0
+    for k in range(height - j - 1)
         print("#", end="")
-    print()
+    for j in range(i + 1):
+        print()
