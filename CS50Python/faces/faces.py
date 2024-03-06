@@ -6,8 +6,8 @@ def main():
     print(string)
 
 def convert(emoticon):
-    emoticon.replace(":\)","🙂")
-    emoticon.replace(":\()","🙁")
-    emoticon.replace(":|)","😐")
+    emoticon.replace(":)","🙂")
+    emoticon.replace(":(","🙁")
+    emoticon.replace(":|","😐")
 
 main()
