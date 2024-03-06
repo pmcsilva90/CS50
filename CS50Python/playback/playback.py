@@ -1,5 +1,5 @@
 string = input()
 
-string = str.replace(string)
+string = string.replace(" ", "...")
 
 print(string)
