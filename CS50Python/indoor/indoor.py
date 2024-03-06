@@ -1,3 +1,5 @@
 string = input()
 
-string = 
+string = str.lower(string)
+
+print(string)
