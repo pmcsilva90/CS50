@@ -1,7 +1,7 @@
 def main():
     string = input()
 
-    convert(string)
+    string = convert(string)
 
     print(string)
 
