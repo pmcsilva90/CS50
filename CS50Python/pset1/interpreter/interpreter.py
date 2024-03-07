@@ -8,13 +8,13 @@ z = int(z)
 result = 0
 
 if y == "+":
-    result = (x + z)
+    result = x + z
 elif y == "-":
-    result = (x - z)
+    result = x - z
 elif y == "*":
-    result = (x * z)
+    result = x * z
 elif y == "/":
-    result = (x / z)
+    result = x / z
 else:
     print("Expression not supported")
 
