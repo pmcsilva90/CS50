@@ -11,13 +11,9 @@ match filename:
         print("image/png")
     case filename.endswith(".pdf"):
         print("application/pdf")
-    case filename.endswith(".gif"):
-        print("image/gif")
-    case filename.endswith(".gif"):
-        print("image/gif")
-    case filename.endswith(".gif"):
-        print("image/gif")
-    case filename.endswith(".gif"):
-        print("image/gif")
-    case filename.endswith(".gif"):
-        print("image/gif")
+    case filename.endswith(".txt"):
+        print("text/plain")
+    case filename.endswith(".zip"):
+        print("application/zip")
+    case filename.endswith(".zip"):
+        print("application/octet-stream")
