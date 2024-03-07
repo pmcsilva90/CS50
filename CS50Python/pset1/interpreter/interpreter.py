@@ -12,6 +12,6 @@ elif y == "-":
 elif y == "*":
     print(x * z)
 elif y == "/":
-    print(x / y)
+    print(x / z)
 else:
     print("Expression not supported")
