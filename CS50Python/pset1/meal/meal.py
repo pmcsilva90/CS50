@@ -5,7 +5,7 @@ def main():
 
 
 def convert(time):
-    time = time.split(":")
+    hour, minute = time.split(":")
 
 
 
