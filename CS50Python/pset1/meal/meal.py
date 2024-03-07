@@ -7,6 +7,8 @@ def main():
 def convert(time):
     hour, minute = time.split(":")
 
+    time = 
+
 
 
 if __name__ == "__main__":
