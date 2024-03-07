@@ -2,9 +2,9 @@ greeting = input("Greeting: ")
 
 greeting = greeting.strip().lower()
 
-if greeting.startswitch("hello"):
+if greeting.startswith("hello"):
     print("$0")
-elif greeting.startswitch("h"):
+elif greeting.startswith("h"):
     print("$20")
 else:
     print("$0")
