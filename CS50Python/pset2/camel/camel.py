@@ -6,7 +6,7 @@ for c in var:
     char_count += 1
     if c.isupper():
         c = c.lower()
-        print(var[char_count:])
+        print(var[:char_count])
         break
 
-print(var[:char_count - 1])
+print()
