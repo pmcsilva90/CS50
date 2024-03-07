@@ -1,3 +1,5 @@
+# Convert camel case to snake case
+
 var = input("camelCase: ")
 
 char_count = 0
