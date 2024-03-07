@@ -2,6 +2,7 @@ due = 50
 
 print("Amount due: " + due)
 
-coin = int(input("Insert coin: "))
+while True:
+    coin = int(input("Insert coin: "))
 
 
