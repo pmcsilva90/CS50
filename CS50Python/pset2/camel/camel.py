@@ -8,5 +8,6 @@ for c in var:
         c = c.lower()
         for _ in range(char_counter):
             print(c + "_", end="")
-    print(c )
+
+print(var[-(var.len - char_counter):])
 
