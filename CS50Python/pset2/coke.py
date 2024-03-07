@@ -7,6 +7,7 @@ while True:
         due -= coin
         if due <= 0:
             print(f"Change owed: {due * -1}")
+            break
     else:
         continue
 
