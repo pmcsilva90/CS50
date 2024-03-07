@@ -15,5 +15,5 @@ match filename:
         print("text/plain")
     case filename.endswith(".zip"):
         print("application/zip")
-    case filename.endswith(".zip"):
+    case _:
         print("application/octet-stream")
