@@ -9,5 +9,5 @@ for c in var:
         for _ in range(char_counter):
             print(c + "_", end="")
 
-print(var[-(var.len - char_counter):])
+print(var[-(len(var) - char_counter):])
 
