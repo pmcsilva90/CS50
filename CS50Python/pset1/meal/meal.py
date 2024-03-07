@@ -1,13 +1,13 @@
 def main():
     time = input("What time is it? ")
 
+    
 
 
 
 def convert(time):
     hour, minute = time.split(":")
-
-    time = 
+    return hour + (minute / 60)
 
 
 
