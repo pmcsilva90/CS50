@@ -8,4 +8,4 @@ for c in var:
         c = c.lower()
         break
 
-print(var[char_count:])
+print(var[:char_count])
