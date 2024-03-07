@@ -2,6 +2,8 @@ filename = input("File name: ")
 
 filename = filename.lower().strip()
 
+
+
 match filename:
     case filename.endswith(".gif"):
         print("image/gif")
