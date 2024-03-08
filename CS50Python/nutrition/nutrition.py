@@ -25,7 +25,7 @@ def main():
     fruit = fruit.lower()
 
     if fruit in fruits:
-        print("Calories: " + fruits[1])
+        print("Calories: " + fruits[fruit])
 
 main()
 
