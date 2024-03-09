@@ -36,4 +36,4 @@ month = int(month)
 day = int(day)
 year = int(year)
 
-print(year, month, day, sep="-")
+print(f"{year}-{month:02}-{day:02}")
