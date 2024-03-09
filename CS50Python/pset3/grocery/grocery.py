@@ -4,7 +4,7 @@ while True:
     try:
         item = input()
         item = item.upper()
-        grocery
+        grocery[item] = 
     except KeyError:
 
         pass
