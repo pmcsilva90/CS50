@@ -16,11 +16,10 @@ months = [
 date = input("Date: ")
 date = date.strip()
 
-for c in date:
-    if c == " ":
-        
-        break
-    elif c == "/":
-        ...
-        break
+month, day, year = date.split("/")
 
+month = int(month)
+day = int(day)
+year = int(year)
+
+print(year, month, day)
