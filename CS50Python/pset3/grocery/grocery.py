@@ -4,11 +4,11 @@ while True:
     try:
         item = input()
         if item == "":
-              break
+            break
         item = item.upper()
-        grocery[item] = grocery.get(item, 0) +1
+        grocery[item] = grocery.get(item, 0) + 1
     except EOFError:
         break
 
 for item in sorted(grocery):
-            print(grocery[item], item, sep=" ")
+    print(grocery[item], item, sep=" ")
