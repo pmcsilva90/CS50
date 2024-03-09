@@ -6,5 +6,6 @@ while True:
         input = input.upper()
         grocery[item] += 1
     except EOFError:
-        print()
+        for item in grocery:
+            print(item, grocery[item], sep=",")
         break
