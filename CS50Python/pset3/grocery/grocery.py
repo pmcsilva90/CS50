@@ -2,7 +2,7 @@ grocery = {}
 
 while True:
     try:
-        item = input()
+a        item = input()
         item = item.upper()
         grocery[item] = 0
         if item in grocery:
