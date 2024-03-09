@@ -18,8 +18,9 @@ while True:
         item = item.title()
         if item in menu:
             total += menu[item]
-            print(f"${total:.2f}")
+            print(f"Total: ${total:.2f}")
     except EOFError:
+        print()
         break
 
 
