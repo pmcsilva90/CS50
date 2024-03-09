@@ -10,5 +10,5 @@ while True:
     except EOFError:
         break
 
-for item in grocery:
+for item in sorted(grocery):
             print(grocery[item], item, sep=", ")
