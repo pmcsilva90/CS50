@@ -18,11 +18,10 @@ date = date.strip()
 
 try:
     month, day, year = date.split("/")
-    month = month(int)
 except ValueError:
     month, day, year = date.split(" ")
     if month in months:
-        month = int()
+        month = months.index(month)
 
 month = int(month)
 day = int(day)
