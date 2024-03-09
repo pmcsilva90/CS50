@@ -13,15 +13,17 @@ months = [
     "December"
 ]
 
-date = input("Date: ")
-date = date.strip()
-
-try:
-    month, day, year = date.split("/")
-except ValueError:
-    month, day, year = date.split(" ")
-    if month in months:
-        month = months.index(month)
+while True:
+    try:
+        date = input("Date: ")
+        date = date.strip()
+        month, day, year = date.split("/")
+        break
+    except ValueError:
+        month, day, year = date.split(" ")
+        if month in months:
+            month = months.index(month)
+            break
 
 month = int(month)
 day = int(day)
