@@ -7,8 +7,8 @@ while True:
         x = int(x)
         y = int(y)
         percent = x / y * 100
-
-        break
+        if percent <= 100:
+            break
     except (ValueError, ZeroDivisionError):
         print("Invalid fraction")
         pass
