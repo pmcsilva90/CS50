@@ -32,8 +32,4 @@ while True:
         except ValueError:
             pass
 
-month = int(month)
-day = int(day)
-year = int(year)
-
 print(year, month, day, sep="-")
