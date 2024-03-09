@@ -14,5 +14,13 @@ months = [
 ]
 
 date = input("Date: ")
+date = date.strip()
 
+for c in date:
+    if c == " ":
+        
+        break
+    elif c == "/":
+        ...
+        break
 
