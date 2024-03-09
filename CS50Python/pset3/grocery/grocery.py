@@ -9,4 +9,4 @@ while True:
     except EOFError:
         for item in grocery:
             print(item, grocery[item], sep=",")
-            break
+        break
