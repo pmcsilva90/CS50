@@ -10,11 +10,15 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
+total = 0
+
 while True:
     try:
         item = input("Item: ")
         item = item.title()
-        
+        if item in menu:
+            total += 
+
     except EOFError:
         break
 
