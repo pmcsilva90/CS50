@@ -8,6 +8,7 @@ while True:
         y = int(y)
         break
     except ValueError:
+        print("")
         pass
 
 
