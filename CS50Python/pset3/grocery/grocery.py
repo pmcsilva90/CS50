@@ -11,4 +11,4 @@ while True:
         break
 
 for item in sorted(grocery):
-            print(grocery[item], item, sep=", ")
+            print(grocery[item], item, sep=" ")
