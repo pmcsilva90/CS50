@@ -22,7 +22,7 @@ while True:
             break
     except ValueError:
         try:
-            date.replace(",", "")
+            date = date.replace(",", "")
             month, day, year = date.split()
             month = month.capitalize()
             if month in months and 0 < int(day) <= 31:
