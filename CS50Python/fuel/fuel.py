@@ -7,11 +7,16 @@ while True:
         x = int(x)
         y = int(y)
         break
-    except ValueError:
-        print("")
+    except (ValueError, ZeroDivisionError):
+        print("Invalid fraction")
         pass
 
 
 percent = x / y * 100
 
-print(f"{percent:.0f}%")
+if percent >= 99:
+    print("F")
+elif percent <= 1:
+    print("E")
+else:
+    print(f"{percent:.0f}%")
