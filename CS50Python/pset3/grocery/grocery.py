@@ -4,9 +4,7 @@ while True:
     try:
         item = input()
         item = item.upper()
-        if grocery[item] > 0:
-            if item in grocery:
-                grocery[item] += 1
+        grocery
     except KeyError:
 
         pass
