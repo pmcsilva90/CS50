@@ -20,11 +20,14 @@ while True:
         month, day, year = date.split("/")
         break
     except ValueError:
-        month, day, year = date.split(" ")
-        if month in months:
-            month = months.index(month)
-            break
-        else:
+        try:
+            month, day, year = date.split(" ")
+            if month in months:
+                month = months.index(month)
+                break
+            else:
+                pass
+        except ValueError:
             pass
 
 month = int(month)
