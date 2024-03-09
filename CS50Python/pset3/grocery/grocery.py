@@ -3,7 +3,8 @@ grocery = {}
 while True:
     try:
         item = input()
-        grocery[item] = item.upper()
+        item = item.upper()
+        grocery[item] = grocery.get
     except KeyError:
 
         pass
