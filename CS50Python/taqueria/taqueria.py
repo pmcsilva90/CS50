@@ -22,8 +22,3 @@ while True:
     except EOFError:
         print()
         break
-
-
-
-
-
