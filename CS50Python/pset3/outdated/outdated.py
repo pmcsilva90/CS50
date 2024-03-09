@@ -16,7 +16,13 @@ months = [
 date = input("Date: ")
 date = date.strip()
 
-month, day, year = date.split("/")
+try:
+    month, day, year = date.split("/")
+    month = month(int)
+except ValueError:
+    month, day, year = date.split(" ")
+    if month in months:
+        month = int()
 
 month = int(month)
 day = int(day)
