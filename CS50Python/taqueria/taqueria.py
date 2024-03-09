@@ -13,6 +13,8 @@ menu = {
 while True:
     try:
         item = input("Item: ")
+        item = item.title()
+        
     except EOFError:
         break
 
