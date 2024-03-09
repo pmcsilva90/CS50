@@ -1,8 +1,15 @@
 gauge = input("Fraction: ")
 
 x, y = gauge.split(sep="/")
-x = int(x)
-y = int(y)
+
+while True:
+    try:
+        x = int(x)
+        y = int(y)
+        break
+    except ValueError:
+        pass
+
 
 percent = x / y * 100
 
