@@ -24,7 +24,7 @@ while True:
         try:
             month, day, year = date.split(" ")
             month = month.capitalize()
-            if month in months:
+            if month in months and 0 < day <= 31:
                 month = months.index(month) + 1
                 break
             else:
@@ -36,4 +36,4 @@ month = int(month)
 day = int(day)
 year = int(year)
 
-print(year, month, day)
+print(year, month, day, sep="-")
