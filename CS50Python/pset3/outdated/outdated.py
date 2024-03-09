@@ -18,6 +18,7 @@ while True:
         date = input("Date: ")
         date = date.strip()
         month, day, year = date.split("/")
+        if 
         break
     except ValueError:
         try:
