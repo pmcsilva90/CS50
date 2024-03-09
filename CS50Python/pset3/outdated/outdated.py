@@ -18,8 +18,8 @@ while True:
         date = input("Date: ")
         date = date.strip()
         month, day, year = date.split("/")
-        if 
-        break
+        if 0 < month <= 12 and 0 < day <= 31:
+            break
     except ValueError:
         try:
             month, day, year = date.split(" ")
