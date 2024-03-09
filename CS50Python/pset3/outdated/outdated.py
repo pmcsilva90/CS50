@@ -24,13 +24,11 @@ while True:
         try:
             if "," in date:
                 date = date.replace(",", "")
-            else:
-                pass
-            month, day, year = date.split()
-            month = month.capitalize()
-            if month in months and 0 < int(day) <= 31:
-                month = months.index(month) + 1
-                break
+                month, day, year = date.split()
+                month = month.capitalize()
+                if month in months and 0 < int(day) <= 31:
+                    month = months.index(month) + 1
+                    break
             else:
                 pass
         except ValueError:
