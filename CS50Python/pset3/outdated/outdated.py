@@ -22,7 +22,7 @@ while True:
     except ValueError:
         try:
             month, day, year = date.split(" ")
-            if month.capitalize in months:
+            if month.capitalize() in months:
                 month = months.index(month)
                 break
             else:
