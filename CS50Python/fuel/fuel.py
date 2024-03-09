@@ -6,4 +6,4 @@ y = int(y)
 
 percent = x / y * 100
 
-print(percent + "%")
+print(f"{percent:.0f}%")
