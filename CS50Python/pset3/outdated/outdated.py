@@ -24,6 +24,8 @@ while True:
         if month in months:
             month = months.index(month)
             break
+        else:
+            pass
 
 month = int(month)
 day = int(day)
