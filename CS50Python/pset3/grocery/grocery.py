@@ -4,7 +4,6 @@ while True:
     try:
         item = input()
         item = item.upper()
-        grocery[item] = 0
         if item in grocery:
             grocery[item] += 1
     except EOFError:
