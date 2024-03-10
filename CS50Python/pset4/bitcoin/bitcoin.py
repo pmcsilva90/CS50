@@ -14,7 +14,11 @@ elif len(sys.argv) == 1:
 elif len(sys.argv) > 2:
     sys.exit("Too many arguments")
 
-response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+try:
+    response = requests.get("https://api.coindesk.com/v1/bpi/currentaaprice.json")
+except requests.RequestException:
+    sys.exit("Request error")
+
 data = response.json()
 rate = data["bpi"]["USD"]["rate_float"]
 
