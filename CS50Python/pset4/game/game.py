@@ -24,4 +24,6 @@ while True:
             print("Too small!")
         else:
             print("Too large!")
+    except ValueError:
+        pass
 
