@@ -7,9 +7,9 @@ def main():
     for _ in range(10):
         x = generate_integer(n)
         y = generate_integer(n)
+        tries = 0
         while True:
             try:
-                tries = 0
                 ans = int(input(f"{x} + {y} = "))
                 if ans != x + y:
                     print("EEE")
