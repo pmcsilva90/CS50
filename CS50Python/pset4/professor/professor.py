@@ -8,6 +8,7 @@ def main():
         x = generate_integer(n)
         y = generate_integer(n)
         tries = 0
+
         while True:
             try:
                 ans = int(input(f"{x} + {y} = "))
