@@ -20,6 +20,7 @@ def main():
                 elif ans == x + y:
                     break
             except ValueError:
+                print("Invalid input")
                 pass
 
 def get_level():
