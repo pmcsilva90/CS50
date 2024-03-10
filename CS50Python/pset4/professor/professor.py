@@ -25,7 +25,7 @@ def main():
             except ValueError:
                 print("Invalid input")
                 pass
-    print("Score: " + score)
+    print(f"Score: {score}")
 
 def get_level():
     while True:
