@@ -2,7 +2,9 @@ import sys
 import random
 from pyfiglet import Figlet
 
-fonts[] = figlet.getFonts()
+figlet = Figlet()
+
+fonts = figlet.getFonts()
 
 if len(sys.argv) == 0:
     # random font
