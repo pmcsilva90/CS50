@@ -10,7 +10,6 @@ while True:
     except ValueError:
         pass
 
-
 number = randint(1, level)
 
 while True:
@@ -26,4 +25,3 @@ while True:
             print("Too large!")
     except ValueError:
         pass
-
