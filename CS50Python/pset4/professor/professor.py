@@ -8,9 +8,13 @@ def main():
 
         x = generate_integer(n)
         y = generate_integer(n)
-        ans = int(input(f"{x} + {y} = "))
-        if ans != x + y:
-            
+        while True:
+            try:
+            ans = int(input(f"{x} + {y} = "))
+            except???
+            if ans != x + y:
+                print("EEE")
+
 
 
     i = generate_integer(n)
