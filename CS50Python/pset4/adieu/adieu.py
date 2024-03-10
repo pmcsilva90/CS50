@@ -9,6 +9,7 @@ while True:
         name = input("Name: ")
         names.append(name)
     except EOFError:
+        print()
         break
 
 names = p.join((names), final_sep="")
