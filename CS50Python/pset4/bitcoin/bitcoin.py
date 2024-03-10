@@ -10,7 +10,9 @@ if len(sys.argv) == 2:
     except ValueError:
         sys.exit("Command-line argument is not a number")
 elif len(sys.argv) == 1:
-    sys.exit(f"Missing command-line argument")
+    sys.exit("Missing command-line argument")
+elif len(sys.argv) > 2:
+    sys.exit("Too many arguments")
 
 response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 data = response.json()
