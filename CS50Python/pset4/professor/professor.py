@@ -30,6 +30,8 @@ def get_level():
             level = int(input("Level: "))
             if 0 < level <= 3:
                 return level
+            else:
+                raise ValueError
         except (KeyError, ValueError):
             pass
 
