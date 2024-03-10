@@ -4,6 +4,14 @@ from pyfiglet import Figlet
 
 fonts = figlet.getFonts()
 
+if len(sys.argv) == 0:
+    # random font
+elif len(sys.argv) == 2:
+    # argv[1] is "-f" or "--font", argv[2] is fontName
+
+
+
+
 str = input("Input: ")
 
 f = Figlet(font='slant')
