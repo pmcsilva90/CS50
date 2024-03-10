@@ -8,6 +8,6 @@ if len(sys.argv) == 2:
     except ValueError:
         sys.exit("Not a valid value")
 else:
-    sys.exit(f"Usage: {sys.argv[0]} integer")
+    sys.exit(f"Usage: {sys.argv[0]} number")
 
 print(n)
