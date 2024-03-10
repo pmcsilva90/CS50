@@ -5,22 +5,19 @@ def main():
     n = get_level()
 
     for _ in range(10):
-
         x = generate_integer(n)
         y = generate_integer(n)
         while True:
             try:
-            ans = int(input(f"{x} + {y} = "))
-            except???
-            if ans != x + y:
-                print("EEE")
-
-
-
-    i = generate_integer(n)
-
-    print(i)
-
+                tries = 0
+                ans = int(input(f"{x} + {y} = "))
+                if ans != x + y:
+                    print("EEE")
+                    tries += 1
+                elif ans == x + y:
+                    break
+            except ValueError:
+                pass
 
 def get_level():
     while True:
