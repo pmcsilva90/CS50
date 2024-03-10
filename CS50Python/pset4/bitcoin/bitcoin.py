@@ -8,9 +8,9 @@ if len(sys.argv) == 2:
     try:
         n = float(sys.argv[1])
     except ValueError:
-        sys.exit("Not a valid value")
-else:
-    sys.exit(f"Usage: {sys.argv[0]} number")
+        sys.exit("Command-line argument is not a number")
+elif len(sys.argv) == 1:
+    sys.exit(f"Missing command-line argument")
 
 response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 data = response.json()
