@@ -2,6 +2,8 @@ import json
 import requests
 import sys
 
+n = 0
+
 if len(sys.argv) == 2:
     try:
         n = int(sys.argv[1])
@@ -15,4 +17,4 @@ response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 data = response.json()
 
 
-print(data["bpi"]["USD"]["rate_float"])
+print(f"${data["bpi"]["USD"]["rate_float"]:,.4f}")
