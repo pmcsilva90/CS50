@@ -7,12 +7,14 @@ while level <= 0:
 
 number = randint(1, level)
 
-guess = int(input("Guess: "))
+while True:
+    guess = int(input("Guess: "))
 
-if guess == number:
-    print("Just right!")
-elif guess < number:
-    print("Too small!")
-else:
-    print("Too large!")
+    if guess == number:
+        print("Just right!")
+        break
+    elif guess < number:
+        print("Too small!")
+    else:
+        print("Too large!")
 
