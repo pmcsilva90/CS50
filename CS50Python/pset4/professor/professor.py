@@ -4,6 +4,15 @@ import random
 def main():
     n = get_level()
 
+    for _ in range(10):
+
+        x = generate_integer(n)
+        y = generate_integer(n)
+        ans = int(input(f"{x} + {y} = "))
+        if ans != x + y:
+            
+
+
     i = generate_integer(n)
 
     print(i)
