@@ -1,1 +1,3 @@
-pip
+import emoji
+
+
