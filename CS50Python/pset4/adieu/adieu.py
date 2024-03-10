@@ -13,5 +13,5 @@ while True:
 
 names = p.join((names), final_sep="")
 
-print(names)
+print("Adieu, adieu, to " + names)
 
