@@ -2,7 +2,11 @@ import random
 
 
 def main():
-    ...
+    n = get_level()
+
+    i = generate_integer(n)
+
+    print(i)
 
 
 def get_level():
@@ -11,7 +15,7 @@ def get_level():
             level = int(input("Level: "))
             if 0 < level <= 3:
                 return level
-        except KeyError:
+        except (KeyError, ValueError):
             pass
 
 
