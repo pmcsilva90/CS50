@@ -1,6 +1,11 @@
 import sys
+import random
 from pyfiglet import Figlet
 
 figlet = Figlet()
 
-str = sys.argv[]
+
+
+str = input("Input: ")
+
+print(figlet.renderText(str))
