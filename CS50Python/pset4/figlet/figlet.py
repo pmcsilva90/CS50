@@ -13,4 +13,5 @@ from pyfiglet import Figlet
 #print(figlet.renderText(str))
 
 f = Figlet(font='slant')
+
 print(f.renderText('text to render'))
