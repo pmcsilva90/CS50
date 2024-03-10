@@ -40,6 +40,7 @@ def get_level():
 
 
 def generate_integer(level):
+    if level == 1
     return random.randint((10 ** (level - 1)), ((10 ** level) - 1))
 
 
