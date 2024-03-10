@@ -12,6 +12,6 @@ while True:
         print()
         break
 
-names = p.join((names), final_sep=", ")
+names = p.join((names), final_sep=",")
 
 print("Adieu, adieu, to " + names)
