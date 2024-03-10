@@ -11,5 +11,7 @@ while True:
     except EOFError:
         break
 
-print(p.join(names), final_sep="")
+names = (p.join(names), final_sep="")
+
+print(names)
 
