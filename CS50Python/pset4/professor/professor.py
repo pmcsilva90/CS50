@@ -14,6 +14,9 @@ def main():
                 if ans != x + y:
                     print("EEE")
                     tries += 1
+                    if tries == 3:
+                        print(f"{x} + {y} = {x + y}")
+                        break
                 elif ans == x + y:
                     break
             except ValueError:
