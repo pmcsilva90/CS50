@@ -11,7 +11,7 @@ while True:
     except EOFError:
         break
 
-names = (p.join(names), final_sep="")
+names = p.join((names), final_sep="")
 
 print(names)
 
