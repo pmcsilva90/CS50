@@ -18,4 +18,4 @@ data = response.json()
 rate = data["bpi"]["USD"]["rate_float"]
 
 
-print(f"{rate:,.4f}")
+print(f"${n * rate:,.4f}")
