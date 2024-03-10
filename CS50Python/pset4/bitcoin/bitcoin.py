@@ -6,7 +6,7 @@ n = 0
 
 if len(sys.argv) == 2:
     try:
-        n = int(sys.argv[1])
+        n = float(sys.argv[1])
     except ValueError:
         sys.exit("Not a valid value")
 else:
