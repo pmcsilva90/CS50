@@ -17,17 +17,15 @@ def test_h:
     assert value("Hi, friend!") == 20
     assert value("Heeeyyy!!1!11|") == 20
     assert value("Hola") == 20
-    assert value("HOLA, qUe Tal???") == 20
-
-
+    assert value("HOLA, qUe Tal¿¿¿???") == 20
+    assert value("How are you today?") == 20
 
 def test_else:
     assert value("Good morning!") == 100
-    assert value("") == 100
-    assert value("") == 100
-    assert value("") == 100
-    assert value("") == 100
-    assert value("") == 100
-    assert value("") == 100
-    assert value("") == 100
+    assert value("Good afternoon") == 100
+    assert value("COMO ESTÁS") == 100
+    assert value("TuDo BEmm?") == 100
+    assert value("BueNas!!1'!|") == 100
 
+if __name__ == "__main__":
+    main()
