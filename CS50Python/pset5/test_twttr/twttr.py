@@ -4,7 +4,7 @@ def main():
 
 
 def shorten(word):
-    vowels = "aeoiuAEIOU"
+    vowels = "aeiouAEIOU"
     shortened_word = []
     for char in word:
         if char not in vowels:
