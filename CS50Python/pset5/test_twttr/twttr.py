@@ -5,11 +5,8 @@ def main():
 
 
 def shorten(word):
-    for c in word:
-        if c.lower() in ['a', 'e', 'i', 'o', 'u']:
-            print("", end="")
-        else:
-            print(c, end="")
+    vowels = "aeoiu"
+    
 
 
 if __name__ == "__main__":
