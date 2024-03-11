@@ -7,7 +7,7 @@ def main():
 def shorten(word):
     for c in word:
         if c.lower() in ['a', 'e', 'i', 'o', 'u']:
-            print(c, end="")
+            print("", end="")
         else:
             print(c, end="")
 
