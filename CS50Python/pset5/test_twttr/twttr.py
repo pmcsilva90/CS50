@@ -5,10 +5,10 @@ def main():
 
 
 def shorten(word):
-    vowels = "aeoiu"
+    vowels = "aeoiuAEIOU"
     shortened_word = []
     for char in word:
-        if char.lower() not in vowels:
+        if char not in vowels:
             shortened_word.append(char)
     return shortened_word
 
