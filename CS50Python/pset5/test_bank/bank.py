@@ -1,7 +1,7 @@
 def main():
-    greeting = input("Greeting: ")
-    value = value(greeting)
-    print(f"${value}")
+    greet = input("Greeting: ")
+    val = value(greet)
+    print(f"${val}")
 
 
 def value(greeting):
