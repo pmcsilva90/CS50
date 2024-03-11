@@ -1,6 +1,5 @@
 def main():
-    s = input("Input: ")
-    s = shorten(s)
+    s = shorten(input("Input: "))
     print(f"Output: {s}")
 
 
