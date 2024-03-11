@@ -19,6 +19,8 @@ def test_h():
     assert value("Hola") == 20
     assert value("HOLA, qUe Tal¿¿¿???") == 20
     assert value("How are you today?") == 20
+    assert value("henlo frend") == 20
+
 
 def test_else():
     assert value("Good morning!") == 100
