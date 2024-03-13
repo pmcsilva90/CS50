@@ -23,7 +23,7 @@ def main():
             sys.exit("File does not exist")
     elif len(sys.argv) < 2:
         sys.exit("Too few command-line arguments")
-    else:
+    elif len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
 
     print(line_count)
