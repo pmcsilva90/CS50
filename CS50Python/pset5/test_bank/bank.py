@@ -3,6 +3,15 @@ def main():
     val = value(greet)
     print(f"${val}")
 
+"""asdasd as
+asd as
+asdsdg
+sadfsdfs ad
+sdfsdf
+hdfhsr
+ae
+asdas sdf sd """
+
 
 def value(greeting):
     greeting = greeting.strip().lower()
