@@ -1,31 +1,5 @@
 import sys
 
-def is_python(filename):
-    if filename.endswith(".py"):
-        return True
-    return False
-
-def count_lines(pycode):
-    line_count = 0
-    #in_docstring = False
-
-    with open(pycode) as file:
-        for line in file:
-            line = line.strip()
-            #if line.startswith('"""') and not in_docstring:
-            #    in_docstring = True
-            #    continue
-            #elif line.endswith('"""') and in_docstring:
-            #    in_docstring = False
-            #    continue
-            if line.startswith("#") or line == "":
-                continue
-            #elif not in_docstring:
-            #    line_count += 1
-            else:
-                line_count += 1
-
-    return line_count
 
 def main():
 
@@ -40,6 +14,27 @@ def main():
         print(count_lines(sys.argv[1]))
     except FileNotFoundError:
         sys.exit("File does not exist")
+
+
+def is_python(filename):
+    if filename.endswith(".py"):
+        return True
+    return False
+
+
+def count_lines(pycode):
+    line_count = 0
+
+    with open(pycode) as file:
+        for line in file:
+            line = line.strip()
+            if line.startswith("#") or line == "":
+                continue
+            else:
+                line_count += 1
+
+    return line_count
+
 
 if __name__ == "__main__":
     main()
