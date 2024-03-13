@@ -19,10 +19,12 @@ def main():
                     if line.startswith('"""') and not in_docstring:
                         in_docstring = True
                         continue
-                    
-                    if line.startswith("#") or line == "":
+                    elif line.endswith('"""') and in_docstring:
+                        in_docstring = False
                         continue
-                    else:
+                    elif line.startswith("#") or line == "":
+                        continue
+                    elif not in_docstring:
                         line_count += 1
         except FileNotFoundError:
             sys.exit("File does not exist")
