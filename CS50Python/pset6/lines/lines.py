@@ -5,6 +5,21 @@ def is_python(filename):
         return True
     return False
 
+def count_lines(code):
+    line_count = 0
+    for line in code:
+        line = line.strip()
+        if line.startswith('"""') and not in_docstring:
+            in_docstring = True
+            continue
+        elif line.endswith('"""') and in_docstring:
+            in_docstring = False
+            continue
+        elif line.startswith("#") or line == "":
+            continue
+        elif not in_docstring:
+            line_count += 1
+        return line_count
 
 def main():
 
