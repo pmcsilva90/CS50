@@ -7,6 +7,8 @@ def is_python(filename):
 
 def count_lines(code):
     line_count = 0
+    in_docstring = False
+
     for line in code:
         line = line.strip()
         if line.startswith('"""') and not in_docstring:
@@ -23,13 +25,12 @@ def count_lines(code):
 
 def main():
 
-    line_count = 0
-    in_docstring = False
+    lines = 0
 
     if len(sys.argv) == 2 and is_python(sys.argv[1]):
         try:
             with open(sys.argv[1]) as file:
-                count_lines(file)
+                lines = count_lines(file)
         except FileNotFoundError:
             sys.exit("File does not exist")
     elif len(sys.argv) < 2:
@@ -39,7 +40,7 @@ def main():
     elif not is_python(sys.argv[1]):
         sys.exit("Not a Python file")
 
-    print(line_count)
+    print(lines)
 
 if __name__ == "__main__":
     main()
