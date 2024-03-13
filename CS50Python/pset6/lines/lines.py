@@ -9,7 +9,7 @@ def main():
             with open(sys.argv[1]) as file:
                 for line in file:
                     line = line.strip()
-                    if line.startswith('"""') or line.startswith("#"):
+                    if line.startswith('"""') or line.startswith("#") or line == "":
                         continue
                     else:
                         line_count += 1
