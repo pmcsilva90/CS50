@@ -22,6 +22,8 @@ def count_lines(pycode):
                 continue
             elif not in_docstring:
                 line_count += 1
+            else:
+                continue
 
     return line_count
 
