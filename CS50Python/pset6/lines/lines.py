@@ -20,5 +20,7 @@ def main():
     else:
         sys.exit("Too many command-line arguments")
 
+    print(line_count)
+
 if __name__ == "__main__":
     main()
