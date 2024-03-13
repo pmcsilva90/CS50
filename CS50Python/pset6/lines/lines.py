@@ -8,7 +8,7 @@ def main():
         try:
             with open(sys.argv[1]) as file:
                 for line in file:
-                    line.strip()
+                    line = line.strip()
                     if line.startswith('"""') or line.startswith("#"):
                         continue
                     else:
