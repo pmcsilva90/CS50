@@ -7,23 +7,23 @@ def is_python(filename):
 
 def count_lines(pycode):
     line_count = 0
-    in_docstring = False
+    #in_docstring = False
 
     with open(pycode) as file:
         for line in file:
             line = line.strip()
-            if line.startswith('"""') and not in_docstring:
-                in_docstring = True
+            #if line.startswith('"""') and not in_docstring:
+            #    in_docstring = True
+            #    continue
+            #elif line.endswith('"""') and in_docstring:
+            #    in_docstring = False
+            #    continue
+            if line.startswith("#") or line == "":
                 continue
-            elif line.endswith('"""') and in_docstring:
-                in_docstring = False
-                continue
-            elif line.startswith("#") or line == "":
-                continue
-            elif not in_docstring:
-                line_count += 1
+            #elif not in_docstring:
+            #    line_count += 1
             else:
-                continue
+                line_count += 1
 
     return line_count
 
