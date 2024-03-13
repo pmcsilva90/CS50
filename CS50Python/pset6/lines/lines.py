@@ -5,20 +5,22 @@ def is_python(filename):
         return True
     return False
 
-def in_docstring(line):
-    if 
-
 
 def main():
 
     line_count = 0
+    in_docstring = False
 
     if len(sys.argv) == 2 and is_python(sys.argv[1]):
         try:
             with open(sys.argv[1]) as file:
                 for line in file:
                     line = line.strip()
-                    if line.startswith('"""') or line.startswith("#") or line == "":
+                    if line.startswith('"""') and not in_docstring:
+                        in_docstring = True
+                        continue
+                    
+                    if line.startswith("#") or line == "":
                         continue
                     else:
                         line_count += 1
