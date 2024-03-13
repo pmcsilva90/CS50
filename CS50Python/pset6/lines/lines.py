@@ -10,7 +10,7 @@ def main():
 
     line_count = 0
 
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 2 and is_python(sys.argv[1]):
         try:
             with open(sys.argv[1]) as file:
                 for line in file:
