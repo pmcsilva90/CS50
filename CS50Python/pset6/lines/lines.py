@@ -5,6 +5,9 @@ def is_python(filename):
         return True
     return False
 
+def in_docstring(line):
+    if 
+
 
 def main():
 
