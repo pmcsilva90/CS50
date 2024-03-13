@@ -22,7 +22,8 @@ def count_lines(pycode):
                 continue
             elif not in_docstring:
                 line_count += 1
-            
+
+    return line_count
 
 def main():
 
