@@ -29,18 +29,7 @@ def main():
     if len(sys.argv) == 2 and is_python(sys.argv[1]):
         try:
             with open(sys.argv[1]) as file:
-                for line in file:
-                    line = line.strip()
-                    if line.startswith('"""') and not in_docstring:
-                        in_docstring = True
-                        continue
-                    elif line.endswith('"""') and in_docstring:
-                        in_docstring = False
-                        continue
-                    elif line.startswith("#") or line == "":
-                        continue
-                    elif not in_docstring:
-                        line_count += 1
+                count_lines(file)
         except FileNotFoundError:
             sys.exit("File does not exist")
     elif len(sys.argv) < 2:
