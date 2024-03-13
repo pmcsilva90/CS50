@@ -27,17 +27,17 @@ def count_lines(pycode):
 
 def main():
 
-    if len(sys.argv) == 2 and is_python(sys.argv[1]):
-        try:
-            print(count_lines(sys.argv[1]))
-        except FileNotFoundError:
-            sys.exit("File does not exist")
-    elif len(sys.argv) < 2:
+    if len(sys.argv) < 2:
         sys.exit("Too few command-line arguments")
     elif len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
     elif not is_python(sys.argv[1]):
         sys.exit("Not a Python file")
+
+    try:
+        print(count_lines(sys.argv[1]))
+    except FileNotFoundError:
+        sys.exit("File does not exist")
 
 if __name__ == "__main__":
     main()
