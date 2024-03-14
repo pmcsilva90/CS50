@@ -1,21 +1,20 @@
 import sys
-from tabulate import tabulate
 import csv
 
 
 def main():
 
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 3:
         if is_csv(sys.argv[1]):
             try:
-                table(sys.argv[1])
+                ...
             except FileNotFoundError:
                 sys.exit("File does not exist")
         else:
             sys.exit("Not a CSV file")
-    elif len(sys.argv) < 2:
+    elif len(sys.argv) < 3:
         sys.exit("Too few arguments")
-    elif len(sys.argv) > 2:
+    elif len(sys.argv) > 3:
         sys.exit("Too many arguments")
 
 
@@ -24,19 +23,23 @@ def is_csv(filename):
         return True
     return False
 
-
-def table(filename):
-
+def convert(finput, foutput)
     data = []
 
-    with open(filename) as file:
+    with open(finput) as file:
         reader = csv.DictReader(file)
         for row in reader:
-            data.append(row)
+            data.replace(row('"', ''))
+            data.append({"surname": row[0], "name": row[1], "house": row[2]})
 
-    print()
-    print(tabulate(data, headers="keys", tablefmt="grid"))
-    print()
+    if is_csv(foutput):
+        with open(foutput, "a") as file:
+            writer = csv.DictWriter(file)
+            writer.writerow("key")
+    else:
+        sys.exit("Output must be CSV file")
+
+
 
 
 if __name__ == "__main__":
