@@ -1,5 +1,6 @@
 import sys
 import PIL
+from os.path import splitext
 
 def main():
 
@@ -28,5 +29,8 @@ def is_image(filename):
     if ext.lower() == ".png" or ext.lower() == ".jpeg" or ext.lower() == ".jpg":
         return True
     return False
+
+if __name__ == "__main__":
+    main()
 
 
