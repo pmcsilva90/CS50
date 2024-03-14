@@ -15,8 +15,7 @@ def main():
         if is_image(sys.argv[1]) and is_image(sys.argv[2]):
             if splitext(sys.argv[1])[1] == splitext(sys.argv[2])[1]:
                 try:
-                    with open(sys.argv[1]) as file:
-
+                    print("good so far")
                 except FileNotFoundError:
                     sys.exit("File not found")
             else:
