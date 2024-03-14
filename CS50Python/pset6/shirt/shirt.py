@@ -2,11 +2,12 @@ import sys
 from PIL import Image, ImageOps
 from os.path import splitext
 
+
 def main():
 
-#  two command-line arguments
-# in sys.argv[1], the name (or path) of a JPEG or PNG to read (i.e., open) as input
-# in sys.argv[2], the name (or path) of a JPEG or PNG to write (i.e., save) as output
+    #  two command-line arguments
+    # in sys.argv[1], the name (or path) of a JPEG or PNG to read (i.e., open) as input
+    # in sys.argv[2], the name (or path) of a JPEG or PNG to write (i.e., save) as output
 
     if len(sys.argv) < 3:
         sys.exit("Too few arguments")
@@ -23,7 +24,7 @@ def main():
             else:
                 sys.exit("Input and output have different extensions")
         else:
-            sys.exit("Invalid input")
+            sys.exit("Invalid input/output")
 
 
 def dress(i_input, i_output):
@@ -45,7 +46,6 @@ def is_image(filename):
         return True
     return False
 
+
 if __name__ == "__main__":
     main()
-
-
