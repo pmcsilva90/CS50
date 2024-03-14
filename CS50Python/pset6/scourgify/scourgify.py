@@ -38,7 +38,7 @@ def convert(finput, foutput):
 
     with open(foutput, "a") as file:
         writer = csv.DictWriter(file, fieldnames=["surname", "name", "house"])
-        writer.writerow("key")
+        writer.writerow({"surname": surname, "name": name, "house": house})
 
 
 
