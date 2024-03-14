@@ -5,7 +5,7 @@ import csv
 def main():
 
     if len(sys.argv) == 3:
-        if is_csv(sys.argv[1]):
+        if is_csv(sys.argv[1]) and is_csv(sys.argv[2]):
             try:
                 convert(sys.argv[1], sys.argv[2])
             except FileNotFoundError:
