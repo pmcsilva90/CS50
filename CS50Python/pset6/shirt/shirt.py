@@ -14,7 +14,7 @@ def main():
         sys.exit("Too many arguments")
     elif len(sys.argv) == 3:
         if is_image(sys.argv[1]) and is_image(sys.argv[2]):
-            if splitext(sys.argv[1])[1] == splitext(sys.argv[2])[1]:
+            if splitext(sys.argv[1])[1].lower() == splitext(sys.argv[2])[1].lower():
                 try:
                     print("good so far")
                 except FileNotFoundError:
