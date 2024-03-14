@@ -13,6 +13,7 @@ if len(sys.argv) > 3:
     sys.exit("Too many arguments")
 if len(sys.argv) == 3:
     if is_image(sys.argv[1]) and is_image(sys.argv[2]):
+        if 
         try:
             ...
         except FileNotFoundError:
