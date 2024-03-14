@@ -16,7 +16,7 @@ def main():
         if is_image(sys.argv[1]) and is_image(sys.argv[2]):
             if splitext(sys.argv[1])[1].lower() == splitext(sys.argv[2])[1].lower():
                 try:
-                    print("good so far")
+                    shirt = Image.open("")
                 except FileNotFoundError:
                     sys.exit("File not found")
             else:
