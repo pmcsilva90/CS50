@@ -32,6 +32,9 @@ def convert(finput, foutput):
         for row in reader:
             data.append(row)
 
+    for line in data:
+        line = line.replace('"', '')
+
 
     with open(foutput, "a") as file:
         writer = csv.DictWriter(file, fieldnames=["surname", "name", "house"])
