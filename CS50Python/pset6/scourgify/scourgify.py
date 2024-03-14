@@ -9,7 +9,7 @@ def main():
             try:
                 convert(sys.argv[1], sys.argv[2])
             except FileNotFoundError:
-                sys.exit("File does not exist")
+                sys.exit(f"Could not read {sys.argv[1]}")
         else:
             sys.exit("Not a CSV file")
     elif len(sys.argv) < 3:
