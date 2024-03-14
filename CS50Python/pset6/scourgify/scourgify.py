@@ -33,11 +33,16 @@ def convert(finput, foutput):
             data.append(row)
 
     for val in data:
-        val = val.replace('"', '')
+        full_name = val["name"].strip('"').split(", ")
+        val["name"] = full_name[1]
+        val["surname"] = full_name[0]
 
+    fieldnames = ["name", "surname", "house"]
 
     with open(foutput, "w") as file:
-        writer = csv.DictWriter
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(data)
 
 
 if __name__ == "__main__":
