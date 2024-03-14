@@ -34,10 +34,12 @@ def convert(finput, foutput):
 
     for val in data:
         full_name = val["name"].strip('"').split(", ")
-        val["name"] = full_name[1]
-        val["surname"] = full_name[0]
+        val["first"] = full_name[1]
+        val["last"] = full_name[0]
 
-    fieldnames = ["name", "surname", "house"]
+        del val["name"]
+
+    fieldnames = ["first", "last", "house"]
 
     with open(foutput, "w") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
