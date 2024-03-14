@@ -36,7 +36,7 @@ def convert(finput, foutput):
         val = val.replace('"', '')
 
 
-    with open(foutput, "a") as file:
+    with open(foutput, "w") as file:
         writer = csv.DictWriter
 
 
