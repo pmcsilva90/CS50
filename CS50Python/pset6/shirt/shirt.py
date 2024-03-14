@@ -27,7 +27,7 @@ def main():
 
 def dress(i_input, i_output):
     image = Image.open(i_input)
-    
+    image = ImageOps.fit(image)
 
 
 def is_image(filename):
