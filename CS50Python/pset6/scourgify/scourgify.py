@@ -7,7 +7,7 @@ def main():
     if len(sys.argv) == 3:
         if is_csv(sys.argv[1]):
             try:
-                ...
+                convert(sys.argv[1], sys.argv[2])
             except FileNotFoundError:
                 sys.exit("File does not exist")
         else:
@@ -23,7 +23,8 @@ def is_csv(filename):
         return True
     return False
 
-def convert(finput, foutput)
+
+def convert(finput, foutput):
     data = []
 
     with open(finput) as file:
@@ -38,8 +39,6 @@ def convert(finput, foutput)
             writer.writerow("key")
     else:
         sys.exit("Output must be CSV file")
-
-
 
 
 if __name__ == "__main__":
