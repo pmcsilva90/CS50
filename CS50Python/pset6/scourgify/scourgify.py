@@ -29,8 +29,8 @@ def convert(finput, foutput)
     with open(finput) as file:
         reader = csv.DictReader(file)
         for row in reader:
+            data.append(row)
             data.replace(row('"', ''))
-            data.append({"surname": row[0], "name": row[1], "house": row[2]})
 
     if is_csv(foutput):
         with open(foutput, "a") as file:
