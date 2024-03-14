@@ -19,7 +19,7 @@ def main():
                     with open(sys.argv[1], "rb"):
                         dress(sys.argv[1], sys.argv[2])
                 except FileNotFoundError:
-                    sys.exit("File not found")
+                    sys.exit("Input does not exist")
             else:
                 sys.exit("Input and output have different extensions")
         else:
