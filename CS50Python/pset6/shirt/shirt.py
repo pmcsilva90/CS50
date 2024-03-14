@@ -25,8 +25,8 @@ def main():
             sys.exit("Invalid input")
 
 
-def dress(f_input, f_output):
-    
+def dress(i_input, i_output):
+    image = Image.open(i_input)
 
 
 def is_image(filename):
