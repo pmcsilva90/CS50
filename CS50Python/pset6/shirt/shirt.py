@@ -16,13 +16,17 @@ def main():
         if is_image(sys.argv[1]) and is_image(sys.argv[2]):
             if splitext(sys.argv[1])[1].lower() == splitext(sys.argv[2])[1].lower():
                 try:
-                    shirt = Image.open("")
+                    ...
                 except FileNotFoundError:
                     sys.exit("File not found")
             else:
                 sys.exit("Input and output have different extensions")
         else:
             sys.exit("Invalid input")
+
+
+def shirt()
+
 
 def is_image(filename):
     _, ext = splitext(filename)
