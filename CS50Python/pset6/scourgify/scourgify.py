@@ -28,13 +28,13 @@ def convert(finput, foutput)
 
     with open(finput) as file:
         reader = csv.DictReader(file)
-        for row in reader:
+        for row[1:] in reader:
             data.append(row)
             data.replace(row('"', ''))
 
     if is_csv(foutput):
         with open(foutput, "a") as file:
-            writer = csv.DictWriter(file)
+            writer = csv.DictWriter(file, fieldnames=["surname", "name", "house"])
             writer.writerow("key")
     else:
         sys.exit("Output must be CSV file")
