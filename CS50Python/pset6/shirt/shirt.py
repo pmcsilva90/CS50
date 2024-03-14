@@ -20,7 +20,8 @@ if len(sys.argv) == 3:
             sys.exit("")
 
 def is_image(filename):
-    if filename.endswith(".png") or filename.endswith(".jpeg") or filename.endswith(".jpg"):
+    root, ext = splitext(filename)
+    if ext.lower() == ".png" or ext.lower() == ".jpeg" or ext.lower() == ".jpg"
         return True
     return False
 
