@@ -26,8 +26,15 @@ def main():
 
 
 def dress(i_input, i_output):
+
+    shirt = Image.open("shirt.png")
+    size = shirt.size
+
     image = Image.open(i_input)
-    image = ImageOps.fit(image)
+    image = ImageOps.fit(image, size)
+    image = Image.paste(shirt, shirt)
+
+    image.save(i_output)
 
 
 def is_image(filename):
