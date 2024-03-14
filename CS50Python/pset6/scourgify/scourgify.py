@@ -29,7 +29,7 @@ def convert(finput, foutput):
 
     with open(finput) as file:
         reader = csv.DictReader(file)
-        for row[1:] in reader:
+        for row in reader:
             data.append(row)
             data.replace(row('"', ''))
 
