@@ -32,8 +32,8 @@ def convert(finput, foutput):
         for row in reader:
             data.append(row)
 
-    for line in data:
-        line = line.replace('"', '')
+    for val in data:
+        val = val.replace('"', '')
 
 
     with open(foutput, "a") as file:
