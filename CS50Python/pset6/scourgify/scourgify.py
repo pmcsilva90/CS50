@@ -31,14 +31,12 @@ def convert(finput, foutput):
         reader = csv.DictReader(file)
         for row in reader:
             data.append(row)
-            data.replace(row('"', ''))
 
-    if is_csv(foutput):
-        with open(foutput, "a") as file:
-            writer = csv.DictWriter(file, fieldnames=["surname", "name", "house"])
-            writer.writerow("key")
-    else:
-        sys.exit("Output must be CSV file")
+
+    with open(foutput, "a") as file:
+        writer = csv.DictWriter(file, fieldnames=["surname", "name", "house"])
+        writer.writerow("key")
+
 
 
 if __name__ == "__main__":
