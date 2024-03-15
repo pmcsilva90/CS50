@@ -14,10 +14,8 @@ def parse(s):
     # <iframe width="560" height="315" src="https://cs50.harvard.edu/python"></iframe>
     # --> None
 
-    matches = re.search(r".+(youtube\.com/embed/.+)\"", s, re.INGORECASE)
-
-
-...
+    matches = re.search(r".+(youtube\.com/embed/.+)\".+", s, re.IGORECASE)
+    return matches.group(1)
 
 
 if __name__ == "__main__":
