@@ -17,6 +17,10 @@ def test_inrange():
     assert validate("566.754.346.72") == False
     assert validate("-11.11.-11.11") == False
     assert validate("-11.11.11.11") == False
+    assert validate("0.123.123.123") == True
+    assert validate("255.123.123.123") == True
+    assert validate("256.123.123.123") == False
+    assert validate("-1.123.123.123") == False
 
 
 def test_format():
