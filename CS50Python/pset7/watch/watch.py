@@ -15,8 +15,12 @@ def parse(s):
     # --> None
 
     matches = re.search(r".+(youtube\.com/embed/\w+).+", s, re.IGNORECASE)
-    print()
-    return matches.group(1)
+    url = matches.group(1)
+
+    try:
+        return matches.group(1)
+    except AttributeError:
+        sys.exit("None")
 
 
 if __name__ == "__main__":
