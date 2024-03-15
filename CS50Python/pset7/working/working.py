@@ -12,18 +12,16 @@ def convert(s):
     valid_time = False
 
     for n in range(1, len(matches.groups())):
-        print(type(matches.groups(n)))
+        print(type(matches.group(n)))
 
     list = []
 
     for n in range(1, len(matches.groups())):
-        list.append(matches.groups(n))
-        print(matches.groups(n))
+        list.append(matches.group(n))
+        print(matches.group(n))
 
     for n in list:
         print(n, type(n))
-
-    print(matches.groups(1))
 
     return "done"
 
