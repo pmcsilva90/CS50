@@ -11,13 +11,13 @@ def convert(s):
     print(matches.groups())
     valid_time = False
 
-    start_h = int(str(matches.groups(1)))
-    start_m = int(str(matches.groups(2)))
-    start_ampm = str(matches.groups(3))
-    to = str(matches.groups(4))
-    end_h = int(str(matches.groups(5)))
-    end_m = int(str(matches.groups(6)))
-    end_ampm = str(matches.groups(7))
+    start_h = matches.groups(1)
+    start_m = matches.groups(2)
+    start_ampm = matches.groups(3)
+    to = matches.groups(4)
+    end_h = matches.groups(5)
+    end_m = matches.groups(6)
+    end_ampm = matches.groups(7)
 
     if (0 < start_h < 13) and (0 < end_h < 13) and (0 <= start_m < 60) and (0 <= end_m < 60):
         valid_time = True
