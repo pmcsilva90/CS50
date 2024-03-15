@@ -21,6 +21,8 @@ def test_inrange():
     assert validate("255.123.123.123") == True
     assert validate("256.123.123.123") == False
     assert validate("-1.123.123.123") == False
+    assert validate("123.333.333.333") == False
+
 
 
 def test_format():
