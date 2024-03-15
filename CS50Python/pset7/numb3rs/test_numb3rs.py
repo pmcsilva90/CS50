@@ -1,6 +1,6 @@
 from numb3rs import validate
 
-def test_hello():
+def test_string():
     assert value("hello") == 0
     assert value("HELLO") == 0
     assert value("HeLlO") == 0
@@ -9,7 +9,7 @@ def test_hello():
     assert value("Hello!!1!1") == 0
 
 
-def test_h():
+def test_outofrange():
     assert value("hey") == 20
     assert value("HEY") == 20
     assert value("Hi") == 20
@@ -22,7 +22,7 @@ def test_h():
     assert value("henlo frend") == 20
 
 
-def test_else():
+def test_format():
     assert value("Good morning!") == 100
     assert value("Good afternoon") == 100
     assert value("COMO ESTÁS") == 100
