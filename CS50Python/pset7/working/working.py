@@ -12,17 +12,17 @@ def convert(s):
     valid_time = False
 
     start_h = int(matches.groups(1))
-    if matches.groups(2):
-        start_m = int(matches.groups(2))
+    start_m = int(matches.groups(2))
     start_ampm = str(matches.groups(3))
     to = str(matches.groups(4))
     end_h = int(matches.groups(5))
-    if matches.groups(6):
-        end_m = int(matches.groups(6))
+    end_m = int(matches.groups(6))
     end_ampm = str(matches.groups(7))
 
     if (0 < start_h < 13) and (0 < end_h < 13) and (0 <= start_m < 60) and (0 <= end_m < 60):
         valid_time = True
+    if to != "to":
+        sys.exit("to error")
     
 
 
