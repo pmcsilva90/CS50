@@ -13,6 +13,8 @@ def convert(s):
     for n in range(1, len(matches.groups()) + 1):
         print(matches.group(n), type(matches.group(n)))
 
+    return "done"
+
 
 if __name__ == "__main__":
     main()
