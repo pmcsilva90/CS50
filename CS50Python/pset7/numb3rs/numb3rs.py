@@ -9,6 +9,7 @@ def main():
 def validate(ip):
     matches = re.search(r"^([0-9])\.([0-9])\.([0-9])\.([0-9])$", ip)
     for match in matches:
+        print(match.group())
 
 
 
