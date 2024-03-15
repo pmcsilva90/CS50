@@ -15,6 +15,7 @@ def parse(s):
     # --> None
 
     matches = re.search(r".+(youtube\.com/embed/\w+).+", s, re.IGNORECASE)
+    print()
     return matches.group(1)
 
 
