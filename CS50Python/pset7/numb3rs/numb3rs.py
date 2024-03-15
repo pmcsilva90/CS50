@@ -9,10 +9,10 @@ def main():
 def validate(ip):
     valid = 0
     matches = re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)$", ip)
-    for n in range([1:5]):
-        print(matches.group(n))
-        #if 0 < int(matches.group(n)) < 256:
-            #valid += 1
+    for n in range(1, 5):
+        #print(matches.group(n))
+        if 0 < int(matches.group(n)) < 256:
+            valid += 1
     if valid == 4:
         return True
     return False
