@@ -23,6 +23,8 @@ def convert(s):
     for n in list:
         print(n, type(n))
 
+    print(matches.groups(1))
+
     return "done"
 
     #if (0 < start_h < 13) and (0 < end_h < 13) and (0 <= start_m < 60) and (0 <= end_m < 60):
