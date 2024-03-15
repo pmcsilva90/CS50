@@ -19,7 +19,9 @@ def convert(s):
     end_m = int(matches.groups(6))
     end_ampm = str(matches.groups(7))
 
-    if start_h 
+    if (0 < start_h < 13) and (0 < end_h < 13) and (0 <= start_m < 60) and (0 <= end_m < 60):
+        valid_time = True
+        
 
 
 
