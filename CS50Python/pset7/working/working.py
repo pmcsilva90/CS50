@@ -13,6 +13,11 @@ def convert(s):
     start_h = matches.groups(1)
     start_m = matches.groups(2)
     start_ampm = matches.groups(3)
+    to = matches.groups(4)
+    end_h = matches.groups(5)
+    end_m = matches.groups(6)
+    end_ampm = matches.groups(7)
+
     
 
     return "done"
