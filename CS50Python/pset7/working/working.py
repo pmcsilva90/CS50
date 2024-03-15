@@ -11,7 +11,7 @@ def convert(s):
     print(matches.groups())
     valid_time = False
 
-    for n in range(1, len(matches)):
+    for n in range(1, len(matches.groups())):
         print(type(matches.groups(n)))
 
     return "done"
