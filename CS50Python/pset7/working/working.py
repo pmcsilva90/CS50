@@ -15,7 +15,9 @@ def convert(s):
         print(type(matches.groups(n)))
 
     list = []
-    list = matches.groups()
+
+    for n in range(1, len(matches.groups())):
+        list.append(matches.groups(n))
 
     for n in list:
         print(n, type(n))
