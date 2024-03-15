@@ -13,6 +13,9 @@ def convert(s):
     for n in range(1, len(matches.groups()) + 1):
         print(matches.group(n), type(matches.group(n)))
 
+    if matches.group(2) == None:
+        print("just None works")
+
     return "done"
 
 
