@@ -34,7 +34,7 @@ def convert(s):
     if to != "to":
         sys.exit("to error")
 
-    return f"{start_h}:{start_m:02f} to {end_h}:{end_m:02f}"
+    return f"{start_h:02d}:{start_m:02d} to {end_h:02d}:{end_m:02d}"
 
 
 
