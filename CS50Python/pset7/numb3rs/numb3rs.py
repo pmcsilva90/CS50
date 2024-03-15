@@ -7,8 +7,12 @@ def main():
     validate(input("IPv4 Address: "))
 
 def validate(ip):
-    matches = re.search(r"^([0-9])\.([0-9])\.([0-9])\.([0-9])$", ip)
-    
+    valid = True
+    matches = re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)$", ip)
+    for n in range(4):
+        if 0 < int(matches.group(n)) < 256:
+            
+
 
 
 
