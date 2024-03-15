@@ -9,6 +9,7 @@ def main():
 def convert(s):
     matches = re.search(r"^(\d{1,2}):?(\d{2})? (AM|PM) (to|-) (\d{1,2}):?(\d{2})? (AM|PM)", s)
     print(matches.groups())
+    valid_time = False
 
     start_h = int(matches.groups(1))
     start_m = int(matches.groups(2))
@@ -17,6 +18,8 @@ def convert(s):
     end_h = int(matches.groups(5))
     end_m = int(matches.groups(6))
     end_ampm = str(matches.groups(7))
+
+    if start_h 
 
 
 
