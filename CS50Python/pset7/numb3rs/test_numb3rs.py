@@ -1,33 +1,31 @@
 from numb3rs import validate
 
-def test_string():
-    assert value("hello") == 0
-    assert value("HELLO") == 0
-    assert value("HeLlO") == 0
-    assert value("hElLo") == 0
-    assert value("Hello, friend!") == 0
-    assert value("Hello!!1!1") == 0
+def test_alpha():
+    assert validate("cat") == False
+    assert validate("dog") == False
+    assert validate("a.b.c.d") == False
+    assert validate("aa.bb.cc.dd") == False
+    assert validate("Hello...") == False
 
 
 def test_outofrange():
-    assert value("hey") == 20
-    assert value("HEY") == 20
-    assert value("Hi") == 20
-    assert value("hI") == 20
-    assert value("Hi, friend!") == 20
-    assert value("Heeeyyy!!1!11|") == 20
-    assert value("Hola") == 20
-    assert value("HOLA, qUe Tal¿¿¿???") == 20
-    assert value("How are you today?") == 20
-    assert value("henlo frend") == 20
+    assert validate("1.1.1.1") == True
+    assert validate("11.11.11.11") == True
+    assert validate("111.111.111.111") == True
+    assert validate("333.333.333.333") == False
+    assert validate("123.123.123.123") == True
+    assert validate("566.754.346.72") == False
+    assert validate("-11.11.-11.11") == False
+
+
 
 
 def test_format():
-    assert value("Good morning!") == 100
-    assert value("Good afternoon") == 100
-    assert value("COMO ESTÁS") == 100
-    assert value("TuDo BEmm?") == 100
-    assert value("BueNas!!1'!|") == 100
+    assert validate("1.2") == False
+    assert validate("198.0.0") == False
+    assert validate("1,1,2.0") == False
+    assert validate("123.234.111.222") == True
+    assert validate("198:0:0;1") == False
 
 if __name__ == "__main__":
     main()
