@@ -10,8 +10,8 @@ def convert(s):
     matches = re.search(r"^(\d{1,2}):?(\d{2})? (AM|PM) (to|-) (\d{1,2}):?(\d{2})? (AM|PM)", s)
     print(matches.groups())
 
-    for n in range(len(matches.groups())):
-        print(n, type(matches.group(n)))
+    for n in range(1, len(matches.groups())):
+        print(matches.group(n), type(matches.group(n)))
 
 
 if __name__ == "__main__":
