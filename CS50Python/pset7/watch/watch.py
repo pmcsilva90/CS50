@@ -7,13 +7,13 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r"<iframe.+(youtube\.com/embed/\w+).+</iframe>", s, re.IGNORECASE)
-    try:
+    if matches := re.search(r"<iframe.+(youtube\.com/embed/\w+).+</iframe>", s, re.IGNORECASE):
         url = matches.group(1)
-        url = "https://" + url.replace("youtube.com/embed", "youtu.be")
-        return url
-    except AttributeError:
-        sys.exit("None")
+    else:
+        return matches
+
+    url = "https://" + url.replace("youtube.com/embed", "youtu.be")
+    return url
 
 
 if __name__ == "__main__":
