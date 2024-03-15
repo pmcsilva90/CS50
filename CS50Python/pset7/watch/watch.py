@@ -14,7 +14,7 @@ def parse(s):
     # <iframe width="560" height="315" src="https://cs50.harvard.edu/python"></iframe>
     # --> None
 
-    matches = re.search(r".+(youtube\.com/embed/.+\"?).+", s, re.IGNORECASE)
+    matches = re.search(r".+(youtube\.com/embed/.+).+", s, re.IGNORECASE)
     return matches.group(1)
 
 
