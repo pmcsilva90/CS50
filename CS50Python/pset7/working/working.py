@@ -23,7 +23,7 @@ def convert(s):
         valid_time = True
     if to != "to":
         sys.exit("to error")
-    
+    if start_ampm == "PM"
 
 
 
