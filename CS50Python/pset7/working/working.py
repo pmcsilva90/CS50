@@ -20,19 +20,21 @@ def convert(s):
     end_ampm = str(matches.groups(7))
 
     for n in range(1, len(matches)):
-        print(type(matches.groups(n)), )
+        print(type(matches.groups(n)))
 
-    if (0 < start_h < 13) and (0 < end_h < 13) and (0 <= start_m < 60) and (0 <= end_m < 60):
-        valid_time = True
-    if to != "to":
-        sys.exit("to error")
-    if start_ampm == "PM":
-        start_h += 12
-    if end_ampm == "PM":
-        end_h += 12
+    return "done"
 
-    if valid_time:
-        return f"{start_h}:{start_m} to {end_h}:{end_m}"
+    #if (0 < start_h < 13) and (0 < end_h < 13) and (0 <= start_m < 60) and (0 <= end_m < 60):
+        #valid_time = True
+    #if to != "to":
+        #sys.exit("to error")
+    #if start_ampm == "PM":
+        #start_h += 12
+    #if end_ampm == "PM":
+        #end_h += 12
+
+    #if valid_time:
+        #return f"{start_h}:{start_m} to {end_h}:{end_m}"
 
 
 if __name__ == "__main__":
