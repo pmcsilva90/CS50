@@ -11,7 +11,10 @@ def convert(s):
     print(matches.groups())
     valid_time = False
 
-    
+    if (0 < int(matches.group(1)) <= 12) and (0 < int(matches.group(5)) <= 12):
+        if matches.group(2) and matches.group(6):
+            if (0 <= int(matches.group(1)) < 60) and (0 <= int(matches.group(1)) < 60):
+                valid_time = True
 
 
 
