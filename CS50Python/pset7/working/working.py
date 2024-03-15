@@ -37,7 +37,5 @@ def convert(s):
     return f"{start_h:02d}:{start_m:02d} to {end_h:02d}:{end_m:02d}"
 
 
-
-
 if __name__ == "__main__":
     main()
