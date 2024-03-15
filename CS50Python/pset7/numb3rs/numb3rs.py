@@ -11,7 +11,7 @@ def validate(ip):
     matches = re.search(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$", ip)
     for n in range(1, 5):
         try:
-            if 0 <= int(matches.group(n)) <= 256:
+            if 0 <= int(matches.group(n)) < 256:
                 valid += 1
         except AttributeError:
             pass
