@@ -23,12 +23,13 @@ def convert(s):
         valid_time = True
     if to != "to":
         sys.exit("to error")
-    if start_ampm == "PM"
+    if start_ampm == "PM":
+        start_h += 12
+    if end_ampm == "PM":
+        end_h += 12
 
-
-
-
-    return "done"
+    if valid_time:
+        return f"{start_h}:{start_m} to {end_h}:{end_m}"
 
 
 if __name__ == "__main__":
