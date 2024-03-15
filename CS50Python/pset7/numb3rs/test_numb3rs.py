@@ -8,7 +8,7 @@ def test_alpha():
     assert validate("Hello...") == False
 
 
-def test_outofrange():
+def test_inrange():
     assert validate("1.1.1.1") == True
     assert validate("11.11.11.11") == True
     assert validate("111.111.111.111") == True
