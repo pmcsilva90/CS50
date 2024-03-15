@@ -7,7 +7,7 @@ def main():
 
 
 def parse(s):
-    matches = re.search(r".+(youtube\.com/embed/\w+).+", s, re.IGNORECASE)
+    matches = re.search(r"<iframe.+(youtube\.com/embed/\w+).+</iframe>", s, re.IGNORECASE)
     try:
         url = matches.group(1)
         url = "https://" + url.replace("youtube.com/embed", "youtu.be")
