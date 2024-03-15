@@ -10,8 +10,11 @@ def validate(ip):
     valid = 0
     matches = re.search(r"^([0-9]+)\.([0-9]+)\.([0-9]+)\.([0-9]+)$", ip)
     for n in range(1, 5):
-        if 0 < int(matches.group(n)) < 256:
-            valid += 1
+        try:
+            if 0 < int(matches.group(n)) < 256:
+                valid += 1
+        except AttributeError:
+            pass
     if valid == 4:
         return True
     return False
