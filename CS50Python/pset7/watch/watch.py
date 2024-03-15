@@ -16,9 +16,10 @@ def parse(s):
 
     matches = re.search(r".+(youtube\.com/embed/\w+).+", s, re.IGNORECASE)
     url = matches.group(1)
+    url = "https://" + url.replace("youtube.com/embed", "youtu.be")
 
     try:
-        return matches.group(1)
+        return url
     except AttributeError:
         sys.exit("None")
 
