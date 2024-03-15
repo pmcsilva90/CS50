@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    ...
+    matches = re.search(r"\d{1,2}:?\d{1,2}? ")
 
 
 ...
