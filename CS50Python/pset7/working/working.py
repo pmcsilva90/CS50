@@ -18,6 +18,7 @@ def convert(s):
 
     for n in range(1, len(matches.groups())):
         list.append(matches.groups(n))
+        print(matches.groups(n))
 
     for n in list:
         print(n, type(n))
