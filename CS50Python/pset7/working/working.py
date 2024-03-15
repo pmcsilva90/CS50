@@ -11,7 +11,7 @@ def convert(s):
     print(matches.groups())
 
     for n in range(len(matches.groups())):
-        print(n, type(n))
+        print(n, type(matches.group(n)))
 
 
 if __name__ == "__main__":
