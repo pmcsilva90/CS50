@@ -7,11 +7,9 @@ def main():
     validate(input("IPv4 Address: "))
 
 def validate(ip):
-    #matches = re.search(r"^([0-9])\.([0-9])\.([0-9])\.([0-9])$", ip)
-    lol = ip.split(".")
-    for _ in lol:
-        print(_)
-    print(type(lol))
+    matches = re.search(r"^([0-9])\.([0-9])\.([0-9])\.([0-9])$", ip)
+    
+
 
 
 
