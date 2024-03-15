@@ -11,11 +11,17 @@ def convert(s):
     print(matches.groups())
     valid_time = False
     start_h = int(matches.group(1))
-    start_m = int(matches.group(2))
+    if matches.group(2):
+        start_m = int(matches.group(2))
+    else:
+        start_m = 0
     start_ampm = matches.group(3)
     to = matches.group(4)
     end_h = int(matches.group(5))
-    end_m = int(matches.group(6))
+    if matches.group(6):
+        end_m = int(matches.group(6))
+    else:
+        end_m = 0
     end_ampm = matches.group(7)
 
     if (0 < start_h <= 12) and (0 < end_h <= 12):
@@ -28,7 +34,7 @@ def convert(s):
     if to != "to":
         sys.exit("to error")
 
-    return f"{}{}{}{}"
+    return f"{start_h}:{start_m} to {end_h}:{end_m}"
 
 
 
