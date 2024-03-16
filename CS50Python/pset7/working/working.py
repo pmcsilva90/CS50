@@ -29,8 +29,12 @@ def convert(s):
             valid_time = True
     if start_ampm == "PM":
         start_h += 12
+    elif start_ampm == "AM" and start_h == 12:
+        start_h = 0
     if end_ampm == "PM":
         end_h += 12
+    elif end_ampm == "AM" and end_h == 12:
+        end_h = 0
     if to != "to":
         sys.exit("to error")
 
