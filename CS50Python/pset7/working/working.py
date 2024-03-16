@@ -28,7 +28,7 @@ def convert(s):
         elif end_ampm == "AM" and end_h == 12:
             end_h = 0
 
-        # Check for invalid hour output
+        # Check for invalid hour conversion
         if not (0 <= start_h < 24 and 0 <= end_h < 24):
             raise ValueError("Invalid time")
 
