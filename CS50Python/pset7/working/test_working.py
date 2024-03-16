@@ -6,7 +6,7 @@ def test_case():
     assert convert("9 PM to 7 AM") == "21:00 to 07:00"
     assert convert("2 AM to 1 AM") == "02:00 to 01:00"
 
-    assert convert("05:31 pm to 10:31 AM") == ValueError: Invalid format
+    assert convert("05:31 pm to 10:31 AM") == ValueError
     assert convert("02:35 AM to 09:30 am") == ValueError
     assert convert("09:48 Pm to 09:16 Am") == ValueError
     assert convert("06:29 aM to 12:51 AM") == ValueError
