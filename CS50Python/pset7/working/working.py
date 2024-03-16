@@ -8,7 +8,9 @@ def main():
 
 def convert(s):
     if matches := re.search(r"^(\d{1,2}):?(\d{2})? (AM|PM) (to|-) (\d{1,2}):?(\d{2})? (AM|PM)", s):
-        start_h, start_m, start_ampm, 
+        start_h, start_m, start_ampm, prep, end_h, end_m, end_ampm = matches.groups()
+
+
 
 
 
