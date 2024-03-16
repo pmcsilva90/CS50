@@ -7,11 +7,11 @@ def test_case():
     assert convert("2 AM to 1 AM") == True
 
     assert convert("05:31 pm to 10:31 AM") == False
-    assert convert("02:35 AM to 09:30 AM") == False
-    assert convert("05:31 pm to 10:31 AM") == False
-    assert convert("05:31 pm to 10:31 AM") == False
-    assert convert("05:31 pm to 10:31 AM") == False
-    assert convert("05:31 pm to 10:31 AM") == False
+    assert convert("02:35 AM to 09:30 am") == False
+    assert convert("09:48 Pm to 09:16 Am") == False
+    assert convert("06:29 aM to 12:51 AM") == False
+    assert convert("02 am to 10 AM") == False
+    assert convert("11 am to 4 am") == False
 
 
 def test_inrange():
