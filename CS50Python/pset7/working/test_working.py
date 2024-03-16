@@ -1,9 +1,9 @@
 from working import convert
 
 def test_case():
-    assert convert("12:01 AM to 07:08 PM") == "12:01 to 19:08"
-    assert convert("10:00 PM to 02:40 PM") == "10:00 to 13:40"
-    assert convert("9 PM to 7 AM") == "09:00 to 07:00"
+    assert convert("12:01 AM to 07:08 PM") == "00:01 to 19:08"
+    assert convert("10:00 PM to 02:40 PM") == "22:00 to 14:40"
+    assert convert("9 PM to 7 AM") == "21:00 to 07:00"
     assert convert("2 AM to 1 AM") == "02:00 to 01:00"
 
     assert convert("05:31 pm to 10:31 AM") == "ValueError"
