@@ -28,14 +28,14 @@ def convert(s):
         if start_m:
             if not (0 <= start_m < 60):
                 raise ValueError("Invalid time")
-            else:
-                start_m = 0
+        else:
+            start_m = 0
 
         if end_m:
             if not (0 <= end_m < 60):
                 raise ValueError("Invalid time")
-            else:
-                end_m = 0
+        else:
+            end_m = 0
 
         if not prep == "to":
             raise ValueError("Invalid format")
