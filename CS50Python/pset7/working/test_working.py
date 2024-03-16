@@ -73,23 +73,23 @@ def test_inrange():
 
 def test_format():
     try:
-        convert("02:56PM to 03:2 AM")
+        assert convert("02:56PM to 03:2 AM")
     except ValueError
 
     try:
-        convert("7 AM - 5 AM")
+        assert convert("7 AM - 5 AM")
     except ValueError
 
     try:
-        convert("07:5 PM to 12:4 PM")
+        assert convert("07:5 PM to 12:4 PM")
     except ValueError
 
     try:
-        convert("8PM - 3PM")
+        assert convert("8PM - 3PM")
     except ValueError
 
     try:
-        convert("08:13 AM until 01:03 PM")
+        assert convert("08:13 AM until 01:03 PM")
     except ValueError
 
 if __name__ == "__main__":
