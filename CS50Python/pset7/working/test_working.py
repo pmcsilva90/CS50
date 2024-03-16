@@ -9,12 +9,13 @@ def test_alpha():
 
 
 def test_inrange():
-    assert convert("1.1.1.1") == True
-    assert convert("11.11.11.11") == True
-    assert convert("111.111.111.111") == True
-    assert convert("333.333.333.333") == False
-    assert convert("123.123.123.123") == True
-    assert convert("566.754.346.72") == False
+    assert convert("08:30 PM to 12:43 AM") == True
+    assert convert("07:31 PM to 11:26 AM") == True
+    assert convert("10 AM to 4 PM") == True
+
+    assert convert("11:82 AM to 07:47 AM") == False
+    assert convert("13:08 PM to 04:29 PM") == 
+    assert convert("") == False
 
 
 
