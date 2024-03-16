@@ -26,12 +26,14 @@ def convert(s):
             raise ValueError("Invalid time")
 
         if start_m:
+            int(start_m)
             if not (0 <= start_m < 60):
                 raise ValueError("Invalid time")
         else:
             start_m = 0
 
         if end_m:
+            int(end_m)
             if not (0 <= end_m < 60):
                 raise ValueError("Invalid time")
         else:
