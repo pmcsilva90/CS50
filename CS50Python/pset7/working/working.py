@@ -8,7 +8,7 @@ def main():
 
 def convert(s):
     if matches := re.search(r"^(\d{1,2}):?(\d{2})? (AM|PM) (to|-) (\d{1,2}):?(\d{2})? (AM|PM)", s):
-        start_h, start_m, start_ampm, prep, end_h, end_m, end_ampm = matches.groups():
+        start_h, start_m, start_ampm, prep, end_h, end_m, end_ampm = matches.groups()
 
         start_h = int(start_h)
         if start_ampm == "PM" and start_h < 12:
@@ -16,7 +16,7 @@ def convert(s):
         elif start_ampm == "AM" and start_h == 12:
             start_h = 0
 
-        end_hour = int(end_hour)
+        end_h = int(end_h)
         if end_ampm == "PM" and end_h < 12:
             end_h += 12
         elif end_ampm == "AM" and end_h == 12:
@@ -40,7 +40,7 @@ def convert(s):
         if not prep == "to":
             raise ValueError("Invalid format")
 
-        return f"{start_h}:{start_m} to {end_h}:{end_m}
+        return f"{start_h:}:{start_m} to {end_h}:{end_m}"
     else:
         raise ValueError("Invalid format")
 
