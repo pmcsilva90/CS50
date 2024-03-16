@@ -28,9 +28,11 @@ def convert(s):
         elif end_ampm == "AM" and end_h == 12:
             end_h = 0
 
+        # Check for invalid hour output
         if not (0 <= start_h < 24 and 0 <= end_h < 24):
             raise ValueError("Invalid time")
 
+        # Check for valid start minutes
         if start_m:
             start_m = int(start_m)
             if not (0 <= start_m < 60):
@@ -38,6 +40,7 @@ def convert(s):
         else:
             start_m = 0
 
+        # Check for valid end minutes
         if end_m:
             end_m = int(end_m)
             if not (0 <= end_m < 60):
@@ -45,6 +48,7 @@ def convert(s):
         else:
             end_m = 0
 
+        # Check for correct format
         if not prep == "to":
             raise ValueError("Invalid format")
 
