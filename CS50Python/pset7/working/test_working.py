@@ -1,5 +1,10 @@
 from working import convert
 
+def main():
+    test_case()
+    test_inrange()
+    test_format()
+
 def test_case():
     assert convert("12:01 AM to 07:08 PM") == "00:01 to 19:08"
     assert convert("10:00 PM to 02:40 PM") == "22:00 to 14:40"
