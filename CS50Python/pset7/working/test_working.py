@@ -59,7 +59,7 @@ def test_inrange():
         pass
 
     try:
-        assert convert("22:31 AM to 10:06 AM")
+        assert convert("66:66 AM to 77:77 AM")
     except ValueError:
         pass
 
