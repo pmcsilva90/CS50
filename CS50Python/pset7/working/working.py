@@ -40,7 +40,7 @@ def convert(s):
         if not prep == "to":
             raise ValueError("Invalid format")
 
-        return f"{start_h:}:{start_m} to {end_h}:{end_m}"
+        return f"{start_h:02d}:{start_m:02d} to {end_h:02d}:{end_m:02d}"
     else:
         raise ValueError("Invalid format")
 
