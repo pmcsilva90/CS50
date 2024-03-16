@@ -1,14 +1,14 @@
 from working import convert
 
 def test_case():
-    assert convert("12:01 AM to 07:08 PM") == True
-    assert convert("10:00 PM to 02:40 PM") == True
-    assert convert("9 PM to 7 AM") == True
-    assert convert("2 AM to 1 AM") == True
+    assert convert("12:01 AM to 07:08 PM") == "12:01 to 19:08"
+    assert convert("10:00 PM to 02:40 PM") == "10:00 to 14:40"
+    assert convert("9 PM to 7 AM") == "9 PM to 7 AM"
+    assert convert("2 AM to 1 AM") == "2 AM to 1 AM"
 
-    assert convert("05:31 pm to 10:31 AM") == False
-    assert convert("02:35 AM to 09:30 am") == False
-    assert convert("09:48 Pm to 09:16 Am") == False
+    assert convert("05:31 pm to 10:31 AM") == "05:31 pm to 10:31 AM"
+    assert convert("02:35 AM to 09:30 am") == "02:35 AM to 09:30 am"
+    assert convert("09:48 Pm to 09:16 Am") == "09:48 Pm to 09:16 Am"
     assert convert("06:29 aM to 12:51 AM") == False
     assert convert("02 am to 10 AM") == False
     assert convert("11 am to 4 am") == False
