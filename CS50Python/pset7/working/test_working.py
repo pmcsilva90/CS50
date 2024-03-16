@@ -38,10 +38,10 @@ def test_inrange():
     with pytest.raises(ValueError, match="Invalid time"):
         convert("13:08 PM to 04:29 PM")
 
-    with pytest.raises(ValueError, match="Invalid time"):
+    with pytest.raises(ValueError, match="Invalid format"):
         convert("-2:31 AM to 10:06 AM")
 
-    with pytest.raises(ValueError, match="Invalid time"):
+    with pytest.raises(ValueError, match="Invalid format"):
         convert("04:53 PM to -6:57 AM")
 
     with pytest.raises(ValueError, match="Invalid time"):
