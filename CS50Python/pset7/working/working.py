@@ -10,6 +10,7 @@ def convert(s):
     if matches := re.search(r"^(\d{1,2}):?(\d{2})? (AM|PM) (to|-) (\d{1,2}):?(\d{2})? (AM|PM)", s):
         start_h, start_m, start_ampm, prep, end_h, end_m, end_ampm = matches.groups()
 
+        # Check for valid start hour and convert
         start_h = int(start_h)
         if not 0 < start_h <= 12:
             raise ValueError("Invalid time")
@@ -18,6 +19,7 @@ def convert(s):
         elif start_ampm == "AM" and start_h == 12:
             start_h = 0
 
+        # Check for valid end hour and convert
         end_h = int(end_h)
         if not 0 < end_h <= 12:
             raise ValueError("Invalid time")
