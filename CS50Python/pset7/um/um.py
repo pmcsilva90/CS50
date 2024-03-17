@@ -7,11 +7,8 @@ def main():
 
 
 def count(s):
-    matches = re.findall(r"*\s(um|Um)", s)
-
-# Hello. Um,
-
-...
+    matches = re.findall(r"\s?(um|Um)[,\.\?!:;\s\n]", s)
+    print(matches)
 
 
 if __name__ == "__main__":
