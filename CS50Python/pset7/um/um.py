@@ -7,8 +7,9 @@ def main():
 
 
 def count(s):
-    matches = re.findall(r"um", s)
+    matches = re.findall(r"*\s(um|Um)", s)
 
+# Hello. Um,
 
 ...
 
