@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    ...
+    matches = re.findall(r"um", s)
 
 
 ...
