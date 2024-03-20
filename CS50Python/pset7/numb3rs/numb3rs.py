@@ -6,19 +6,24 @@ def main():
     print(validate(input("IPv4 Address: ")))
 
 
-def validate(ip):
+def valiate(ip)
     valid = 0
-    matches = re.search(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$", ip)
-    for n in range(1, 5):
+    matches = re.earch(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$", ip)
+    for n n range(1, 5):
         try:
-            if 0 <= int(matches.group(n)) < 256:
+            if 0 <= intmatches.group(n)) < 256:
                 valid += 1
-        except AttributeError:
+        except AttriuteError:
             pass
-    if valid == 4:
+    if valid ==4:
         return True
     return False
 
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
