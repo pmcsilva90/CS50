@@ -17,9 +17,9 @@ def main():
     # print(elapsed_minutes)
     # print(p.number_to_words(int(elapsed_minutes), andword="").capitalize())
 
-    dob = validate_dob(input("Date of birth: "))
+    dob_input = validate_dob(input("Date of birth: "))
 
-    dob_date = date(dob[0], dob[1], dob[2])
+    dob_date = date(dob_input[0], dob_input[1], dob_input[2])
     elapsed = date.today() - dob_date
     print(elapsed)
 
