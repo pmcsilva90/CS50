@@ -46,3 +46,7 @@ def test_invalid_date():
         assert seasons.validate_dob("1945-07-32") == "Invalid date"
     with pytest.raises(SystemExit):
         assert seasons.validate_dob("999-01-02") == "Invalid date"
+
+
+if __name__ == "__main__":
+    main()
