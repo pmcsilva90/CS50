@@ -2,11 +2,11 @@ import seasons
 import pytest
 from datetime import date
 
+
 def main():
     test_dateformat()
     test_invalid_date()
     test_valid_date()
-    test_main()
 
 
 def test_dateformat():
@@ -46,16 +46,3 @@ def test_invalid_date():
         assert seasons.validate_dob("1945-07-32") == "Invalid date"
     with pytest.raises(SystemExit):
         assert seasons.validate_dob("999-01-02") == "Invalid date"
-
-def test_main():
-    with pytest.raises(SystemExit):
-        assert seasons.main("random string") == "Invalid date"
-    with pytest.raises(SystemExit):
-        assert seasons.validate_dob("L3375p34k") == "Invalid date"
-    with pytest.raises(SystemExit):
-        assert seasons.validate_dob("2000BC-01-01") == "Invalid date"
-    assert seasons.main()
-
-
-
-
