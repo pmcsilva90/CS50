@@ -2,10 +2,12 @@ import seasons
 import pytest
 
 def main():
-    test_ddmmyyyy()
-    test_mmddyyyy()
-    test_mmmdyyyy()
-    test_dmyyyy()
+    test_dateformat()
+    test_valid_date()
 
-def test_ddmmyyyy():
-    assert 
+
+def test_dateformat():
+    assert seasons.validate_dob("10-02-1999") == ValueError
+    # assert validate_dob("") ==
+    # assert validate_dob("") ==
+    # assert validate_dob("") ==
