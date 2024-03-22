@@ -15,7 +15,12 @@ def main():
     # print(elapsed_minutes)
     # print(p.number_to_words(int(elapsed_minutes), andword="").capitalize())
 
+    dob = input("Date of birth: ")
+
+def valid_dob(s):
     
+
+
 
 
 if __name__ == "__main__":
