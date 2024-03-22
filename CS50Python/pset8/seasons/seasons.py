@@ -1,6 +1,7 @@
 from datetime import date
 import inflect
 import re
+import sys
 
 p = inflect.engine()
 
@@ -21,7 +22,10 @@ def main():
 def validate_dob(s):
     if matches := re.search(r"^(\d{4})-(\d{2})-(\d{2})$", s):
         year, month, day = matches.groups()
-        
+        return int(year), int(month), int(day)
+    else:
+        sys.exit("Invalid date")
+
 
 
 
