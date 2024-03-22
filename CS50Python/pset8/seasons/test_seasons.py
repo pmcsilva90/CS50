@@ -7,7 +7,7 @@ def main():
 
 
 def test_dateformat():
-    assert seasons.validate_dob("10-02-1999") == ValueError
+    assert seasons.validate_dob("10-02-1999") == SystemExit
     # assert validate_dob("") ==
     # assert validate_dob("") ==
     # assert validate_dob("") ==
