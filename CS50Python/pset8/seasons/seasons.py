@@ -1,5 +1,6 @@
 from datetime import date
 import inflect
+import re
 
 p = inflect.engine()
 
@@ -18,7 +19,7 @@ def main():
     dob = input("Date of birth: ")
 
 def valid_dob(s):
-    
+    if 
 
 
 
