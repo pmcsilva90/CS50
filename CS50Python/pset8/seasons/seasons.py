@@ -22,7 +22,8 @@ def main():
     dob_date = date(dob_input[0], dob_input[1], dob_input[2])
     elapsed = date.today() - dob_date
     elapsed_minutes = int(elapsed.total_seconds() / 60)
-    print(elapsed_minutes)
+    elapsed_words = p.number_to_words(elapsed_minutes, andword="").capitalize() + " minutes"
+    print(elapsed_words)
 
 def validate_dob(s):
     if matches := re.search(r"^(\d{4})-(\d{2})-(\d{2})$", s):
