@@ -6,7 +6,7 @@ def main():
     test_dateformat()
     test_invalid_date()
     test_valid_date()
-
+    test_main()
 
 
 def test_dateformat():
@@ -37,7 +37,7 @@ def test_valid_date():
 
 def test_invalid_date():
     with pytest.raises(SystemExit):
-        assert seasons.main() == "Invalid date"
+        assert seasons.validate_dob("1995-02-30") == "Invalid date"
     with pytest.raises(SystemExit):
         assert seasons.validate_dob("1974-13-25") == "Invalid date"
     with pytest.raises(SystemExit):
@@ -49,7 +49,7 @@ def test_invalid_date():
 
 def test_main():
     with pytest.raises(SystemExit):
-        assert seasons.validate_dob("random string") == "Invalid date"
+        assert seasons.main("random string") == "Invalid date"
     with pytest.raises(SystemExit):
         assert seasons.validate_dob("L3375p34k") == "Invalid date"
     with pytest.raises(SystemExit):
