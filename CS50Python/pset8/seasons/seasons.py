@@ -19,6 +19,8 @@ def main():
 
     print(elapsed_words)
 
+
+# Validate and convert input to date
 def validate_dob(s):
     if matches := re.search(r"^(\d{4})-(\d{2})-(\d{2})$", s):
         year, month, day = map(int, matches.groups())
