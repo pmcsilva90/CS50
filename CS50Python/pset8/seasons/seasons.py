@@ -24,8 +24,8 @@ def main():
 
 def validate_dob(s):
     if matches := re.search(r"^(\d{4})-(\d{2})-(\d{2})$", s):
-        year, month, day = matches.groups()
-        return int(year), int(month), int(day)
+        year, month, day = map(int, matches.groups())
+        
     else:
         sys.exit("Invalid date")
 
