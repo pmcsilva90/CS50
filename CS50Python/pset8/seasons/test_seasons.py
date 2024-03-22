@@ -1,5 +1,6 @@
 import seasons
 import pytest
+from datetime import date
 
 def main():
     test_dateformat()
@@ -24,5 +25,10 @@ def test_dateformat():
     with pytest.raises(SystemExit):
         assert seasons.validate_dob("July 4th 1984") == "Invalid date"
 
-    assert seasons.validate_dob("2001-02-25") == "2001-02-25"
+    assert seasons.validate_dob("2001-02-25") == date(2001, 2, 25)
+    assert seasons.validate_dob("1990-03-17") == date(1990, 3, 17)
+    assert seasons.validate_dob("1961-06-26") == date(1961, 6, 26)
+    assert seasons.validate_dob("1980-02-01") == date(1980, 2, 1)
 
+def test_valid_date():
+    with pyet
