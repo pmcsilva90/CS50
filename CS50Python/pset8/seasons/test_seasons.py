@@ -6,7 +6,7 @@ def main():
     test_dateformat()
     test_invalid_date()
     test_valid_date()
-    test_main()
+
 
 
 def test_dateformat():
