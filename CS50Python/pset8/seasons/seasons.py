@@ -25,6 +25,7 @@ def validate_dob(s):
     if matches := re.search(r"^(\d{4})-(\d{2})-(\d{2})$", s):
         year, month, day = map(int, matches.groups())
         try:
+            print(date(year, month, day))
             return date(year, month, day)
         except ValueError:
             sys.exit("Invalid date")
