@@ -24,5 +24,5 @@ def test_dateformat():
     with pytest.raises(SystemExit):
         assert seasons.validate_dob("July 4th 1984") == "Invalid date"
 
-    assert seasons.validate_dob("2001-02-25") == datetime.date(2001, 2, 25)
+    assert seasons.validate_dob("2001-02-25") == "2001-02-25"
 
