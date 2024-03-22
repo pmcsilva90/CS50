@@ -8,7 +8,7 @@ def main():
 
     print(mybday)
     print(tday)
-    print(elapsed)
+    print(elapsed.total_seconds() / 60)
 
 
 if __name__ == "__main__":
