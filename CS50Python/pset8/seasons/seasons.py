@@ -18,8 +18,11 @@ def main():
     # print(p.number_to_words(int(elapsed_minutes), andword="").capitalize())
 
     dob = validate_dob(input("Date of birth: "))
-    print(dob)
-    print(type(dob))
+    # print(dob)
+    # print(type(dob))
+
+    elapsed = date.today() - dob
+    print(elapsed)
 
 def validate_dob(s):
     if matches := re.search(r"^(\d{4})-(\d{2})-(\d{2})$", s):
