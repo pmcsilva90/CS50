@@ -10,7 +10,7 @@ def main():
 
     print(mybday)
     print(mybdaypl1)
-    print(elapsed_minutes)
+    print(p.number_to_words(elapsed_minutes))
 
 
 if __name__ == "__main__":
