@@ -18,9 +18,10 @@ def main():
 
     dob = input("Date of birth: ")
 
-def valid_dob(s):
+def validate_dob(s):
     if matches := re.search(r"^(\d{4})-(\d{2})-(\d{2})$", s):
         year, month, day = matches.groups()
+        
 
 
 
