@@ -21,7 +21,7 @@ def main():
 
     dob_date = date(dob_input[0], dob_input[1], dob_input[2])
     elapsed = date.today() - dob_date
-    elapsed_minutes = elapsed.total_seconds() / 60
+    elapsed_minutes = int(elapsed.total_seconds() / 60)
     print(elapsed_minutes)
 
 def validate_dob(s):
