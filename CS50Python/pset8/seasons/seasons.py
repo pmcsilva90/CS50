@@ -1,6 +1,8 @@
 from datetime import date
 import inflect
 
+p = inflect.engine()
+
 
 def main():
     mybday = date(1990, 3, 18)
@@ -10,7 +12,8 @@ def main():
 
     print(mybday)
     print(mybdaypl1)
-    print(p.number_to_words(elapsed_minutes))
+    print(elapsed_minutes)
+    print(p.number_to_words(int(elapsed_minutes)))
 
 
 if __name__ == "__main__":
