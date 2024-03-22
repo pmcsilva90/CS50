@@ -8,13 +8,10 @@ p = inflect.engine()
 
 def main():
 
-    dob_input = validate_dob(input("Date of birth: "))
-
-    # Convert to date format
-    dob_date = date(dob_input[0], dob_input[1], dob_input[2])
+    dob = validate_dob(input("Date of birth: "))
 
     # Calculate delta time in minutes
-    elapsed = date.today() - dob_date
+    elapsed = date.today() - dob
     elapsed_minutes = int(elapsed.total_seconds() / 60)
 
     # Convert to words
