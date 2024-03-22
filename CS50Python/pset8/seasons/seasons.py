@@ -8,7 +8,7 @@ def main():
 
     print(mybday)
     print(tday)
-    print(elapsed.minutes)
+    print(elapsed)
 
 
 
