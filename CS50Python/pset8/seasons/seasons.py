@@ -21,6 +21,7 @@ def main():
     # print(dob)
     # print(type(dob))
 
+    dob_date = date(dob)
     elapsed = date.today() - dob
     print(elapsed)
 
