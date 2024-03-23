@@ -15,8 +15,8 @@ def main():
 
 
     pdf.set_font('helvetica', size=26, style='B')
-    pdf.set_text_color(123, 123, 123)
-    pdf.cell(pdf.epw, 100, text=f"{name} took CS50", align='C', ln=True)
+    pdf.set_text_color(255, 255, 255)
+    pdf.cell(pdf.epw, 220, text=f"{name} took CS50", align='C', ln=True)
 
     pdf.output("hello_world.pdf")
 
