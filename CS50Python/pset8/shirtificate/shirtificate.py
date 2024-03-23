@@ -9,7 +9,7 @@ def main():
     pdf.image("shirtificate.png", (pdf.w - 180) / 2, 80, w=180)
 
     pdf.set_font('helvetica', size=26, style='B')
-    pdf.set_text_color(255, 255, 255)
+    pdf.set_text_color(0, 255, 255)
 
     text_width = pdf.get_string_width(f"{name} took CS50")
     pdf.cell(text_width, 260, text=f"{name} took CS50", align='C')
