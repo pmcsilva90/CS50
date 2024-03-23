@@ -11,7 +11,6 @@ def main():
     pdf.set_font('helvetica', size=26, style='B')
     pdf.set_text_color(0, 255, 255)
 
-    text_width = pdf.get_string_width(f"{name} took CS50")
     pdf.cell(pdf.epw, 260, text=f"{name} took CS50", align='C')
     pdf.output("hello_world.pdf")
 
