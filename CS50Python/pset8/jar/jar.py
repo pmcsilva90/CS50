@@ -50,7 +50,7 @@ def main():
     print(pot)
 
     while True:
-        action = input("Choose: deposit; withdraw; exit - ")
+        action = input("Choose: deposit; withdraw; exit -> ")
         if action.lower() == "deposit":
             pot.deposit(int(input("Deposit: ")))
             print(pot)
