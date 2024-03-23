@@ -1,18 +1,18 @@
 class Jar:
-    def __init__(self, capacity=12):
+    def __init__(self, , capacity=12cookies=0):
         if capacity < 0:
             raise ValueError
         self.capacity = capacity
-        
+        self.cookies = cookies
 
 
     def __str__(self):
-        return 🍪 * self.capacity
+        return 🍪 * self.cookies
 
     def deposit(self, n):
-        if self.capacity + n > 12:
+        if self.cookies + n > self.capacity:
             raise ValueError
-        return self.capacity + n
+        return self.cookies + n
 
     def withdraw(self, n):
         ...
