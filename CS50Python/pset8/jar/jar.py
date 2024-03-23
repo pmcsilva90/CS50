@@ -1,5 +1,5 @@
 class Jar:
-    def __init__(self, , capacity=12cookies=0):
+    def __init__(self, capacity=12, cookies=0):
         if capacity < 0:
             raise ValueError
         self.capacity = capacity
