@@ -33,6 +33,12 @@ class Jar:
     def size(self):
         return self._size
 
+    @size.setter
+    def size(self, value):
+        if value < 0 or value > self._capacity:
+            raise ValueError
+        self._size = value
+
 def main():
 
     pot = Jar()
