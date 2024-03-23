@@ -18,7 +18,7 @@ def main():
     pdf.set_text_color(255, 255, 255)
     pdf.cell(pdf.epw, 220, text=f"{name} took CS50", align='C', ln=True)
 
-    pdf.output("hello_world.pdf")
+    pdf.output("shirtificate.pdf")
 
 if __name__ == "__main__":
     main()
