@@ -1,3 +1,5 @@
+import sys
+
 class Jar:
     def __init__(self, capacity=12, size=0):
         if capacity < 0:
@@ -47,13 +49,19 @@ def main():
 
     print(pot)
 
-    pot.deposit(int(input("Deposit: ")))
-
-    print(pot)
-
-    pot.withdraw(int(input("Withdraw: ")))
-
-    print(pot)
+    while True:
+        action = input("Choose: deposit; withdraw; exit")
+        if action.lower() == "deposit":
+            pot.deposit(int(input("Deposit: ")))
+            print(pot)
+        elif action.lower() == "withdraw":
+            pot.withdraw(int(input("Withdraw: ")))
+            print(pot)
+        elif action.lower == "exit":
+            print(pot)
+            sys.exit
+        else:
+            pass
 
 
 if __name__ == "__main__":
