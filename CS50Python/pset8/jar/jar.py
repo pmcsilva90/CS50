@@ -15,7 +15,9 @@ class Jar:
         return self.cookies + n
 
     def withdraw(self, n):
-        ...
+        if self.cookies - n < 0:
+            raise ValueError
+        return self.cookies - n
 
     @property
     def capacity(self):
