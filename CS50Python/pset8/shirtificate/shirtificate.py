@@ -12,7 +12,7 @@ def main():
     pdf.set_text_color(0, 255, 255)
 
     text_width = pdf.get_string_width(f"{name} took CS50")
-    pdf.cell(text_width, 260, text=f"{name} took CS50", align='C')
+    pdf.cell(pdf.epw, 260, text=f"{name} took CS50", align='C')
     pdf.output("hello_world.pdf")
 
 if __name__ == "__main__":
