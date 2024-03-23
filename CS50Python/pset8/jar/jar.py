@@ -57,9 +57,9 @@ def main():
         elif action.lower() == "withdraw":
             pot.withdraw(int(input("Withdraw: ")))
             print(pot)
-        elif action.lower == "exit":
+        elif action.lower() == "exit":
             print(pot)
-            sys.exit
+            sys.exit()
         else:
             pass
 
