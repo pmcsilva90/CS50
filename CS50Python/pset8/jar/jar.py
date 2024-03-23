@@ -42,6 +42,8 @@ def main():
 
     pot = Jar()
 
+    pot.
+
     print(pot)
 
     pot.deposit(int(input("Deposit: ")))
@@ -52,13 +54,6 @@ def main():
 
     print(pot)
 
-    pot.capacity = 15
-
-    print(pot)
-
-    pot.size = 10
-
-    print(pot)
 
 if __name__ == "__main__":
     main()
