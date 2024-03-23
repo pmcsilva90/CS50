@@ -2,7 +2,9 @@ import sys
 
 class Jar:
     def __init__(self, capacity=12, size=0):
-        if capacity < 0 or capacity < size:
+        if capacity < 0:
+            raise ValueError
+        if capacity < size:
             raise ValueError
         self._capacity = capacity
         self._size = size
