@@ -14,6 +14,12 @@ def test_init():
     with pytest.raises(ValueError):
         jar2 = Jar(10, 11)
 
+    with pytest.raises(ValueError):
+        jar3 = Jar(10, -1)
+
+    with pytest.raises(ValueError):
+        jar4 = Jar(-2)
+
 
 def test_str():
     jar = Jar()
