@@ -6,6 +6,8 @@ class Jar:
             raise ValueError
         if capacity < size:
             raise ValueError
+        if size < 0:
+            raise ValueError
         self._capacity = capacity
         self._size = size
 
