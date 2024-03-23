@@ -53,11 +53,11 @@ def main():
 
     print(pot)
 
-    pot._capacity = 15
+    pot.capacity = 15
 
     print(pot)
 
-    pot._size = 10
+    pot.size = 10
 
     print(pot)
 
