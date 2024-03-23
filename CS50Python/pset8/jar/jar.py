@@ -5,7 +5,6 @@ class Jar:
         self._capacity = capacity
         self._size = size
 
-
     def __str__(self):
         return "🍪" * self._size
 
