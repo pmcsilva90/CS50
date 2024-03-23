@@ -1,5 +1,5 @@
 class Jar:
-    def __init__(self, capacity=12, cookies=0):
+    def __init__(self, capacity=12, size=0):
         if capacity < 0:
             raise ValueError
         self.capacity = capacity
@@ -7,7 +7,7 @@ class Jar:
 
 
     def __str__(self):
-        return 🍪 * self.size
+        return "🍪" * self.size
 
     def deposit(self, n):
         if self.size + n > self.capacity:
@@ -26,3 +26,28 @@ class Jar:
     @property
     def size(self):
         return self.size
+
+def main():
+
+    pot = Jar()
+
+    print(pot)
+
+    pot.deposit(int(input("Deposit: ")))
+
+    print(pot)
+
+    pot.withdraw(int(input("Withdraw: ")))
+
+    print(pot)
+
+    pot.capacity = 15
+
+    print(pot)
+
+    pot.size = 10
+
+    print(pot)
+
+if __name__ == "__main__":
+    main()
