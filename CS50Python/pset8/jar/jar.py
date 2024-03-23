@@ -40,9 +40,10 @@ class Jar:
 
 def main():
 
-    pot = Jar()
+    cap = int(input("Jar capacity: "))
+    cookies = int(input("Number of cookies"))
 
-    pot.
+    pot = Jar(cap, cookies)
 
     print(pot)
 
