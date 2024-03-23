@@ -43,14 +43,14 @@ class Jar:
 def main():
 
     cap = int(input("Jar capacity: "))
-    cookies = int(input("Number of cookies"))
+    cookies = int(input("Number of cookies: "))
 
     pot = Jar(cap, cookies)
 
     print(pot)
 
     while True:
-        action = input("Choose: deposit; withdraw; exit")
+        action = input("Choose: deposit; withdraw; exit - ")
         if action.lower() == "deposit":
             pot.deposit(int(input("Deposit: ")))
             print(pot)
