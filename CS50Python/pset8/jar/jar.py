@@ -6,7 +6,7 @@ class Jar:
 
 
     def __str__(self):
-        ...
+        return 🍪 * self.capacity
 
     def deposit(self, n):
         ...
