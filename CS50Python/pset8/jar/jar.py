@@ -12,12 +12,12 @@ class Jar:
     def deposit(self, n):
         if self._size + n > self._capacity:
             raise ValueError
-        return self._size + n
+        self._size += n
 
     def withdraw(self, n):
         if self._size - n < 0:
             raise ValueError
-        return self._size - n
+        self._size -= n
 
     @property
     def capacity(self):
