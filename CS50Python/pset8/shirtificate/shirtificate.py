@@ -1,9 +1,15 @@
 from fpdf import FPDF
 
-pdf = FPDF()
-pdf.add_page()
-pdf.set_font('helvetica', size=12)
-pdf.image("shirtificate.png", (210 - 180) / 2, 80, w=180)
+def main():
 
-pdf.cell(text="hello world")
-pdf.output("hello_world.pdf")
+    name = input("Name: ")
+
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.image("shirtificate.png", (210 - 180) / 2, 80, w=180)
+    pdf.set_font('helvetica', size=20)
+    pdf.cell(text=f"{name} took CS50")
+    pdf.output("hello_world.pdf")
+
+if __name__ == "__main__":
+    main()
