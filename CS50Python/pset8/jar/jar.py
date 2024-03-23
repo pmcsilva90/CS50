@@ -41,7 +41,7 @@ class Jar:
 
 def main():
 
-    pot = Jar(12, 0)
+    pot = Jar()
 
     print(pot)
 
