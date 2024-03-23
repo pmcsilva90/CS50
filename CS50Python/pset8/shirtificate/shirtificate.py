@@ -11,12 +11,12 @@ def main():
 
     pdf.set_font('helvetica', size=40, style='B')
     pdf.set_text_color(0, 0, 0)
-    pdf.cell(pdf.epw, 0, text="CS50 Shirtificate", align='C')
+    pdf.cell(pdf.epw, 20, text="CS50 Shirtificate", align='C', ln=True)
 
 
     pdf.set_font('helvetica', size=26, style='B')
-    pdf.set_text_color(255, 255, 255)
-    pdf.cell(pdf.epw, 260, text=f"{name} took CS50", align='C')
+    pdf.set_text_color(123, 123, 123)
+    pdf.cell(pdf.epw, 100, text=f"{name} took CS50", align='C', ln=True)
 
     pdf.output("hello_world.pdf")
 
