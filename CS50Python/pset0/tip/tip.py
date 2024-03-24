@@ -6,6 +6,7 @@ def main():
 
 
 def dollars_to_float(d):
+    d = d.strip("$")
     return float(d)
 
 
