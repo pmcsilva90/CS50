@@ -8,11 +8,12 @@ fonts = figlet.getFonts()
 
 if len(sys.argv) == 0:
     f = Figlet(font=random.choice(fonts))
+    figlet.setFont(font=f)
 elif len(sys.argv) == 2:
-    font_choice = sys.argv[2]
+    f = sys.argv[2]
     if sys.argv[1] == "-f" or sys.argv[1] == "--font":
         try:
-            f = Figlet(font=font_choice(fonts))
+            f = Figlet(font=f(fonts))
         except ValueError:
             sys.exit("Invalid font")
 else:
