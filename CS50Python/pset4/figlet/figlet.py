@@ -22,4 +22,5 @@ else:
 
 str = input("Input: ")
 
+print("Output:")
 print(figlet.renderText(str))
