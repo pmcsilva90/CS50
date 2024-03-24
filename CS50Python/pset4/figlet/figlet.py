@@ -13,7 +13,9 @@ if len(sys.argv) == 1:
 elif len(sys.argv) == 3:
     f = sys.argv[2]
     if sys.argv[1] == "-f" or sys.argv[1] == "--font":
-        if f not in fonts:
+        if f in fonts:
+            figlet.setFont(font=f)
+        else:
             sys.exit("Invalid font")
     else:
         sys.exit("Invalid usage")
