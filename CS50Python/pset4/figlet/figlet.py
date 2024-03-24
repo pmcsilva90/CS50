@@ -22,6 +22,4 @@ else:
 
 str = input("Input: ")
 
-f = Figlet(font='slant')
-
-print(f.renderText(str))
+print(figlet.renderText(str))
