@@ -3,8 +3,8 @@ import random
 from pyfiglet import Figlet
 
 figlet = Figlet()
-
 fonts = figlet.getFonts()
+
 
 if len(sys.argv) == 0:
     f = Figlet(font=random.choice(fonts))
