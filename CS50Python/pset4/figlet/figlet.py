@@ -6,7 +6,9 @@ figlet = Figlet()
 
 
 def main():
+
     fonts = figlet.getFonts()
+
     if len(sys.argv) == 1:
         f = random.choice(fonts)
         print(f)
@@ -27,6 +29,7 @@ def main():
 
     print("Output:")
     print(figlet.renderText(str))
+
 
 if __name__ == "__main__":
     main()
