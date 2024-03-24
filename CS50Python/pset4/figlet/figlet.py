@@ -6,10 +6,10 @@ figlet = Figlet()
 fonts = figlet.getFonts()
 
 
-if len(sys.argv) == 0:
+if len(sys.argv) == 1:
     f = Figlet(font=random.choice(fonts))
     figlet.setFont(font=f)
-elif len(sys.argv) == 2:
+elif len(sys.argv) == 3:
     f = sys.argv[2]
     if sys.argv[1] == "-f" or sys.argv[1] == "--font":
         try:
