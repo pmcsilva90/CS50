@@ -15,9 +15,6 @@ elif len(sys.argv) == 2:
 else:
     sys.exit("Invalid usage")
 
-
-
-
 str = input("Input: ")
 
 f = Figlet(font='slant')
