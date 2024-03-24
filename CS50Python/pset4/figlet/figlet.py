@@ -7,7 +7,7 @@ fonts = figlet.getFonts()
 
 
 if len(sys.argv) == 1:
-    f = Figlet(font=random.choice(fonts))
+    f = random.choice(fonts)
     figlet.setFont(font=f)
 elif len(sys.argv) == 3:
     f = sys.argv[2]
