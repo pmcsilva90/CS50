@@ -13,7 +13,7 @@ elif len(sys.argv) == 2:
     f = sys.argv[2]
     if sys.argv[1] == "-f" or sys.argv[1] == "--font":
         try:
-            f = Figlet(font=f(fonts))
+            figlet.setFont(font=f)
         except ValueError:
             sys.exit("Invalid font")
 else:
