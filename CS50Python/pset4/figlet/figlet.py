@@ -7,12 +7,13 @@ figlet = Figlet()
 fonts = figlet.getFonts()
 
 if len(sys.argv) == 0:
-    # random font
     f = Figlet(font=random.choice(fonts))
-
 elif len(sys.argv) == 2:
-    # argv[1] is "-f" or "--font", argv[2] is fontName
-    if sys.argv[1] == "-f" or sys.argv[1] == 
+    if sys.argv[1] == "-f" or sys.argv[1] == "--font":
+        try:
+            f = Figlet(font=sys.argv[2])
+        except ValueError:
+            sys.exit("Invalid font")
 else:
     sys.exit("Invalid usage")
 
