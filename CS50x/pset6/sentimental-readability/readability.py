@@ -13,10 +13,12 @@ def main():
         count_words += 1
 
     for c in text:
-        if c.isalpha():
+        if (c.isalpha()):
             count_letters += 1
 
     
+
+
 
 
 def L(text):
