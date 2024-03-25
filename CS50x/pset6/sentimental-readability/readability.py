@@ -4,11 +4,15 @@ def main():
 
     text = get_string("Text: ")
 
-    l =
-    s =
+    count_words = 0
+    count_letters = 0
+    count_sentences = 0
+
+    
+
 
 def L(text):
-    
+
 
 def S(text):
 
