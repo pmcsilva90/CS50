@@ -54,7 +54,8 @@ def main():
     print(longest_STR)
 
     # TODO: Check database for matching profiles
-    for 
+    for key in keys:
+        if 
 
 
     return
