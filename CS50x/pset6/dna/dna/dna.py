@@ -57,7 +57,10 @@ def main():
     number_matches = 0
     for key in keys:
         if longest_STR[key] == database[key]:
-            number_
+            number_matches += 1
+
+    if number_matches == len(keys)
+        print(database["name"])
 
 
     return
