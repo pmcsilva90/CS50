@@ -49,14 +49,12 @@ def main():
             continue
         else:
             longest_STR.append({key: longest_match(sequence, key)})
-            print(f"{key}: ", longest_match(sequence, str(key)))
+            print(f"{key}:", longest_match(sequence, str(key)))
     print()
     print(longest_STR)
 
-
-
-
     # TODO: Check database for matching profiles
+    
 
 
     return
