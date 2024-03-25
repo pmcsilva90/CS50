@@ -20,14 +20,18 @@ def main():
         reader = csv.DictReader(file)
         for row in reader:
             data = {}
+            keys = []
             for key, value in row.items():
                 try:
                     data[key] = int(value)
                 except ValueError:
                     data[key] = value
+                keys.append(key)
             database.append(data)
 
     print(database)
+    print()
+    print(keys)
 
 
     # TODO: Read DNA sequence file into a variable
@@ -36,7 +40,10 @@ def main():
         sequence = file.readlines()
 
     # TODO: Find longest match of each STR in DNA sequence
-    
+    # for key in database[key:]:
+
+    for key in keys(1, len(keys) + 1):
+        longest_match(sequence, key)
 
     # TODO: Check database for matching profiles
 
