@@ -8,7 +8,7 @@ def main():
     count_letters = 0
     count_sentences = 0
 
-    
+    count_words = text.split(" ")
 
 
 def L(text):
