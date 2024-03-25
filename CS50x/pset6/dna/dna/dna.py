@@ -43,7 +43,7 @@ def main():
     # for key in database[key:]:
 
     for key in keys(1, len(keys) + 1):
-        longest_match(sequence, key)
+        print(f"{key}: ", longest_match(sequence, key))
 
     # TODO: Check database for matching profiles
 
