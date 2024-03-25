@@ -13,7 +13,12 @@ def main():
 
     grade = CLindex(l, s)
 
-    print(f"Grade: {grade:00}")
+    if grade < 1:
+        print("Before Grade 1")
+    elif grade >= 16:
+        print("Grade 16+")
+    else:
+        print(f"Grade: {grade:.0f}")
 
 def count_words(text):
 
