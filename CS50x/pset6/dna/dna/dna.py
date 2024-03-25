@@ -5,11 +5,14 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if not len(sys.argv) == 3 and not sys.argv[1].endswith(".csv") and not sys.argv[2].endswith(".txt"):
+    if len(sys.argv) == 3 and sys.argv[1].endswith(".csv") and sys.argv[2].endswith(".txt"):
+        pass
+    else:
         sys.exit(f"usage: {sys.argv[0]} file.csv file.txt")
 
 
     # TODO: Read database file into a variable
+    
 
     # TODO: Read DNA sequence file into a variable
 
