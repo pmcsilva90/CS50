@@ -29,9 +29,9 @@ def main():
                 keys.append(key)
             database.append(data)
 
-    print(database)
-    print()
-    print(keys)
+    # print(database)
+    # print()
+    # print(keys)
 
 
     # TODO: Read DNA sequence file into a variable
@@ -39,7 +39,7 @@ def main():
     with open(txt_file) as file:
         sequence = file.readline().strip()
 
-    print(sequence)
+    # print(sequence)
 
     # TODO: Find longest match of each STR in DNA sequence
 
@@ -49,9 +49,9 @@ def main():
             continue
         else:
             longest_STR.append({key: longest_match(sequence, key)})
-            print(f"{key}:", longest_match(sequence, str(key)))
-    print()
-    print(longest_STR)
+    #         print(f"{key}:", longest_match(sequence, str(key)))
+    # print()
+    # print(longest_STR)
 
     # TODO: Check database for matching profiles
 
