@@ -20,7 +20,8 @@ def main():
         reader = csv.DictReader(file)
         for row in reader:
             data = {}
-            
+            for key, value in row.items():
+                
 
 
     # TODO: Read DNA sequence file into a variable
