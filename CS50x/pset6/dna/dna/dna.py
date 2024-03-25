@@ -39,6 +39,8 @@ def main():
     with open(txt_file) as file:
         sequence = file.readlines()
 
+    print(sequence)
+
     # TODO: Find longest match of each STR in DNA sequence
     # for key in database[key:]:
 
