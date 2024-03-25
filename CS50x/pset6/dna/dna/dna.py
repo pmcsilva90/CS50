@@ -45,13 +45,15 @@ def main():
 
     longest_STR = []
     for key in keys:
-        STR_data = {}
         if key == "name":
             pass
         else:
-            
-            STR_data.append()
+            longest_STR.append({key, longest_match})
             print(f"{key}: ", longest_match(sequence, str(key)))
+    print()
+    print(longest_STR)
+
+
 
 
     # TODO: Check database for matching profiles
