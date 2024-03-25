@@ -46,9 +46,9 @@ def main():
     longest_STR = []
     for key in keys:
         if key == "name":
-            pass
+            continue
         else:
-            longest_STR.append({key, longest_match})
+            longest_STR.append({key: longest_match(sequence, key)})
             print(f"{key}: ", longest_match(sequence, str(key)))
     print()
     print(longest_STR)
