@@ -10,12 +10,13 @@ def main():
     else:
         sys.exit(f"usage: {sys.argv[0]} file.csv file.txt")
 
-    csv = sys.argv[1]
-    txt = sys.argv[2]
+    csv_file = sys.argv[1]
+    txt_file = sys.argv[2]
 
     # TODO: Read database file into a variable
-    with open(csv) as file:
-        reader
+    with open(csv_file) as file:
+        reader =csv.DictReader(file)
+        
 
 
     # TODO: Read DNA sequence file into a variable
