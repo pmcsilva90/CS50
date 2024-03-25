@@ -13,25 +13,31 @@ def main():
 
     grade = CLindex(l, s)
 
-    print(f"Grade: {grade:00d}")
+    print(f"Grade: {grade:00}")
 
 def count_words(text):
 
+    count_words = 0
     words = text.split(" ")
     for word in words:
         count_words += 1
+    return count_words
 
 def count_letters(text):
 
+    count_letters = 0
     for char in text:
-        if (c.isalpha()):
+        if (char.isalpha()):
             count_letters += 1
+    return count_letters
 
 def count_sentences(text):
 
+    count_sentences = 0
     for char in text:
         if char in ['.', '!', '?']:
             count_sentences += 1
+    return count_sentences
 
 
 def L(letters, words):
