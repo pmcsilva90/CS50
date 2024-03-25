@@ -21,7 +21,10 @@ def main():
         for row in reader:
             data = {}
             for key, value in row.items():
-                data[key] = value
+                try:
+                    data[key] = int(value)
+                except ValueError:
+                    data[key] = value
             database.append(data)
 
     print(database)
