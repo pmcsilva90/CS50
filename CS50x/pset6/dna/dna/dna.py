@@ -50,6 +50,7 @@ def main():
             pass
         else:
             
+            STR_data.append()
             print(f"{key}: ", longest_match(sequence, str(key)))
 
 
