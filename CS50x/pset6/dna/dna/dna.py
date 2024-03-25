@@ -47,7 +47,7 @@ def main():
         if key == "name":
             pass
         else:
-            print(f"{key}: ", longest_match(sequence, key))
+            print(f"{key}: ", longest_match(sequence, str(key)))
 
     # TODO: Check database for matching profiles
 
