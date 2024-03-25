@@ -48,9 +48,10 @@ def main():
             pass
         else:
             print(f"{key}: ", longest_match(sequence, str(key)))
+            
 
     # TODO: Check database for matching profiles
-    
+
 
     return
 
