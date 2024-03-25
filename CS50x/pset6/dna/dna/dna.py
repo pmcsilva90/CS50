@@ -60,12 +60,9 @@ def main():
         match = True
         for STR_dict in longest_STR:
             for k, v in STR_dict.items():
-                if k == "name":
-                    continue
-                else:
-                    if v != profile[k]:
-                        match = False
-                        break
+                if v != profile[k]:
+                    match = False
+                    break
             if not match:
                 break
         if match:
