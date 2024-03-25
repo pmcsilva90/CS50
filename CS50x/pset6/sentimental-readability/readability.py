@@ -1,5 +1,6 @@
 from cs50 import get_string
 
+
 def main():
 
     text = get_string("Text: ")
@@ -18,7 +19,8 @@ def main():
     elif grade >= 16:
         print("Grade 16+")
     else:
-        print(f"Grade: {grade:.0f}")
+        print(f"Grade: {grade: .0f}")
+
 
 def count_words(text):
 
@@ -28,6 +30,7 @@ def count_words(text):
         count_words += 1
     return count_words
 
+
 def count_letters(text):
 
     count_letters = 0
@@ -35,6 +38,7 @@ def count_letters(text):
         if (char.isalpha()):
             count_letters += 1
     return count_letters
+
 
 def count_sentences(text):
 
@@ -48,12 +52,14 @@ def count_sentences(text):
 def L(letters, words):
     return letters / words * 100
 
+
 def S(sentences, words):
     return sentences / words * 100
+
 
 def CLindex(L, S):
     return 0.0588 * L - 0.296 * S - 15.8
 
+
 if __name__ == "__main__":
     main()
-
