@@ -55,15 +55,15 @@ def main():
 
     # TODO: Check database for matching profiles
 
-    for k1, v1 in longest_STR.items():
-        for k2, v2 in database.items():
-            matches = 0
-            if k1 == k2 and v1 == v2:
-                matches += 1
-            if matches == len(keys):
-                print()
+    # for k1, v1 in longest_STR.items():
+    #     for k2, v2 in database.items():
+    #         matches = 0
+    #         if k1 == k2 and v1 == v2:
+    #             matches += 1
+    #         if matches == len(keys):
+    #             print()
 
-    if matches == len(keys):
+    # if matches == len(keys):
 
 
 
