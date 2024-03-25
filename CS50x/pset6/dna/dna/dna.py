@@ -5,7 +5,11 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    
+    if len(sys.argv) == 3 and sys.arg[1].endswith(".csv") and sys.argv[2].endswith(".txt"):
+        ...
+    else:
+        sys.exit(f"usage: {sys.argv[0]} file.csv file.txt")
+
 
     # TODO: Read database file into a variable
 
