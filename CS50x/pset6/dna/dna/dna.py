@@ -21,7 +21,10 @@ def main():
         for row in reader:
             data = {}
             for key, value in row.items():
-                
+                data[key] = int(value)
+            database.append(data)
+
+    print(database)
 
 
     # TODO: Read DNA sequence file into a variable
