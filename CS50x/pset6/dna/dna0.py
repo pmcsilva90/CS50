@@ -2,15 +2,15 @@ seq = "AAGGTAAGTTTAGAATATAAAAGGTGAGTTAAATAGAATAGGTTAAAATTAAAGGAGATCAGATCAGATCAGA
 
 seq_length = len(seq)
 
-start = 0
-end = start + 4
-
-subseqs = []
+groups = []
 
 for i in range(seq_length):
-    subseq = seq[start + i:end + i]
-    for j + 1 in range(seq_length)
-        subseq2 = seq[start + ]
+    subseq = {"seq[i]": 0}
+    for j in range(seq_length(1, seq_length + 1)):
+        if subseq == seq[j]:
+            groups.append(["seq[i]": "count"])
+
+
 
 
 print(subseqs)
