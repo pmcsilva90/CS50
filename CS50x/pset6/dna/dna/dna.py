@@ -5,9 +5,7 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if len(sys.argv) == 3 and sys.arg[1].endswith(".csv") and sys.argv[2].endswith(".txt"):
-        ...
-    else:
+    if not len(sys.argv) == 3 and not sys.argv[1].endswith(".csv") and not sys.argv[2].endswith(".txt"):
         sys.exit(f"usage: {sys.argv[0]} file.csv file.txt")
 
 
