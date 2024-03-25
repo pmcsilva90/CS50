@@ -6,6 +6,7 @@ start = 0
 end = start + 4
 
 for i in seq:
-    
+    subseq = seq[start:end]
+        if 
 
 print(seq_length)
