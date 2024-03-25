@@ -57,18 +57,17 @@ def main():
 
     for profile in database:
         match = True
-        for k, v in longest_STR.items():
-            if k == name:
-                continue
-            else:
-                if v[k] != profile[k]
+        for STR_dict in longest_STR:
+            for k, v in STR_dict.items():
+                if k == "name":
+                    continue
+                else:
+                    if v != profile[k]
+                    break
+            if not match:
                 break
         if match:
-            print(profile[name])
-
-
-
-
+            print(profile["name"])
 
     return
 
