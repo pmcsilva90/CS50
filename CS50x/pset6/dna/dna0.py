@@ -9,8 +9,7 @@ subseqs = []
 
 for i in range(seq_length):
     subseq = seq[start + i:end + i]
-    if subseq in seq:
-        subseqs.append(subseq)
+    
 
 print(subseqs)
 print(seq_length)
