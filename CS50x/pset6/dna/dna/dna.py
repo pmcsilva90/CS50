@@ -45,6 +45,7 @@ def main():
 
     longest_STR = []
     for key in keys:
+        STR_data = {}
         if key == "name":
             pass
         else:
