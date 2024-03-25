@@ -4,4 +4,5 @@ def main():
 
     text = get_string("Text: ")
 
-
+    l =
+    s =
