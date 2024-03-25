@@ -16,7 +16,8 @@ def main():
         if (c.isalpha()):
             count_letters += 1
 
-    
+    for ['.', '!', '?'] in text:
+        count_sentences += 1
 
 
 
