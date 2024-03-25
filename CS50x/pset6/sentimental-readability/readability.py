@@ -6,3 +6,9 @@ def main():
 
     l =
     s =
+
+def L(text):
+    
+
+def S(text):
+
