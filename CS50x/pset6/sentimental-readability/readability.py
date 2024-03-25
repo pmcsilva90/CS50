@@ -12,7 +12,7 @@ def main():
     for word in words:
         count_words += 1
 
-    
+    letters = 
 
 
 def L(text):
