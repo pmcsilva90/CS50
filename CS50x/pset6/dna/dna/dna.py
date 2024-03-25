@@ -21,7 +21,7 @@ def main():
         for row in reader:
             data = {}
             for key, value in row.items():
-                data[key] = int(value)
+                data[key] = value
             database.append(data)
 
     print(database)
