@@ -55,7 +55,7 @@ def main():
 
     # TODO: Check database for matching profiles
     for key in keys:
-        if 
+        if longest_STR[key] == database[key]
 
 
     return
