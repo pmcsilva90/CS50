@@ -5,6 +5,7 @@ seq_length = len(seq)
 start = 0
 end = start + 4
 
-
+for i in seq:
+    
 
 print(seq_length)
