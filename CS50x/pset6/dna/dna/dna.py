@@ -37,7 +37,7 @@ def main():
     # TODO: Read DNA sequence file into a variable
 
     with open(txt_file) as file:
-        sequence = file.readlines()
+        sequence = file.readline().strip()
 
     print(sequence)
 
