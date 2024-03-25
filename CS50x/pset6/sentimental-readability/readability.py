@@ -4,27 +4,38 @@ def main():
 
     text = get_string("Text: ")
 
-    count_words = 0
-    count_letters = 0
-    count_sentences = 0
+    words = count_words(text)
+    letters = count_letters(text)
+    sentences = count_sentences(text)
+
+    l = L(letters, words)
+    s = S(sentences, words)
+
+    
+
+def count_words(text):
 
     words = text.split(" ")
     for word in words:
         count_words += 1
 
+def count_letters(text):
+
     for char in text:
         if (c.isalpha()):
             count_letters += 1
+
+def count_sentences(text):
 
     for char in text:
         if char in ['.', '!', '?']:
             count_sentences += 1
 
 
+def L(letters, words):
+    return letters / words * 100
 
 
-def L(text):
-
-
-def S(text):
+def S(sentences, words):
+    return sentences / words * 100
 
