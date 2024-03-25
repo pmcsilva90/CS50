@@ -12,12 +12,13 @@ def main():
     for word in words:
         count_words += 1
 
-    for c in text:
+    for char in text:
         if (c.isalpha()):
             count_letters += 1
 
-    for ['.', '!', '?'] in text:
-        count_sentences += 1
+    for char in text:
+        if char in ['.', '!', '?']:
+            count_sentences += 1
 
 
 
