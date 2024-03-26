@@ -1,0 +1,1 @@
+SELECT "first_name" AS "First Name", "last_name" AS "Last Name", "birth_country" AS "Country of Birth" FROM "players" WHERE "birth_country" = 'Brazil' OR "birth_country" = 'Portugal' ORDER BY "first_name", "last_name";
