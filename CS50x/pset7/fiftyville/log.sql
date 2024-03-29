@@ -18,6 +18,10 @@ SELECT * FROM bakery_security_logs WHERE day = 28 AND month = 7 AND year = 2023 
 -- Find withdrawal transactions on 2023-07-28 on Leggett Street.
 SELECT * FROM atm_transactions WHERE day = 28 AND month = 7 AND year = 2023 AND transaction_type = 'withdraw' AND atm_location = 'Leggett Street';
 
+-- Checking the above table against the bank accounts table, the thief must have one of the id's on this table:
+SELECT * FROM bank_accounts WHERE account_number IN (
+SELECT account_number FROM atm_transactions WHERE day = 28 AND month = 7 AND year = 2023 AND transaction_type = 'withdraw' AND atm_location = 'Leggett Street');
+
 -- Given this description from Raymond's interview:
 -- "As the thief was leaving the bakery, they called someone who talked to them for less than a minute. In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow. The thief then asked the person on the other end of the phone to purchase the flight ticket."
 -- Find phone calls on 2023-07-28 of a duration of less than 60 seconds.
