@@ -59,6 +59,11 @@ AND license_plate IN (
 
 -- The query returns only one result with whose name is Bruce, phone number is (367) 555-5533, passport number is 5773159633 and license plate is 94KL13X
 
+-- I can now try to find the thief's accomplice by finding the receiver's number when the thief made the phone call on the day of the crime
+SELECT * FROM phone_calls WHERE caller = '(367) 555-5533' AND year = 2023 AND month = 7 AND day = 28 AND duration < 60;
+-- The query returns one result where the receiver's phone number is (375) 555-8161
+
+
 
 
 
