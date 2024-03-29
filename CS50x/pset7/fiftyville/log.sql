@@ -23,6 +23,15 @@ SELECT * FROM atm_transactions WHERE day = 28 AND month = 7 AND year = 2023 AND 
 -- Find phone calls on 2023-07-28 of a duration of less than 60 seconds.
 SELECT * FROM phone_calls WHERE year = 2023 AND month = 7 AND day = 28 AND duration < 60;
 
+-- Find earliest flight departing from Fiftyville on 2023-07-29.
+SELECT * FROM (
+    SELECT * FROM airports
+    JOIN flights ON airports.id = flights.origin_airport_id)
+WHERE year = 2023 AND month = 7 AND day = 29
+ORDER BY hour, minute;
+
+
+
 
 
 
