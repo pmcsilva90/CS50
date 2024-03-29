@@ -8,7 +8,7 @@ SELECT * FROM crime_scene_reports WHERE day = 28 AND month = 7 AND year = 2023 A
 -- Find mentions of 'bakery' in interviews
 SELECT * FROM interviews WHERE transcript LIKE '%bakery%';
 
--- Given this description:
+-- Given this description from an interview:
 -- "Sometime within ten minutes of the theft, I saw the thief get into a car in the bakery parking lot and drive away. If you have security footage from the bakery parking lot, you might want to look for cars that left the parking lot in that time frame."
 -- Check bakery security logs of the day of the crime between 10:15am and 10:25am
 SELECT * FROM bakery_security_logs WHERE day = 28 AND month = 7 AND year = 2023 AND hour = 10 AND minute BETWEEN 15 and 25;
