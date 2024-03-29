@@ -63,7 +63,9 @@ AND license_plate IN (
 SELECT * FROM phone_calls WHERE caller = '(367) 555-5533' AND year = 2023 AND month = 7 AND day = 28 AND duration < 60;
 -- The query returns one result where the receiver's phone number is (375) 555-8161
 
-
+-- I can now find the receiver's name by looking up a matching phone number on the people table
+SELECT * FROM people WHERE phone_number = '(375) 555-8161';
+-- the query returns one result with the name of Robin, who can be assumed to be the accomplice
 
 
 
