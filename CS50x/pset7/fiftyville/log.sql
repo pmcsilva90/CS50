@@ -15,6 +15,5 @@ SELECT * FROM bakery_security_logs WHERE day = 28 AND month = 7 AND year = 2023 
 
 -- Given this description from Eugene's interview:
 -- "I don't know the thief's name, but it was someone I recognized. Earlier this morning, before I arrived at Emma's bakery, I was walking by the ATM on Leggett Street and saw the thief there withdrawing some money."
--- Find withdrawal transactions on 2023-07-28 ordered by ATM location. Since there is no ATM on Humphrey Street, I will assume the 
-
-SELECT * FROM atm_transactions WHERE day = 28 AND month = 7 AND year = 2023 AND transaction_type = 'withdraw' ORDER BY atm_location;
+-- Find withdrawal transactions on 2023-07-28 on Leggett Street
+SELECT * FROM atm_transactions WHERE day = 28 AND month = 7 AND year = 2023 AND transaction_type = 'withdraw' AND atm_location = 'Leggett Street';
