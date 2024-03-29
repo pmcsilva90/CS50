@@ -41,6 +41,23 @@ SELECT * FROM airports WHERE id = 4;
 -- Thief is must be among this list of passengers on flight with id of 36.
 SELECT * FROM passengers WHERE flight_id = 36;
 
+-- With all the information gathered above, I will try to find the thief using this query:
+-- From the people table, find an ID's that are in the bank accounts table that also are in the transactions table where a withdrawal transaction was made on 2023-07-28 on Leggett Street
+SELECT * FROM people WHERE
+    id IN (
+        SELECT person_id FROM bank_accounts WHERE account_number IN (
+            SELECT account_number FROM atm_transactions WHERE day = 28 AND month = 7 AND year = 2023 AND transaction_type = 'withdraw' AND atm_location = 'Leggett Street'))
+-- and the person's phone number is the list of callers on the same date in which the duration was less than 60 seconds
+AND phone_number IN (
+    SELECT caller FROM phone_calls WHERE year = 2023 AND month = 7 AND day = 28 AND duration < 60)
+-- and the person's passport number was in the list of passports in with flight ID 36 which was the earliest departure from Fiftyville the day after the crime
+AND passport_number IN (
+    SELECT passport_number FROM passengers WHERE flight_id = 36)
+-- and the person's licence plate was among the bakery security logs on the date of the crime within 10 minutes of the crime
+AND license_plate IN (
+    SELECT license_plate FROM bakery_security_logs WHERE day = 28 AND month = 7 AND year = 2023 AND hour = 10 AND minute BETWEEN 15 and 25);
+
+-- The query returns only one result with whose name is Bruce, phone number is (367) 555-5533, passport number is 5773159633 and license plate is 94KL13X
 
 
 
