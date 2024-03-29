@@ -24,3 +24,5 @@ SELECT * FROM atm_transactions WHERE day = 28 AND month = 7 AND year = 2023 AND 
 SELECT * FROM phone_calls WHERE year = 2023 AND month = 7 AND day = 28 AND duration < 60;
 
 
+
+
