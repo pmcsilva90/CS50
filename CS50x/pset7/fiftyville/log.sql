@@ -34,6 +34,9 @@ ORDER BY hour, minute;
 SELECT * FROM airports WHERE id = 4;
 -- Results in LaGuardia Airport in New York City
 
+-- Thief is must be among this list of passengers on flight with id of 36.
+SELECT * FROM passengers WHERE flight_id = 36;
+
 
 
 
