@@ -30,7 +30,7 @@ SELECT * FROM (
 WHERE year = 2023 AND month = 7 AND day = 29
 ORDER BY hour, minute;
 
--- Given that earliest departure from Fiftyville on 2023-07-29 has the destination airport id of 4, find details of airport with id 4.
+-- Given that earliest departure from Fiftyville on 2023-07-29 has the destination airport id of 4 and flight id of , find details of airport with id 4.
 SELECT * FROM airports WHERE id = 4;
 -- Results in LaGuardia Airport in New York City
 
