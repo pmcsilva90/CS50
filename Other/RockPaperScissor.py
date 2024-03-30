@@ -15,6 +15,9 @@ rock = 0
 paper = 1
 scissors = 2
 
+def outcome(p1, p2):
+    if p1 > ((p2 - 1) % 3)
+
 while True
     p1 = input("player 1: ").lower()
     p2 = input("player 2: ").lower()
