@@ -2,10 +2,18 @@ def main():
 
 while True
     p1 = input("player 1: ").lower()
-    p2 = input("player 2: ").lower()
-
-    if p1 not in ["rock", "paper", "scissors"] and p2 not in ["rock", "paper", "scissors"]
+    if p1 not in ["rock", "paper", "scissors"]
         continue
+    else
+        break
+
+while True
+    p2 = input("player 2: ").lower()
+    if p2 not in ["rock", "paper", "scissors"]
+        continue
+    else
+        break
+
 
 
 def outcome(p1, p2):
