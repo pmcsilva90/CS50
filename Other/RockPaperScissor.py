@@ -34,7 +34,7 @@ def main():
                     break
             break
 
-    print(outcome)
+    print(outcome(p1, p2))
 
 def outcome(p1, p2):
 
