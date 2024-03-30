@@ -11,9 +11,9 @@ s 1
 
 """
 
-rock = -1
-paper = 0
-scissors = 1
+rock = 0
+paper = 1
+scissors = 2
 
 while True
     p1 = input("player 1: ").lower()
