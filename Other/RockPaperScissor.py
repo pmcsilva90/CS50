@@ -23,6 +23,8 @@ while True
 
     if p1 not in ["rock", "paper", "scissors"] and p2 not in ["rock", "paper", "scissors"]
         continue
+    elif p1 == p2
+        print("draw")
     else
         if p1 == "rock" and p2 == "paper"
             print()
