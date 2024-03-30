@@ -11,9 +11,9 @@ s 1
 
 """
 
-rock = 1
-paper = 2
-scissors = 3
+rock = -1
+paper = 0
+scissors = 1
 
 def outcome(p1, p2):
     if p1 - p2 = 0
