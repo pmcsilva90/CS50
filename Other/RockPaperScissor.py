@@ -17,11 +17,11 @@ scissors = 1
 
 def outcome(p1, p2):
 
-    if p1 - p2 = 0
+    if p1 - p2 == 0
         return "draw"
-    elif p1 - p2 = 1
+    elif p1 - p2 == 1
         return "player 1 wins"
-    elif p1 - p2 = -1
+    elif p1 - p2 != 1
         return "player 2 wins"
 
 while True
