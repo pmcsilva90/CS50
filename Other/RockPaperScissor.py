@@ -4,6 +4,10 @@ rock          0       1        -1
 paper         -1      0
 scissors                       0
 
+r -1
+p 0
+s 1
+
 
 """
 
