@@ -1,4 +1,4 @@
-ro
+
 
 while True
     p1 = input("player 1: ").lower
