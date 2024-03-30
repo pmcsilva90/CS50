@@ -18,7 +18,7 @@ scissors = 3
 def outcome(p1, p2):
     if p1 - p2 = 0
         return "draw"
-    elif p1 - p2 
+    elif p1 - p2 = 1
 
 while True
     p1 = input("player 1: ").lower()
