@@ -16,4 +16,6 @@ while True
 
     if p1 not in ["rock", "paper", "scissors"] and p2 not in ["rock", "paper", "scissors"]
         continue
-    
+    else
+        if p1 == "rock" and p2 == "paper"
+            print()
