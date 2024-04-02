@@ -7,6 +7,36 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
+            // Run script once DOM is loaded
+            document.addEventListener('DOMContentLoaded', function () {
+                // When correct answer is clicked change colour to green
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct';
+                });
+
+                // When an incorrect answer is clicked, change color to red
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function(){
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                    });
+                }
+                document.querySelector('#check').addEventListener('click', function () {
+                    let input = document.querySelector('input');
+                    if (input.value === 'Frank Herbert'){
+                        input.style.backgroundColor = 'green';
+                        input.parentElement.querySelector('feedback2').innerHTML = 'Correct!';
+                    else {
+                        input.style.backgroundColor = 'red';
+                        input.parentElement.querySelector('feedback2').innerHTML = 'Incorrect!';
+                    }
+                    }
+                })
+
+            })
         </script>
     </head>
     <body>
@@ -18,13 +48,33 @@
             <div class="section">
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
-                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    In what year did the French Revolution took place?
+                </h3>
+                <button class="correct">
+                    1789
+                </button>
+                <button class="incorrect">
+                    1779
+                </button>
+                <button class="incorrect">
+                    1798
+                </button>
+                <button class="incorrect">
+                    1799
+                </button>
+                <p id="feedback1"></p>
             </div>
 
             <div class="section">
                 <h2>Part 2: Free Response</h2>
                 <hr>
-                <!-- TODO: Add free response question here -->
+                <h3>
+                    Who was the author of the book 'Dune'?
+                </h3>
+                <input type="text" placeholder="Your answer here...">
+                <button id="check">Check Answer</button>
+                <p class="feedback2"></p>
             </div>
         </div>
     </body>
