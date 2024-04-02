@@ -28,11 +28,11 @@
                     let input = document.querySelector('input');
                     if (input.value === 'Frank Herbert'){
                         input.style.backgroundColor = 'green';
-                        input.parentElement.querySelector('feedback2').innerHTML = 'Correct!';
+                        input.parentElement.querySelector('#feedback2').innerHTML = 'Correct!';
+                    }
                     else {
                         input.style.backgroundColor = 'red';
-                        input.parentElement.querySelector('feedback2').innerHTML = 'Incorrect!';
-                    }
+                        input.parentElement.querySelector('#feedback2').innerHTML = 'Incorrect!';
                     }
                 });
 
@@ -74,7 +74,7 @@
                 </h3>
                 <input type="text" placeholder="Your answer here...">
                 <button id="check">Check Answer</button>
-                <p class="feedback2"></p>
+                <p id="feedback2"></p>
             </div>
         </div>
     </body>
