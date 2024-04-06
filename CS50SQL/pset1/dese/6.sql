@@ -1,3 +1,12 @@
-SELECT name FROM (
-    SELECT * FROM schools JOIN graduation_rates ON schools.id = graduation_rates.school_id)
-WHERE graduated = 100;
+SELECT
+    name
+FROM
+    (
+        SELECT
+            *
+        FROM
+            schools
+            JOIN graduation_rates ON schools.id = graduation_rates.school_id
+    )
+WHERE
+    graduated = 100;
