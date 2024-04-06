@@ -41,6 +41,8 @@ SELECT * FROM addresses WHERE id = (
 -- *** The Forgotten Gift ***
 
 -- Gather information about the mentioned addresses
+sqlite> SELECT * FROM addresses WHERE address = '728 Maple Place' OR address = '109 Tileston Street';
+
 
 
 -- 728 Maple Place ID 4983
