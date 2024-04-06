@@ -5,7 +5,7 @@ SELECT
 FROM
     schools
     JOIN graduation_rates ON schools.id = graduation_rates.school_id
-    JOIN expenditures ON schools.id = expenditures.id
+    JOIN expenditures ON graduation_rates.school_id = expenditures.id
 ORDER BY
     per_pupil_expenditure DESC,
     name;
