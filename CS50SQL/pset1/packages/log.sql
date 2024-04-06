@@ -22,7 +22,7 @@ SELECT * FROM addresses WHERE id = 854;
 sqlite> SELECT * FROM packages WHERE from_address_id IS NULL;
 
 -- Find where the package was dropped
-SELECT address_id FROM scans WHERE package_id = (
+SELECT * FROM scans WHERE package_id = (
     SELECT id FROM packages WHERE from_address_id IS NULL)
 AND action = 'Drop';
 
