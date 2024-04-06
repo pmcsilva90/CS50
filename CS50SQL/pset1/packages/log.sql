@@ -40,4 +40,7 @@ SELECT * FROM addresses WHERE id = (
 
 -- *** The Forgotten Gift ***
 
--- 728 Maple Place ID 4983      
+-- Gather information about the mentioned addresses
+
+
+-- 728 Maple Place ID 4983
