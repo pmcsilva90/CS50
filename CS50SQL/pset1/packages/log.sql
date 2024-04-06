@@ -2,15 +2,15 @@
 -- *** The Lost Letter ***
 
 -- Find the receiver's address in the addresses table
-SELECT * FROM addresses WHERE address = "2 Finnegan Street"; -- this query yields no match
+SELECT * FROM addresses WHERE address = '2 Finnegan Street'; -- this query yields no match
 
 
 -- Find the sender's address in the address table
-SELECT * FROM addresses WHERE address = "900 Somerville Avenue";
+SELECT * FROM addresses WHERE address = '900 Somerville Avenue';
 
 -- Find packages sent from sender's address
 SELECT * FROM packages WHERE from_address_id = (
-SELECT id FROM addresses WHERE address = "900 Somerville Avenue");
+SELECT id FROM addresses WHERE address = '900 Somerville Avenue');
 
 -- Given one of the packges contents has the description "Congratulatory letter", it can be assumed to be the lost letter. The query shows it was sent to address ID 854
 
@@ -41,15 +41,19 @@ SELECT * FROM addresses WHERE id = (
 -- *** The Forgotten Gift ***
 
 -- Gather information about the mentioned addresses
-sqlite> SELECT * FROM addresses WHERE address = '728 Maple Place' OR address = '109 Tileston Street';
+SELECT * FROM addresses WHERE address = '728 Maple Place' OR address = '109 Tileston Street';
 
 -- Find more about the package
 SELECT * FROM packages WHERE from_address_id = (
     SELECT id FROM addresses WHERE address = '109 Tileston Street');
+-- Package contents are flowers and the IDs of the sender and receiver addresses seem to match
 
 SELECT * FROM scans WHERE package_id = (
     SELECT id FROM packages WHERE from_address_id = (
         SELECT id FROM addresses WHERE address = '109 Tileston Street'));
 -- Package seems to not have been dropped off yet and is currently with driver with ID 17
 
+-- Find who is the driver
+SELECT * FROM drivers WHERE id = 17;
+-- The driver is named Mikel
 
