@@ -21,6 +21,11 @@ SELECT * FROM addresses WHERE id = 854;
 -- Find a package where there is no address from the sender
 sqlite> SELECT * FROM packages WHERE from_address_id IS NULL;
 
+-- Find where the package was dropped
+sqlite> SELECT * FROM scans WHERE package_id = (
+   ...>     SELECT id FROM packages WHERE from_address_id IS NULL)
+   ...> AND action = 'Drop';
+
 
 
 -- *** The Devious Delivery ***
