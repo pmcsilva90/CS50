@@ -45,6 +45,11 @@ sqlite> SELECT * FROM addresses WHERE address = '728 Maple Place' OR address = '
 
 -- Find more about the package
 SELECT * FROM packages WHERE from_address_id = (
-SELECT id FROM addresses WHERE address = '109 Tileston Street');
+    SELECT id FROM addresses WHERE address = '109 Tileston Street');
+
+SELECT * FROM scans WHERE package_id = (
+    SELECT id FROM packages WHERE from_address_id = (
+        SELECT id FROM addresses WHERE address = '109 Tileston Street'));
+-- Package seems to not have been dropped off yet and is currently with driver with ID 17
 
 
