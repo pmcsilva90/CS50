@@ -18,17 +18,24 @@ SELECT id FROM addresses WHERE address = "900 Somerville Avenue");
 SELECT * FROM addresses WHERE id = 854;
 -- Query returns address 2 Finnigan Street, which is one character different from Anneke's spelling.
 
--- Find a package where there is no address from the sender
-sqlite> SELECT * FROM packages WHERE from_address_id IS NULL;
 
--- Find where the package was dropped
+-- *** The Devious Delivery ***
+
+-- Find a package where there is no address from the sender
+SELECT * FROM packages WHERE from_address_id IS NULL;
+
+-- Find ID of address where the package was dropped
 SELECT * FROM scans WHERE package_id = (
     SELECT id FROM packages WHERE from_address_id IS NULL)
 AND action = 'Drop';
 
+-- Find the corresponding address of that ID
+SELECT * FROM addresses WHERE id = (
+    SELECT address_id FROM scans WHERE package_id = (
+        SELECT id FROM packages WHERE from_address_id IS NULL)
+    AND action = 'Drop');
+-- Query returns 7 Humboldt Place, a Police Station
 
-
--- *** The Devious Delivery ***
 
 -- *** The Forgotten Gift ***
 
