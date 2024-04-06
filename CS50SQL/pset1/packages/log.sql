@@ -48,6 +48,12 @@ sqlite> SELECT * FROM packages WHERE from_address_id = (
    ...> SELECT id FROM addresses WHERE address = '728 Maple Place');
 -- Contents are chalk and was delivered to address with ID 4425, which doesn't match with the ID of address 109 Tileston Street
 
+-- Find what address that ID corresponds to
+sqlite> SELECT * FROM addresses WHERE id = (
+   ...> SELECT to_address_id FROM packages WHERE from_address_id = (
+   ...> SELECT id FROM addresses WHERE address = '728 Maple Place'));
+-- Query returns 8681 Beacon Street, a business address
+
 
 
 
