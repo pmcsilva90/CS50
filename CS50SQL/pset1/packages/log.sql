@@ -23,6 +23,7 @@ SELECT * FROM addresses WHERE id = 854;
 
 -- Find a package where there is no address from the sender
 SELECT * FROM packages WHERE from_address_id IS NULL;
+-- Returns ID: 5098, contents: Duck Debugger, to address ID: 50
 
 -- Find ID of address where the package was dropped
 SELECT * FROM scans WHERE package_id = (
