@@ -18,6 +18,8 @@ SELECT id FROM addresses WHERE address = "900 Somerville Avenue");
 SELECT * FROM addresses WHERE id = 854;
 -- Query returns address 2 Finnigan Street, which is one character different from Anneke's spelling.
 
+-- Find a package where there is no address from the sender
+sqlite> SELECT * FROM packages WHERE from_address_id IS NULL;
 
 
 
