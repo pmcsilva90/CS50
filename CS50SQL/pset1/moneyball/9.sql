@@ -11,4 +11,4 @@ GROUP BY
 ORDER BY
     "average salary"
 LIMIT
-    10;
+    5;
