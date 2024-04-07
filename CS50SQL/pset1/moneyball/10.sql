@@ -16,7 +16,7 @@ FROM
             performances
         GROUP BY
             performances.year
-    ) ON salaries.year = performances.year
+    ) AS performances ON salaries.year = performances.year
 ORDER BY
     players.id,
     salaries.year,
