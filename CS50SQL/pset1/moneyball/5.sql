@@ -4,7 +4,7 @@ FROM
     players
     JOIN performances ON players.id = performances.player_id
     JOIN teams ON performances.team_id = teams.id
-WHERE
+WHERE 
     (
         SELECT
             id
