@@ -4,8 +4,8 @@ FROM
     players
     JOIN performances ON players.id = performances.player_id
     JOIN teams ON performances.team_id = teams.id
-WHERE 
-    (
+WHERE
+    performances.player_id = (
         SELECT
             id
         FROM
@@ -13,4 +13,4 @@ WHERE
         WHERE
             first_name = 'Satchel'
             AND last_name = 'Paige'
-    )
+    );
