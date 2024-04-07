@@ -34,10 +34,10 @@ CREATE TABLE
         "airline_id" INTEGER,
         "from_airport" TEXT NOT NULL,
         "to_airport" TEXT NOT NULL,
-        "departure_hour" NUMERIC,
-        "departure_minute" NUMERIC,
-        "arrival_hour" NUMERIC,
-        "arrival_minute" NUMERIC,
+        "departure_hour" NUMERIC (0 <= "departure_hour" < 24),
+        "departure_minute" NUMERIC (0 <= "departure_minute" < 60),
+        "arrival_hour" NUMERIC (0 <= "arrival_hour" < 24),
+        "arrival_minute" NUMERIC (0 <= "arrival_minute" < 60),
         PRIMARY KEY "id",
         FOREIGN KEY "airline_id" REFERENCES "airline" ("id")
     );
