@@ -1,5 +1,3 @@
-
-
 SELECT
     players.first_name,
     players.last_name,
@@ -19,7 +17,7 @@ ORDER BY
 LIMIT
     10;
 
-
+INTERSECT
 
 SELECT
     players.first_name,
