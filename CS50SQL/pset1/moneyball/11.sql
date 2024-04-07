@@ -3,16 +3,17 @@ SELECT
     players.last_name,
     salaries.salary,
     salaries.year,
-    performances.year,
-    performances.HR
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    
+UNION
+SELECT
+    performances.year,
+    performances.HR
 ORDER BY
     players.id,
     salaries.year DESC,
     performances.HR DESC,
     salaries.salary DESC;
 
-    -- Todd Zeile id = 20728
+-- Todd Zeile id = 20728
