@@ -16,7 +16,8 @@ FROM
         FROM
             performances
         GROUP BY
-            performances.player_id
+            performances.player_id,
+            performances.year
     ) AS perform ON salaries.player_id = perform.player_id
 ORDER BY
     players.id,
