@@ -13,15 +13,9 @@ SELECT
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    JOIN (
-        SELECT
-            performances.player_id,
-            performances.year,
-            performances.HR
-        FROM
-            performances
-            where player_id = 20728
-    ) AS perform ON salaries.player_id = perform.player_id
+    JOIN performances ON salaries.player_id = performances.player_id AND salaries.year = performances.year
+    where players.id = 20728
+    
 ORDER BY
     players.id,
     salaries.year DESC,
