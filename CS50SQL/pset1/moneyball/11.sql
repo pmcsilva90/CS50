@@ -14,8 +14,6 @@ FROM
     players
     JOIN salaries ON players.id = salaries.player_id
     JOIN performances ON salaries.player_id = performances.player_id AND salaries.year = performances.year
-    where players.id = 20728
-    
 ORDER BY
     players.id,
     salaries.year DESC,
