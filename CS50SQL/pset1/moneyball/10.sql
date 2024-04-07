@@ -15,10 +15,8 @@ FROM
         FROM
             performances
         GROUP BY
-            performances.player_id,
-            performances.year
+            performances.player_id
     ) AS performances ON salaries.player_id = performances.player_id
-    AND salaries.year = performances.year
 ORDER BY
     players.id,
     salaries.year DESC,
