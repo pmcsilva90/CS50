@@ -9,9 +9,10 @@ FROM
     AND performances.year = salaries.year
 WHERE
     performances.h > 0
+    AND salaries.year = 2001
 ORDER BY
-    "dollars per hit",
     player_id,
-    year
+    "dollars per hit",
+    salaries.year
 LIMIT
     100;
