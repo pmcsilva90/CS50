@@ -15,7 +15,7 @@ CREATE TABLE
         "flight_id" INTEGER,
         PRIMARY KEY ("id"),
         FOREIGN KEY ("passenger_id") REFERENCES "passengers" ("id"),
-        FOREIGN KEY ("flight_id") REFERENCES "flights" ("flight_id")
+        FOREIGN KEY ("flight_id") REFERENCES "flights" ("id")
     );
 
 CREATE TABLE
