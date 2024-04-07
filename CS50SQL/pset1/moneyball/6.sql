@@ -7,7 +7,6 @@ FROM
 WHERE
     performances.year = 2001
 GROUP BY
-    -- performances.team_id
     teams.name
 ORDER BY
     "total hits" DESC;
