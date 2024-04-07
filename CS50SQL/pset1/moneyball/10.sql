@@ -3,6 +3,7 @@ SELECT
     players.last_name,
     salaries.salary,
     salaries.year,
+    performances.year,
     performances."home runs"
 FROM
     players
