@@ -1,5 +1,5 @@
 SELECT
-    *
+    salaries.salary
 FROM
     salaries
 WHERE
