@@ -35,4 +35,4 @@ CREATE TABLE
         "to_airport" text NOT NULL,
         "departure_time" NUMERIC NOT NULL datetime,
         "arrival_time" NUMERIC NOT NULL datetime,
-    )
+    );
