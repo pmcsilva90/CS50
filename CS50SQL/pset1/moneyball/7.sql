@@ -1,6 +1,6 @@
 SELECT
-    players.first_name,
-    players.last_name
+    first_name,
+    last_name
 FROM
     players
 WHERE
