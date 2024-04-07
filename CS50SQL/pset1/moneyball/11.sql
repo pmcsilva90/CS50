@@ -10,6 +10,8 @@ UNION
 SELECT
     performances.year,
     performances.HR
+FROM
+    performances
 ORDER BY
     players.id,
     salaries.year DESC,
