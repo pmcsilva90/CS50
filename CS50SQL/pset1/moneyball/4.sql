@@ -10,7 +10,7 @@ WHERE
 ORDER BY
     salaries.salary,
     players.first_name,
-    players.l ast_name,
+    players.last_name,
     players.id
 LIMIT
     50;
