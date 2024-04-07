@@ -25,4 +25,14 @@ CREATE TABLE
             "concourse" IN ('A', 'B', 'C', 'D', 'E', 'F', 'T')
         ),
         PRIMARY key "id"
-    )
+    );
+
+create table flights (
+    "id" integer,
+    "airline_id" integer,
+    "from_airport" text,
+    "to_airport" text,
+    "departure_time" numeric,
+    "arrival_time" numeric
+
+)
