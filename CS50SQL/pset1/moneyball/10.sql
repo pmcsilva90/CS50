@@ -10,6 +10,6 @@ FROM
     JOIN salaries ON players.id = salaries.player_id
     JOIN performances ON salaries.player_id = performances.player_id
 ORDER BY
-    players.id, salaries.year
+    players.id, salaries.year, performances.year
 LIMIT
     100;
