@@ -1,3 +1,5 @@
+SELECT first_name, last_name from
+(
 SELECT
     players.first_name,
     players.last_name,
@@ -15,10 +17,11 @@ ORDER BY
     players.first_name,
     players.last_name
 LIMIT
-    10;
-
+    10
+)
 INTERSECT
-
+SELECT first_name, last_name FROM
+(
 SELECT
     players.first_name,
     players.last_name,
@@ -37,3 +40,4 @@ ORDER BY
     players.last_name
 LIMIT
     10;
+)
