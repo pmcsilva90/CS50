@@ -3,12 +3,11 @@ SELECT
     SUM(H) AS "total hits"
 FROM
     teams
-    JOIN performances
+    JOIN performances ON teams.id = performances.team_id
 WHERE
-    teams.id = performances.team_id
-WHERE
-    YEAR = 2001
+    performances.year = 2001
 GROUP BY
-    performances.team_id
+    -- performances.team_id
+    teams.name
 ORDER BY
-    "total hits";
+    "total hits" DESC;
