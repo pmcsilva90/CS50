@@ -1,18 +1,18 @@
 SELECT
-    --performances.h,
-    --salaries.salary
-    *,
+    players.fist_name,
+    players.last_name,
     (salaries.salary / performances.h) AS "dollars per hit"
 FROM
-    performances
+    players
+    JOIN performances ON players.id = performances.player_id
     JOIN salaries ON performances.player_id = salaries.player_id
     AND performances.year = salaries.year
 WHERE
     performances.h > 0
     AND salaries.year = 2001
 ORDER BY
-    player_id,
     "dollars per hit",
-    salaries.year
+    players.first_name,
+    players.last_name
 LIMIT
     100;
