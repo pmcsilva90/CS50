@@ -21,4 +21,6 @@ FROM
     AND salaries.year = performances.year
 ORDER BY
     players.id,
-    salaries.year DESC;
+    salaries.year DESC,
+    performances."home runs" DESC,
+    salaries.salary DESC;
