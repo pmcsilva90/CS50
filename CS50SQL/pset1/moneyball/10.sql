@@ -7,5 +7,8 @@ SELECT
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    order by players.id
-    limit 100;
+    JOIN performances ON salaries.player_id = performances.player_id
+ORDER BY
+    players.id
+LIMIT
+    100;
