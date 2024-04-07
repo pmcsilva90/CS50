@@ -39,5 +39,6 @@ ORDER BY
     players.first_name,
     players.last_name
 LIMIT
-    10;
+    10
 )
+;
