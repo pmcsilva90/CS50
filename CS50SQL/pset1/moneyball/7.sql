@@ -16,4 +16,4 @@ WHERE
                 FROM
                     salaries
             )
-    )
+    );
