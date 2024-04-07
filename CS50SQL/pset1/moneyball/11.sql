@@ -8,17 +8,7 @@ SELECT
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    JOIN (
-        SELECT
-            performancesances.player_id,
-            performancesances.year,
-            SUM(HR) AS HR
-        FROM
-            performancesances
-        GROUP BY
-            performancesances.player_id,
-            performancesances.year
-    ) AS performances ON salaries.player_id = performances.player_id
+    
 ORDER BY
     players.id,
     salaries.year DESC,
