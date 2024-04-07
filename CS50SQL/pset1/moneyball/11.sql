@@ -8,7 +8,7 @@ SELECT
     players.last_name,
     salaries.salary,
     salaries.year,
-    perform.year,
+    performances.year,
     performances.HR
 FROM
     players
