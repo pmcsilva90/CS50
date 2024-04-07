@@ -34,8 +34,10 @@ CREATE TABLE
         "airline_id" INTEGER,
         "from_airport" TEXT NOT NULL,
         "to_airport" TEXT NOT NULL,
-        "departure_time" NUMERIC NOT NULL datetime,
-        "arrival_time" NUMERIC NOT NULL datetime,
+        "departure_hour" NUMERIC,
+        "departure_minute" NUMERIC,
+        "arrival_hour" NUMERIC,
+        "arrival_minute" NUMERIC,
         PRIMARY KEY "id",
         FOREIGN KEY "airline_id" REFERENCES "airline" ("id")
     );
