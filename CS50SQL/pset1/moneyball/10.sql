@@ -20,6 +20,5 @@ FROM
     ) AS performances ON salaries.player_id = performances.player_id
     AND salaries.year = performances.year
 ORDER BY
-    players.first_name,
-    players.last_name,
-    salaries.year;
+    players.id,
+    salaries.year DESC;
