@@ -3,13 +3,23 @@ SELECT
     players.first_name,
     players.last_name,
     salaries.salary,
-    salaries.year as "salary year",
-    performances.year as "performance year"
+    salaries.year AS "salary year",
+    performances.year AS "performance year"
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    JOIN performances ON salaries.year = performances.year
+    JOIN (
+        SELECT
+            *,
+            SUM(HR) AS "home runs"
+        FROM
+            performances
+        GROUP BY
+            performances.year
+    ) ON salaries.year = performances.year
 ORDER BY
-    players.id, salaries.year, performances.year
+    players.id,
+    salaries.year,
+    performances.year
 LIMIT
     100;
