@@ -1,1 +1,1 @@
-SELECT teams.name, 
+SELECT teams.name, performances.H 
