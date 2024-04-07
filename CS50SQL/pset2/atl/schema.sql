@@ -13,26 +13,28 @@ CREATE TABLE
         "timestamp" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
         "passenger_id" INTEGER,
         "flight_id" INTEGER,
-        PRIMARY key ("id"),
-        FOREIGN key ("passenger_id") REFERENCES "passengers" ("id"),
-        FOREIGN key ("flight_id") REFERENCES "flights" ("flight_id")
+        PRIMARY KEY ("id"),
+        FOREIGN KEY ("passenger_id") REFERENCES "passengers" ("id"),
+        FOREIGN KEY ("flight_id") REFERENCES "flights" ("flight_id")
     );
 
 CREATE TABLE
     airlines (
         "id" INTEGER,
-        "concourse" text NOT NULL CHECK (
+        "concourse" TEXT NOT NULL CHECK (
             "concourse" IN ('A', 'B', 'C', 'D', 'E', 'F', 'T')
         ),
-        PRIMARY key "id"
+        PRIMARY KEY "id"
     );
 
 CREATE TABLE
     flights (
         "id" INTEGER,
         "airline_id" INTEGER,
-        "from_airport" text NOT NULL,
-        "to_airport" text NOT NULL,
+        "from_airport" TEXT NOT NULL,
+        "to_airport" TEXT NOT NULL,
         "departure_time" NUMERIC NOT NULL datetime,
         "arrival_time" NUMERIC NOT NULL datetime,
+        PRIMARY KEY "id",
+        FOREIGN KEY "airline_id" REFERENCES "airline" ("id")
     );
