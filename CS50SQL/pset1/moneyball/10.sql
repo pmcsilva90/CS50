@@ -2,9 +2,9 @@ SELECT
     players.first_name,
     players.last_name,
     salaries.salary,
+    performances."home runs",
     salaries.year AS "salary year",
-    performances.year AS "performance year",
-    performances."home runs"
+    performances.year AS "performance year"
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
