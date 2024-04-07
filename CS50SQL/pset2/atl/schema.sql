@@ -25,7 +25,7 @@ CREATE TABLE
         "concourse" TEXT NOT NULL CHECK (
             "concourse" IN ('A', 'B', 'C', 'D', 'E', 'F', 'T')
         ),
-        PRIMARY KEY "id"
+        PRIMARY KEY ("id")
     );
 
 CREATE TABLE
@@ -40,6 +40,6 @@ CREATE TABLE
         "arrival_date" DATE,
         "arrival_hour" INTEGER CHECK ("arrival_hour" >= 0 AND "arrival_hour" < 24),
         "arrival_minute" INTEGER CHECK ("arrival_minute" >= 0 AND "arrival_minute" < 60),
-        PRIMARY KEY "id",
-        FOREIGN KEY "airline_id" REFERENCES "airline" ("id")
+        PRIMARY KEY ("id"),
+        FOREIGN KEY ("airline_id") REFERENCES "airline" ("id")
     );
