@@ -8,16 +8,16 @@ SELECT
     players.last_name,
     salaries.salary,
     performances.year,
-    distinct performances.HR
+    performances.HR
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    JOIN performances ON salaries.player_id = performances.player_id AND salaries.year = performances.year
+    INNER JOIN performances ON salaries.player_id = performances.player_id AND salaries.year = performances.year
 ORDER BY
     players.id,
     salaries.year DESC,
     performances.HR DESC,
-    salaries.salary DESC;
+    salaries.salary DESC limit 100;
 
     -- Todd Zeile id = 20728
 
