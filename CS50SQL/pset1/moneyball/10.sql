@@ -3,7 +3,7 @@ SELECT
     players.last_name,
     salaries.salary,
     performances.HR,
-    performances.year
+    salaries.year
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
