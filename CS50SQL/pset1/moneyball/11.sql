@@ -10,6 +10,8 @@ FROM
 WHERE
     performances.h > 0
 ORDER BY
-    player_id
+    "dollars per hit",
+    player_id,
+    year
 LIMIT
     100;
