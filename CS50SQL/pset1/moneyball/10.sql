@@ -10,4 +10,4 @@ FROM
     JOIN performances ON players.id = performances.player_id;
 
 
-select sum(performances.HR) from performances group by year
+select sum(performances.HR) from performances group by player_id
