@@ -7,6 +7,5 @@ SELECT
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
+    order by players.id
     limit 100;
-
-
