@@ -46,4 +46,6 @@ FROM
             players.last_name
         LIMIT
             10
-    );
+    )
+ORDER BY
+    last_name;
