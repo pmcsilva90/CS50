@@ -7,7 +7,6 @@ SELECT
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    JOIN performances ON players.id = performances.player_id
 
     group by performances.year
     order by players.id;
