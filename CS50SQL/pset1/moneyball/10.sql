@@ -3,8 +3,8 @@ SELECT
     players.last_name,
     salaries.salary,
     salaries.year,
-    performances.year,
-    performances."home runs"
+    perform.year,
+    perform."home runs"
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
@@ -17,11 +17,11 @@ FROM
             performances
         GROUP BY
             performances.player_id
-    ) AS performances ON salaries.player_id = performances.player_id
+    ) AS perform ON salaries.player_id = perform.player_id
 ORDER BY
     players.id,
     salaries.year DESC,
-    performances."home runs" DESC,
+    perform."home runs" DESC,
     salaries.salary DESC;
 
     -- Todd Zeile id = 20728
