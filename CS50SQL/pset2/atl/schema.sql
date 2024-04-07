@@ -1,9 +1,9 @@
 CREATE TABLE
     passengers (
         "id" INTEGER,
-        "first_name" TEXT,
-        "last_name" TEXT,
-        "age" INTEGER,
+        "first_name" TEXT NOT NULL,
+        "last_name" TEXT NOT NULL,
+        "age" INTEGER NOT NULL,
         PRIMARY KEY ("id")
     );
 
@@ -27,12 +27,12 @@ CREATE TABLE
         PRIMARY key "id"
     );
 
-create table flights (
-    "id" integer,
-    "airline_id" integer,
-    "from_airport" text,
-    "to_airport" text,
-    "departure_time" numeric,
-    "arrival_time" numeric
-
-)
+CREATE TABLE
+    flights (
+        "id" INTEGER,
+        "airline_id" INTEGER,
+        "from_airport" text NOT NULL,
+        "to_airport" text NOT NULL,
+        "departure_time" NUMERIC NOT NULL datetime,
+        "arrival_time" NUMERIC NOT NULL datetime,
+    )
