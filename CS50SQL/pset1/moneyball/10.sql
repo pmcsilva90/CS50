@@ -7,7 +7,7 @@ SELECT
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    JOIN performances ON players.id = performances.player_id;
+    JOIN performances ON salaries.player_id = performances.player_id;
 
 
 
