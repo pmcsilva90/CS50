@@ -18,7 +18,7 @@ ORDER BY
     players.id,
     salaries.year DESC,
     performances.HR DESC,
-    salaries.salary DESC limit 100;
+    salaries.salary DESC;
 
     -- Todd Zeile id = 20728
 
