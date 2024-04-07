@@ -7,7 +7,7 @@ SELECT
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
-    INNER JOIN performances ON salaries.player_id = performances.player_id
+    JOIN performances ON salaries.player_id = performances.player_id
     AND salaries.year = performances.year
 ORDER BY
     players.id,
