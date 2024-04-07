@@ -19,6 +19,8 @@ FROM
             "dollars per hit",
             players.first_name,
             players.last_name
+        LIMIT
+            10
     )
 INTERSECT
 SELECT
@@ -42,4 +44,6 @@ FROM
             "dollars per RBI",
             players.first_name,
             players.last_name
+        LIMIT
+            10
     );
