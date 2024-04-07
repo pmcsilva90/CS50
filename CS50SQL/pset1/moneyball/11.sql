@@ -8,6 +8,7 @@ FROM
     JOIN salaries ON players.id = salaries.player_id
 UNION
 SELECT
+    performances.player_id,
     performances.year,
     performances.HR
 FROM
