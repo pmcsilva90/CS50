@@ -3,8 +3,7 @@ SELECT
     players.last_name,
     salaries.salary,
     performances."home runs",
-    salaries.year AS "salary year",
-    performances.year AS "performance year"
+    salaries.year
 FROM
     players
     JOIN salaries ON players.id = salaries.player_id
@@ -20,7 +19,4 @@ FROM
 ORDER BY
     players.first_name,
     players.last_name,
-    salaries.year,
-    performances.year
-LIMIT
-    100;
+    salaries.year;
