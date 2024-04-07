@@ -13,4 +13,4 @@ FROM
     order by players.id;
 
 
-select sum(performances.HR) from performances group by player_id
+sqlite> select *, sum(performances.HR) from performances group by player_id order by player_id limit 100;
