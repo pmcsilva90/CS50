@@ -18,7 +18,8 @@ FROM
             performances.year
     ) AS performances ON salaries.year = performances.year
 ORDER BY
-    players.id,
+    players.first_name,
+    players.last_name,
     salaries.year,
     performances.year
 LIMIT
