@@ -1,7 +1,11 @@
 SELECT
-    players.fist_name,
+    players.first_name,
     players.last_name,
-    (salaries.salary / performances.h) AS "dollars per hit"
+    (salaries.salary / performances.h) AS "dollars per hit",
+    performances.h,
+    salaries.salary,
+    salaries.year as s_year,
+    performances.year as p_year
 FROM
     players
     JOIN performances ON players.id = performances.player_id
