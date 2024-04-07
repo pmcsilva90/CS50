@@ -9,4 +9,6 @@ WHERE
 GROUP BY
     teams.name
 ORDER BY
-    "total hits" DESC;
+    "total hits" DESC
+LIMIT
+    5;
