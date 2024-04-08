@@ -44,14 +44,15 @@ CREATE TABLE
         order_timestamp NUMERIC,
         FOREIGN KEY (order_id) REFERENCES orders (id),
         FOREIGN KEY (customer_id) REFERENCES customers (id),
-        FOREIGN KEY (order_contents) REFERENCES donuts(id),
+        FOREIGN KEY (order_contents) REFERENCES donuts (id),
         FOREIGN KEY (order_timestamp) REFERENCES orders (timestamp)
     );
 
-create table recipes(
-    donut_id INTEGER,
-    ingredient_id INTEGER,
-    ingredient_qty REAL,
-    FOREIGN KEY (donut_id) REFERENCES donuts(id),
-    FOREIGN KEY (ingredient_id) REFERENCES ingredients(id)
-);
+CREATE TABLE
+    recipes (
+        donut_id INTEGER,
+        ingredient_id INTEGER,
+        ingredient_qty REAL,
+        FOREIGN KEY (donut_id) REFERENCES donuts (id),
+        FOREIGN KEY (ingredient_id) REFERENCES ingredients (id)
+    );
