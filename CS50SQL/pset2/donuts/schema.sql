@@ -18,5 +18,8 @@ CREATE TABLE donuts (
 
 CREATE TABLE orders (
     id
+    instore_online
+    customer_name
     
+
 )
