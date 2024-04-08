@@ -15,3 +15,8 @@ CREATE TABLE donuts (
     price_per_donut NUMERIC NOT NULL,
     PRIMARY KEY (id)
 )
+
+CREATE TABLE orders (
+    id
+    
+)
