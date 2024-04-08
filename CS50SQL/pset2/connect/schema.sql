@@ -43,17 +43,17 @@ CREATE TABLE
         start_date DATE,
         end_date DATE,
         degree TEXT,
-        FOREIGN KEY user_id REFERENCES users (id),
-        FOREIGN KEY institution_id REFERENCES education_institutions (id)
+        FOREIGN KEY (user_id) REFERENCES users (id),
+        FOREIGN KEY (institution_id) REFERENCES education_institutions (id)
     );
 
 CREATE TABLE
     users_employment (
         user_id INTEGER,
         company_id INTEGER,
-        stard_date DATE,
+        start_date DATE,
         end_date DATE,
         role TEXT,
-        FOREIGN KEY user_id REFERENCES users (id),
-        FOREIGN KEY company_id REFERENCES companies (id)
+        FOREIGN KEY (user_id) REFERENCES users (id),
+        FOREIGN KEY (company_id) REFERENCES companies (id)
     );
