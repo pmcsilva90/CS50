@@ -1,34 +1,39 @@
 CREATE TABLE
     users (
-        id INTEGER PRIMARY key,
-        username text NOT NULL UNIQUE,
-        first_name text NOT NULL,
-        last_name text NOT NULL,
-        password text NOT NULL CHECK (length (password >= 8)),
+        id INTEGER PRIMARY KEY,
+        username TEXT NOT NULL UNIQUE,
+        first_name TEXT NOT NULL,
+        last_name TEXT NOT NULL,
+        password TEXT NOT NULL CHECK (length (password >= 8)),
     );
 
 CREATE TABLE
     education_institutions (
-        id INTEGER PRIMARY key,
-        type text NOT NULL,
-        location text,
+        id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
+        type TEXT NOT NULL,
+        city TEXT NOT NULL,
+        state TEXT NOT NULL,
+        country TEXT NOT NULL,
         founded INTEGER
     );
 
 CREATE TABLE
     companies (
-        id INTEGER PRIMARY key,
-        name text UNIQUE NOT NULL,
-        industry text NOT NULL,
-        location text NOT NULL
+        id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
+        industry TEXT NOT NULL,
+        city TEXT NOT NULL,
+        state TEXT NOT NULL,
+        country TEXT NOT NULL,
     );
 
 CREATE TABLE
     users_connections (
         user1_id INTEGER,
         user2_id INTEGER,
-        FOREIGN key (user1_id) REFERENCES users (id),
-        FOREIGN key (user2_id) REFERENCES users (id)
+        FOREIGN KEY (user1_id) REFERENCES users (id),
+        FOREIGN KEY (user2_id) REFERENCES users (id)
     );
 
 CREATE TABLE
@@ -37,9 +42,9 @@ CREATE TABLE
         institution_id INTEGER,
         start_date DATE,
         end_date DATE,
-        degree text,
-        FOREIGN key user_id REFERENCES users (id),
-        FOREIGN key institution_id REFERENCES education_institutions (id)
+        degree TEXT,
+        FOREIGN KEY user_id REFERENCES users (id),
+        FOREIGN KEY institution_id REFERENCES education_institutions (id)
     );
 
 CREATE TABLE
@@ -48,7 +53,7 @@ CREATE TABLE
         company_id INTEGER,
         stard_date DATE,
         end_date DATE,
-        role text,
-        FOREIGN key user_id REFERENCES users (id),
-        FOREIGN key company_id REFERENCES companies (id)
+        role TEXT,
+        FOREIGN KEY user_id REFERENCES users (id),
+        FOREIGN KEY company_id REFERENCES companies (id)
     );
