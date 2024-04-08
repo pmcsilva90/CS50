@@ -18,6 +18,14 @@ CREATE TABLE
     );
 
 CREATE TABLE
+    customers (
+        id INTEGER,
+        first_name TEXT,
+        last_name TEXT,
+        PRIMARY KEY (id)
+    );
+
+CREATE TABLE
     orders (
         id INTEGER,
         timestamp NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -27,14 +35,6 @@ CREATE TABLE
         payment_method TEXT NOT NULL CHECK (cost IN ('Cash', 'Card')),
         PRIMARY KEY (id),
         FOREIGN KEY (customer_id) REFERENCES customers (id)
-    );
-
-CREATE TABLE
-    customers (
-        id INTEGER,
-        first_name TEXT,
-        last_name TEXT,
-        PRIMARY KEY (id)
     );
 
 CREATE TABLE
