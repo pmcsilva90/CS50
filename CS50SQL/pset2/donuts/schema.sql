@@ -39,8 +39,14 @@ CREATE TABLE
     order_history (
         customer_id INTEGER,
         order_id INTEGER,
-        timestamp NUMERIC,
+        order_timestamp NUMERIC,
         FOREIGN KEY (customer_id) REFERENCES customers (id),
         FOREIGN KEY (order_id) REFERENCES orders (id),
-        FOREIGN KEY (timestamp) REFERENCES orders (timestamp)
-    )
+        FOREIGN KEY (order_timestamp) REFERENCES orders (timestamp)
+    );
+
+create table recipes(
+    donut_id
+    ingredient_id
+    
+)
