@@ -8,7 +8,10 @@ CREATE TABLE
     );
 
 create table people_connections(
-    
+    user_id1 integer foreign key references users(id),
+    user_id2 integer foreign key references users(id),
+
+
 )
 
 CREATE TABLE
