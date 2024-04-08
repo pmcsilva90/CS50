@@ -4,7 +4,7 @@ CREATE TABLE
         username TEXT NOT NULL UNIQUE,
         first_name TEXT NOT NULL,
         last_name TEXT NOT NULL,
-        password TEXT NOT NULL CHECK (length (password >= 8)),
+        password TEXT NOT NULL CHECK (length (password >= 8))
     );
 
 CREATE TABLE
