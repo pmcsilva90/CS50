@@ -8,10 +8,16 @@ CREATE TABLE
 
 CREATE TABLE
     education (
-        id INTEGER,
+        id INTEGER primary key,
         type text NOT NULL,
-        location text
+        location text,
         founded integer
-        primary key
 
+    )
+
+    create table companies (
+        id integer primary key,
+        name text unique not null,
+        industry text not null,
+        location text not null
     )
