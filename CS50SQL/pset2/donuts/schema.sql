@@ -39,6 +39,7 @@ CREATE TABLE
     order_history (
         customer_id INTEGER,
         order_id INTEGER,
+        
         order_timestamp NUMERIC,
         FOREIGN KEY (customer_id) REFERENCES customers (id),
         FOREIGN KEY (order_id) REFERENCES orders (id),
