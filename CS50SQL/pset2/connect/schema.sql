@@ -25,7 +25,7 @@ CREATE TABLE
         industry TEXT NOT NULL,
         city TEXT NOT NULL,
         state TEXT,
-        country TEXT NOT NULL,
+        country TEXT NOT NULL
     );
 
 CREATE TABLE
