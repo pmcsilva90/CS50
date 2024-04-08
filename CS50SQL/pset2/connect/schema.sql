@@ -1,26 +1,25 @@
 CREATE TABLE
     users (
-        id INTEGER,
+        id INTEGER PRIMARY key,
         username text NOT NULL UNIQUE,
-        first_name text not null,
-        last_name text not null,
-
+        first_name text NOT NULL,
+        last_name text NOT NULL,
         password text NOT NULL CHECK (length (password >= 8)),
-        PRIMARY key id
     );
+
+create table 
 
 CREATE TABLE
     education (
-        id INTEGER primary key,
+        id INTEGER PRIMARY key,
         type text NOT NULL,
         location text,
-        founded integer
-
+        founded INTEGER
     )
-
-    create table companies (
-        id integer primary key,
-        name text unique not null,
-        industry text not null,
-        location text not null
+CREATE TABLE
+    companies (
+        id INTEGER PRIMARY key,
+        name text UNIQUE NOT NULL,
+        industry text NOT NULL,
+        location text NOT NULL
     )
