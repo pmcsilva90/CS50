@@ -32,7 +32,7 @@ CREATE TABLE
         instore_online TEXT NOT NULL CHECK (instore_online IN ('In store', 'Online')),
         customer_id INTEGER,
         cost NUMERIC NOT NULL CHECK (cost != 0),
-        payment_method TEXT NOT NULL CHECK (cost IN ('Cash', 'Card')),
+        payment_method TEXT NOT NULL CHECK (payment_method IN ('Cash', 'Card')),
         PRIMARY KEY (id),
         FOREIGN KEY (customer_id) REFERENCES customers (id)
     );
