@@ -2,6 +2,8 @@ CREATE TABLE
     users (
         id INTEGER,
         username text NOT NULL UNIQUE,
+        first_name text not null,
+        
         password text NOT NULL CHECK (length (password >= 8)),
         PRIMARY key id
     );
