@@ -40,7 +40,7 @@ CREATE TABLE
     users_education (
         user_id INTEGER,
         institution_id INTEGER,
-        start_date DATE,
+        start_date DATE NOT NULL,
         end_date DATE,
         degree TEXT,
         FOREIGN KEY (user_id) REFERENCES users (id),
@@ -51,9 +51,9 @@ CREATE TABLE
     users_employment (
         user_id INTEGER,
         company_id INTEGER,
-        start_date DATE,
+        start_date DATE NOT NULL,
         end_date DATE,
-        role TEXT,
+        role TEXT NOT NULL,
         FOREIGN KEY (user_id) REFERENCES users (id),
         FOREIGN KEY (company_id) REFERENCES companies (id)
     );
