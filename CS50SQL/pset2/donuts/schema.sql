@@ -33,3 +33,13 @@ CREATE TABLE
         last_name TEXT,
         PRIMARY KEY (id)
     );
+
+create table order_history (
+    customer_id INTEGER,
+    order_id INTEGER,
+    timestamp NUMERIC,
+    FOREIGN KEY (customer_id) references customers(id),
+    foreign KEY (order_id) references orders(id),
+    foreign KEY (timestamp) 
+
+)
