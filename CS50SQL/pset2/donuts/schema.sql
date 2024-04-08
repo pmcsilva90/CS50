@@ -4,7 +4,8 @@ CREATE TABLE
         name TEXT NOT NULL UNIQUE,
         unit TEXT NOT NULL,
         unit_qty INTEGER NOT NULL,
-        price_per_unit NUMERIC NOT NULL PRIMARY KEY (id)
+        price_per_unit NUMERIC NOT NULL,
+        PRIMARY KEY (id)
     );
 
 CREATE TABLE
