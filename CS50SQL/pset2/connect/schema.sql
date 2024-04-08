@@ -12,7 +12,7 @@ create table people_connections(
 )
 
 CREATE TABLE
-    education (
+    institutions (
         id INTEGER PRIMARY key,
         type text NOT NULL,
         location text,
