@@ -21,7 +21,8 @@ CREATE TABLE
         timestamp NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
         instore_online TEXT NOT NULL CHECK (instore_online IN ('In store', 'Online')),
         customer_id INTEGER,
-        cost 
+        cost NUMERIC NOT NULL CHECK(cost != 0),
+        payment_method TEXT NOT NULL 
         PRIMARY KEY (id),
         FOREGIN KEY (customer_id) REFERENCES customers (id)
     );
