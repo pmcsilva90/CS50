@@ -46,7 +46,9 @@ CREATE TABLE
     );
 
 create table recipes(
-    donut_id
-    ingredient_id
-    
-)
+    donut_id INTEGER,
+    ingredient_id INTEGER,
+    ingredient_qty REAL,
+    FOREIGN KEY (donut_id) REFERENCES donuts(id),
+    FOREIGN KEY (ingredient_id) REFERENCES ingredients(id)
+);
