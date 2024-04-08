@@ -15,7 +15,7 @@ CREATE TABLE
         city TEXT NOT NULL,
         state TEXT,
         country TEXT NOT NULL,
-        founded INTEGER
+        year_founded INTEGER
     );
 
 CREATE TABLE
