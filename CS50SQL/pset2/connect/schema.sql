@@ -13,7 +13,7 @@ CREATE TABLE
         name TEXT NOT NULL,
         type TEXT NOT NULL,
         city TEXT NOT NULL,
-        state TEXT NOT NULL,
+        state TEXT,
         country TEXT NOT NULL,
         founded INTEGER
     );
@@ -24,7 +24,7 @@ CREATE TABLE
         name TEXT NOT NULL,
         industry TEXT NOT NULL,
         city TEXT NOT NULL,
-        state TEXT NOT NULL,
+        state TEXT,
         country TEXT NOT NULL,
     );
 
