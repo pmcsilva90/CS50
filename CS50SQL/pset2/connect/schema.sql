@@ -7,7 +7,9 @@ CREATE TABLE
         password text NOT NULL CHECK (length (password >= 8)),
     );
 
-create table 
+create table people_connections(
+    
+)
 
 CREATE TABLE
     education (
