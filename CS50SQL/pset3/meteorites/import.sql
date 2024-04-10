@@ -22,29 +22,30 @@ PRIMARY KEY ("id")
 -- To consider the data in the meteorites table clean, you should ensure…
 --     Any empty values in meteorites.csv are represented by NULL in the meteorites table.
 --         Keep in mind that the mass, year, lat, and long columns have empty values in the CSV.
-/* UPDATE temp
+UPDATE temp
 SET
-mass = NULL
+    mass = NULL
 WHERE
-mass = '';
+    mass = '';
 
 UPDATE temp
 SET
-YEAR = NULL
+    YEAR = NULL
 WHERE
-YEAR = '';
+    YEAR = '';
 
 UPDATE temp
 SET
-lat = NULL
+    lat = NULL
 WHERE
-lat = '';
+    lat = '';
 
 UPDATE temp
 SET
-long = NULL
+    long = NULL
 WHERE
-long = ''; */
+    long = '';
+
 --     All columns with decimal values (e.g., 70.4777) should be rounded to the nearest hundredths place (e.g., 70.4777 becomes 70.48).
 --         Keep in mind that the mass, lat, and long columns have decimal values.
 UPDATE temp
@@ -60,8 +61,22 @@ SET
     long = ROUND(long, 2);
 
 --     All meteorites with the nametype “Relict” are not included in the meteorites table.
-
+DELETE FROM temp
+WHERE
+    nametype = 'Relict';
 
 --     The meteorites are sorted by year, oldest to newest, and then—if any two meteorites landed in the same year—by name, in alphabetical order.
+UPDATE temp
+SET
+    * = (
+        SELECT
+            *
+        FROM
+            temp
+        ORDER BY
+            YEAR,
+            name
+    );
+
 --     You’ve updated the IDs of the meteorites from meteorites.csv, according to the order specified in #4.
 --         The id of the meteorites should start at 1, beginning with the meteorite that landed in the oldest year and is the first in alphabetical order for that year.
