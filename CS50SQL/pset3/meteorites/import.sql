@@ -22,6 +22,7 @@ CREATE TABLE
     -- To consider the data in the meteorites table clean, you should ensure…
     --     Any empty values in meteorites.csv are represented by NULL in the meteorites table.
     --         Keep in mind that the mass, year, lat, and long columns have empty values in the CSV.
+
     --     All columns with decimal values (e.g., 70.4777) should be rounded to the nearest hundredths place (e.g., 70.4777 becomes 70.48).
     --         Keep in mind that the mass, lat, and long columns have decimal values.
     --     All meteorites with the nametype “Relict” are not included in the meteorites table.
