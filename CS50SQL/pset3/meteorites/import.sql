@@ -31,9 +31,9 @@ WHERE
 
 UPDATE temp
 SET
-    YEAR = NULL
+    year = NULL
 WHERE
-    YEAR = '';
+    year = '';
 
 UPDATE temp
 SET
@@ -68,8 +68,23 @@ WHERE
 
 --     The meteorites are sorted by year, oldest to newest, and then—if any two meteorites landed in the same year—by name, in alphabetical order.
 --  TODO: just copy the data to the created table
+INSERT INTO
+    meteorites (id, name, class, mass, discovery, year, lat, long)
+SELECT
+    id,
+    name,
+    class,
+    mass,
+    discovery,
+    year,
+    lat,
+    long
+FROM
+    temp
+ORDER BY
+    year,
+    name;
 
-insert into meteorites ()
-
+DROP TABLE temp;
 --     You’ve updated the IDs of the meteorites from meteorites.csv, according to the order specified in #4.
 --         The id of the meteorites should start at 1, beginning with the meteorite that landed in the oldest year and is the first in alphabetical order for that year.
