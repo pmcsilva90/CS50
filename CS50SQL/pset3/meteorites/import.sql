@@ -48,7 +48,7 @@ WHERE
 
 --     All columns with decimal values (e.g., 70.4777) should be rounded to the nearest hundredths place (e.g., 70.4777 becomes 70.48).
 --         Keep in mind that the mass, lat, and long columns have decimal values.
-update
+update temp set mass = (select round(mass, 2) from temp)
 
 --     All meteorites with the nametype “Relict” are not included in the meteorites table.
 --     The meteorites are sorted by year, oldest to newest, and then—if any two meteorites landed in the same year—by name, in alphabetical order.
