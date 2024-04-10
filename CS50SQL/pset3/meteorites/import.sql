@@ -18,10 +18,11 @@ CREATE TABLE
         "long" REAL,
         PRIMARY KEY ("id")
     );
-    -- Keep in mind that not all columns in the CSV should end up in the final table!
-    -- To consider the data in the meteorites table clean, you should ensure…
-    --     Any empty values in meteorites.csv are represented by NULL in the meteorites table.
-    --         Keep in mind that the mass, year, lat, and long columns have empty values in the CSV.
+
+-- Keep in mind that not all columns in the CSV should end up in the final table!
+-- To consider the data in the meteorites table clean, you should ensure…
+--     Any empty values in meteorites.csv are represented by NULL in the meteorites table.
+--         Keep in mind that the mass, year, lat, and long columns have empty values in the CSV.
 UPDATE temp
 SET
     mass = NULL
@@ -30,9 +31,9 @@ WHERE
 
 UPDATE temp
 SET
-    year = NULL
+    YEAR = NULL
 WHERE
-    year = '';
+    YEAR = '';
 
 UPDATE temp
 SET
@@ -48,9 +49,32 @@ WHERE
 
 --     All columns with decimal values (e.g., 70.4777) should be rounded to the nearest hundredths place (e.g., 70.4777 becomes 70.48).
 --         Keep in mind that the mass, lat, and long columns have decimal values.
-update temp set mass = (select round(mass, 2) from temp);
-update temp set lat = (select round(lat, 2) from temp);
-update temp set long = (select round(mass, 2) from temp)
+UPDATE temp
+SET
+    mass = (
+        SELECT
+            ROUND(mass, 2)
+        FROM
+            temp
+    );
+
+UPDATE temp
+SET
+    lat = (
+        SELECT
+            ROUND(lat, 2)
+        FROM
+            temp
+    );
+
+UPDATE temp
+SET
+    long = (
+        SELECT
+            ROUND(mass, 2)
+        FROM
+            temp
+    );
 
 --     All meteorites with the nametype “Relict” are not included in the meteorites table.
 --     The meteorites are sorted by year, oldest to newest, and then—if any two meteorites landed in the same year—by name, in alphabetical order.
