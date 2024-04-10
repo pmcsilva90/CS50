@@ -9,7 +9,7 @@
 CREATE TABLE
     "meteorites" (
         "id" INTEGER,
-        "name" TEXT,
+        "name" TEXT UNIQUE,
         "class" TEXT,
         "mass" REAL,
         "discovery" TEXT CHECK ("discovery" IN ('Found', 'Fell')),
