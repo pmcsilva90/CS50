@@ -53,12 +53,7 @@ WHERE
 --         Keep in mind that the mass, lat, and long columns have decimal values.
 UPDATE temp
 SET
-    mass = (
-        SELECT
-            mass
-        FROM
-            temp
-    );
+    mass = round(mass, 2)
 
 UPDATE temp
 SET
