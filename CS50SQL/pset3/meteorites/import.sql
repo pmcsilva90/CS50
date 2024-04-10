@@ -7,9 +7,8 @@
 --     lat, which is the latitude at which the meteorite landed.
 --     long, which is the longitude at which the meteorite landed.
 
-create table "temp" (
-    .import meteorites.csv
-);
+.import -csv meteorites.csv temp
+
 
 CREATE TABLE
     "meteorites" (
