@@ -6,7 +6,8 @@
 --     year, which is the year in which the the meteorite was discovered.
 --     lat, which is the latitude at which the meteorite landed.
 --     long, which is the longitude at which the meteorite landed.
-CREATE TABLE
+
+/* CREATE TABLE
     "meteorites" (
         "id" INTEGER,
         "name" TEXT NOT NULL UNIQUE,
@@ -17,13 +18,14 @@ CREATE TABLE
         "lat" REAL,
         "long" REAL,
         PRIMARY KEY ("id")
-    );
+    ); */
 
 -- Keep in mind that not all columns in the CSV should end up in the final table!
 -- To consider the data in the meteorites table clean, you should ensure…
 --     Any empty values in meteorites.csv are represented by NULL in the meteorites table.
 --         Keep in mind that the mass, year, lat, and long columns have empty values in the CSV.
-UPDATE temp
+
+/* UPDATE temp
 SET
     mass = NULL
 WHERE
@@ -45,7 +47,7 @@ UPDATE temp
 SET
     long = NULL
 WHERE
-    long = '';
+    long = ''; */
 
 --     All columns with decimal values (e.g., 70.4777) should be rounded to the nearest hundredths place (e.g., 70.4777 becomes 70.48).
 --         Keep in mind that the mass, lat, and long columns have decimal values.
