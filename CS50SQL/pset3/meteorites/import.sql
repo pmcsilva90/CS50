@@ -53,25 +53,15 @@ WHERE
 --         Keep in mind that the mass, lat, and long columns have decimal values.
 UPDATE temp
 SET
-    mass = round(mass, 2)
+    mass = round(mass, 2);
 
 UPDATE temp
 SET
-    lat = (
-        SELECT
-            ROUND(lat, 2)
-        FROM
-            temp
-    );
+    lat = round(lat, 2);
 
 UPDATE temp
 SET
-    long = (
-        SELECT
-            ROUND(mass, 2)
-        FROM
-            temp
-    );
+    long = round(long, 2);
 
 --     All meteorites with the nametype “Relict” are not included in the meteorites table.
 --     The meteorites are sorted by year, oldest to newest, and then—if any two meteorites landed in the same year—by name, in alphabetical order.
