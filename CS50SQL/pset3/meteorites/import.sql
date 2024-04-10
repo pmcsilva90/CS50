@@ -5,7 +5,7 @@ CREATE TABLE
         "id" INTEGER,
         "name" TEXT NOT NULL UNIQUE,
         "class" TEXT,
-        "mass" REAL,
+        "mass" INTEGER,
         "discovery" TEXT CHECK ("discovery" IN ('Found', 'Fell')),
         "year" INTEGER,
         "lat" REAL,
