@@ -4,4 +4,4 @@ SET
 WHERE
     username = 'admin';
 
-
+delete from user_logs where type = update AND 
