@@ -55,7 +55,7 @@ UPDATE temp
 SET
     mass = (
         SELECT
-            ROUND(mass, 2)
+            mass
         FROM
             temp
     );
