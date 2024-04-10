@@ -71,9 +71,8 @@ WHERE
 --     The meteorites are sorted by year, oldest to newest, and then—if any two meteorites landed in the same year—by name, in alphabetical order.
 --  TODO: just copy the data to the created table
 INSERT INTO
-    meteorites (id, name, class, mass, discovery, year, lat, long)
+    meteorites (name, class, mass, discovery, year, lat, long)
 SELECT
-    id,
     name,
     class,
     mass,
