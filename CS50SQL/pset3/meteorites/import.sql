@@ -6,6 +6,8 @@
 --     year, which is the year in which the the meteorite was discovered.
 --     lat, which is the latitude at which the meteorite landed.
 --     long, which is the longitude at which the meteorite landed.
+
+
 CREATE TABLE
     "meteorites" (
         "id" INTEGER,
