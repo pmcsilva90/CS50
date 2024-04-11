@@ -1,2 +1,10 @@
-create view total as
-select count(families), count(households), count(population), count(male), count(female) from census;
+CREATE VIEW
+    total AS
+SELECT
+    SUM(families),
+    SUM(households),
+    SUM(population),
+    SUM(male),
+    SUM(female)
+FROM
+    census;
