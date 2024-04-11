@@ -17,10 +17,9 @@ VALUES
     (2346, 44, 10),
     (3041, 14, 5);
 
-SELECT
-    substr (
-        (select sentence where id in (select sentence_num from triplets)),
-        (select char_num from triplets where sentences.id = triplets.sentence_num)
-    )
-FROM
-    sentences;
+
+select substr(
+    sentence,
+    (select char_num from triplets where )
+)
+select * from sentences where id in (select sentence_num from triplets);
