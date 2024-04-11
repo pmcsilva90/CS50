@@ -1,1 +1,8 @@
-select * from census where locality LIKE '%rural%';
+CREATE VIEW
+    rural AS
+SELECT
+    *
+FROM
+    census
+WHERE
+    locality LIKE '%rural%';
