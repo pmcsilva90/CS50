@@ -12,4 +12,4 @@ FROM
 GROUP BY
     district
 ORDER BY
-    
+    SUM(population) DESC;
