@@ -8,3 +8,5 @@ join availabilities on listings.id = avalabilities.listing_id
 
 
 group by listings.id
+
+select listing_id, count(*) from availabilities where date between '2023-06-01' and '2023-06-30' and available = 'TRUE'
