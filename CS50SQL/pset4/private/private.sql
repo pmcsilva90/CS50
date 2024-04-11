@@ -17,7 +17,7 @@ VALUES
     (2346, 44, 10),
     (3041, 14, 5);
 
-
+create view message as
 select substr(
     sentence,
     (select char_num from triplets where sentence_num = id),
