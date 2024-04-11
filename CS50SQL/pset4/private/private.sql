@@ -20,6 +20,8 @@ VALUES
 
 select substr(
     sentence,
-    (select char_num from triplets where )
-)
-select * from sentences where id in (select sentence_num from triplets);
+    (select char_num from triplets where sentence_num = id),
+    (select message_len from triplets where sentence_num = id)
+) from
+(
+    select * from sentences where id in (select sentence_num from triplets));
