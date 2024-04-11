@@ -5,7 +5,7 @@ CREATE TABLE
         message_len INTEGER NOT NULL
     );
 
-
+insert into triplets (sentence_num, char_num, message_len) values
 
 CREATE VIEW
     triplet1 AS
