@@ -21,7 +21,7 @@ SELECT
     substr (
         (SELECT sentence_num FROM triplets),
         (SELECT char_num FROM triplets),
-        (SELECT message_leng FROM triplets)
+        (SELECT message_len FROM triplets)
     )
 FROM
     sentences;
