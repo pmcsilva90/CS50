@@ -19,9 +19,8 @@ VALUES
 
 SELECT
     substr (
-        (SELECT sentence_num FROM triplets),
-        (SELECT char_num FROM triplets),
-        (SELECT message_len FROM triplets)
+        (select sentence where id in (select sentence_num from triplets)),
+        (select char_num from triplets where sentences.id = triplets.sentence_num)
     )
 FROM
     sentences;
