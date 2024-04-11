@@ -1,3 +1,3 @@
 create view available as
-select id, property_type, host_name from listings
-select date from availabilities;
+select listings.id, property_type, host_name, date from listings
+join availabilities on listings.id = availabilities.listing_id;
