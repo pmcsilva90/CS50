@@ -19,5 +19,9 @@ VALUES
 
 SELECT
     substr (
-        sele
+        (SELECT sentence_num FROM triplets),
+        (SELECT char_num FROM triplets),
+        (SELECT message_leng FROM triplets)
     )
+FROM
+    sentences;
