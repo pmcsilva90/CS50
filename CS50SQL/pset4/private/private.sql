@@ -17,11 +17,39 @@ VALUES
     (2346, 44, 10),
     (3041, 14, 5);
 
-create view message as
-select substr(
-    sentence,
-    (select char_num from triplets where sentence_num = id),
-    (select message_len from triplets where sentence_num = id)
-) from
-(
-    select * from sentences where id in (select sentence_num from triplets));
+CREATE VIEW
+    message AS
+SELECT
+    substr (
+        sentence,
+        (
+            SELECT
+                char_num
+            FROM
+                triplets
+            WHERE
+                sentence_num = id
+        ),
+        (
+            SELECT
+                message_len
+            FROM
+                triplets
+            WHERE
+                sentence_num = id
+        )
+    ) AS phrase
+FROM
+    (
+        SELECT
+            *
+        FROM
+            sentences
+        WHERE
+            id IN (
+                SELECT
+                    sentence_num
+                FROM
+                    triplets
+            )
+    );
