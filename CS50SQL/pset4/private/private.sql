@@ -6,6 +6,7 @@ CREATE TABLE
     );
 
 
+
 CREATE VIEW
     triplet1 AS
 SELECT
