@@ -1,4 +1,12 @@
-create view available as
-select listings.id, property_type, host_name, date, available from listings
-join availabilities on listings.id = availabilities.listing_id
-where availabilities.available = 'TRUE';
+CREATE VIEW
+    available AS
+SELECT
+    listings.id,
+    property_type,
+    host_name,
+    date
+FROM
+    listings
+    JOIN availabilities ON listings.id = availabilities.listing_id
+WHERE
+    availabilities.available = 'TRUE';
