@@ -45,6 +45,12 @@ def index():
         month = request.form.get("month")
         if not month:
             redirect("/")
+        try:
+            month = int(month)
+        except ValueError:
+            redirect("/")
+        if month < 1 or month > 12:
+            redirect("/")
 
         print(f"Name is {name}")
         print(f"Day is {day}")
