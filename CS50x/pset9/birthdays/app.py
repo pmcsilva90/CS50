@@ -62,7 +62,7 @@ def index():
 
     else:
 
-        months = [January, February, March, April, May, June, July, August, September, October, November, December]
+        months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
         # Display the entries in the database on index.html
         rows = db.execute("SELECT * FROM birthdays")
