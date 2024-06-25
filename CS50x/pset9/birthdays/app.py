@@ -29,7 +29,8 @@ def index():
         # Add the user's entry into the database
         name = request.form.get("name")
         if not name:
-            return redirect("/")
+            return render_template("index.html", ErrorMessage="Error adding birthday: Must include name")
+            #return redirect("/")
 
         day = request.form.get("day")
         if not day:
