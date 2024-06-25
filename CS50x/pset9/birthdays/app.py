@@ -53,6 +53,6 @@ def index():
         rows = db.execute("SELECT * FROM birthdays")
         print(rows)
 
-        return render_template("index.html")
+        return render_template("index.html", birthdays=rows)
 
 
