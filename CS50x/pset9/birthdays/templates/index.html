@@ -39,8 +39,8 @@
                          {% for birthday in birthdays %}
                             <tr>
                                 <td>{{ birthday.name }}</td>
-                                <td>{{ birthday.day }}</td>
-                                <td>{{ birthday.month }}</td>
+                                <td>{{ birthday.day 'slash' birthday.month }}</td>
+
                             </tr>
                          {% endfor %}
                     </tbody>
