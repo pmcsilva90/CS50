@@ -29,28 +29,28 @@ def index():
         # Add the user's entry into the database
         name = request.form.get("name")
         if not name:
-            redirect("/")
+            return redirect("/")
 
         day = request.form.get("day")
         if not day:
-            redirect("/")
+            return redirect("/")
         try:
             day = int(day)
         except ValueError:
-            redirect("/")
+            return redirect("/")
         if day < 1 or day > 31:
-            redirect("/")
+            return redirect("/")
 
 
         month = request.form.get("month")
         if not month:
-            redirect("/")
+            return redirect("/")
         try:
             month = int(month)
         except ValueError:
-            redirect("/")
+            return redirect("/")
         if month < 1 or month > 12:
-            redirect("/")
+            return redirect("/")
 
         print(f"Name is {name}")
         print(f"Day is {day}")
