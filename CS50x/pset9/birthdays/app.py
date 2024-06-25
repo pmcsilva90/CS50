@@ -48,13 +48,16 @@ def index():
 
         month = request.form.get("month")
         if not month:
-            return redirect("/")
+            return render_template("index.html", error_message="Error adding birthday: must include month")
+            # return redirect("/")
         try:
             month = int(month)
         except ValueError:
-            return redirect("/")
+            return render_template("index.html", error_message="Error adding birthday: invalid month format")
+            # return redirect("/")
         if month < 1 or month > 12:
-            return redirect("/")
+            return render_template("index.html", error_message="Error adding birthday: invalid month value")
+            #return redirect("/")
 
         print(f"Name is {name}")
         print(f"Day is {day}")
