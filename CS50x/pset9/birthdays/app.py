@@ -24,12 +24,17 @@ def after_request(response):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+    rows = db.execute("SELECT * FROM birthdays")
+
     if request.method == "POST":
 
         # Add the user's entry into the database
         name = request.form.get("name")
         if not name:
-            return render_template("index.html", error_message="Error adding birthday: must include name")
+            return render_template("index.html", birthdays=rows, months=monthserror_message="Error adding birthday: must include name")
             #return redirect("/")
 
         day = request.form.get("day")
@@ -69,10 +74,10 @@ def index():
 
     else:
 
-        months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
 
         # Display the entries in the database on index.html
-        rows = db.execute("SELECT * FROM birthdays")
+
         print(rows)
 
         return render_template("index.html", birthdays=rows, months=months)
