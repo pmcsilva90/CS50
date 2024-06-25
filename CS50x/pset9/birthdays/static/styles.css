@@ -55,6 +55,18 @@ button, input[type="submit"] {
     vertical-align: middle;
 }
 
+select{
+    /* font-size: inherit; */
+    /* font-weight: inherit; */
+    background-color: #fff;
+    line-height: 1.8;
+    color: inherit;
+    width: 25%;
+    height: 30px;
+    color: rgb(150, 148, 148);
+    /* outline: 1px dashed red; */
+}
+
 input[type="text"], input[type="number"] {
     line-height: 1.8;
     width: 25%;
