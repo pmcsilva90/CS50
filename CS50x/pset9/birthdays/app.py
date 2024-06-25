@@ -29,18 +29,21 @@ def index():
         # Add the user's entry into the database
         name = request.form.get("name")
         if not name:
-            return render_template("index.html", error_message="Error adding birthday: Must include name")
+            return render_template("index.html", error_message="Error adding birthday: must include name")
             #return redirect("/")
 
         day = request.form.get("day")
         if not day:
-            return redirect("/")
+            return render_template("index.html", error_message="Error adding birthday: must include day")
+            #return redirect("/")
         try:
             day = int(day)
         except ValueError:
-            return redirect("/")
+            return render_template("index.html", error_message="Error adding birthday: invalid day format")
+            #return redirect("/")
         if day < 1 or day > 31:
-            return redirect("/")
+            return render_template("index.html", error_message="Error adding birthday: invalid day value")
+            #return redirect("/")
 
 
         month = request.form.get("month")
